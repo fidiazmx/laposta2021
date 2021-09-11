@@ -709,7 +709,7 @@ var GardenZone = function(){
 			equalHeight('.equal-wraper .equal-col');
 			counter();
 			masonryBox();
-			handleContactPopup();
+			//handleContactPopup();
 		},
 		
 		resize:function(){
