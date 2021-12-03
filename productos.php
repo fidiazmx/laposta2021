@@ -17,7 +17,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title> La Posta - Contacto</title>
+	<title> La Posta - Productos</title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,7 +66,7 @@
             <div class="main-bar clearfix ">
                 <div class="container clearfix">
                     <!-- website logo -->
-                    <div class="logo-header mostion"><a href="index.html"><img src="images/logo.png" width="193" height="89" alt=""></a></div>
+                    <div class="logo-header mostion"><a href="index.php"><img src="images/logo.png" width="193" height="89" alt=""></a></div>
                     <!-- nav toggle button -->
 					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 						<span></span>
@@ -89,17 +89,17 @@
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li class=""> <a href="index.html">Inicio<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
                             </li>
-                            <li class=""> <a href="nosotros.html">Nosotros<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
                             </li>
-                            <li class=""> <a href="productos.html">Productos<i class="fa fa-chevron-down"></i></a>									
+                            <li class="active"> <a href="productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
                             </li>
-                            <li class=""> <a href="blog.html">Blog<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="blog.php">Blog<i class="fa fa-chevron-down"></i></a>									
                             </li>
-                            <li class=""> <a href="galeria.html">Galería<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="galeria.php">Galería<i class="fa fa-chevron-down"></i></a>									
                             </li>								
-                            <li class="active"> <a href="contacto.html">Contacto<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="contacto.php">Contacto<i class="fa fa-chevron-down"></i></a>									
                             </li>
                         </ul>
                     </div>
@@ -112,10 +112,10 @@
     <!-- Content -->
     <div class="page-content">
         <!-- inner page banner -->
-        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(images/banner/bg-contacto-banderilla.png);">
+        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(images/banner/breadcrubs-productos.png);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
-                    <h1 class="text-white">Contacto</h1>
+                    <h1 class="text-white">Productos</h1>
                 </div>
             </div>
         </div>
@@ -125,127 +125,74 @@
             <div class="container">
                 <ul class="list-inline">
                     <li><a href="#">Inicio</a></li>
-                    <li>Contacto</li>
+                    <li>Productos</li>
                 </ul>
             </div>
         </div>
         <!-- Breadcrumb row END -->
-        <!-- contact area -->
-        <div class="section-full content-inner bg-white contact-style-1">
-			<div class="container">
-                <div class="row">
-                    <!-- Left part start -->
-                    <div class="col-lg-8">
-                        <div class="p-a30 bg-gray clearfix m-b30 ">
-							<h2>Envíanos un mensaje</h2>
-							<div class="dzFormMsg"></div>
-							<form method="post" class="dzForm" action="script/contact.php">
-							<input type="hidden" value="Contact" name="dzToDo" >
-                                <div class="row">
-                                    <div class="col-lg-6 col-sm-6">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input name="dzName" type="text" required class="form-control" placeholder="Nombre">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-6">
-                                        <div class="form-group">
-                                            <div class="input-group"> 
-											    <input name="dzEmail" type="email" class="form-control" required  placeholder="Email" >
-                                            </div>
-                                        </div>
-                                    </div>
-									<div class="col-lg-6 col-sm-6">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input name="dzOther[Phone]" type="text" required class="form-control" placeholder="Teléfono">
-                                            </div>
-                                        </div>
-                                    </div>
-									<div class="col-lg-6 col-sm-6">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input name="dzOther[Subject]" type="text" required class="form-control" placeholder="Asunto">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <textarea name="dzMessage" rows="4" class="form-control" required placeholder="Mensaje..."></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-									<div class="col-lg-12">
-										<div class="form-group">
-											<div class="input-group">
-												<div class="g-recaptcha" data-sitekey="<!-- Put reCaptcha Site Key -->" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-												<input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha">
-											</div>
-										</div>
-									</div>
-                                    <div class="col-lg-12">
-                                        <button name="submit" type="submit" value="Submit" class="site-button "> <span>Enviar</span> </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- Left part END -->
-                    <!-- right part start -->
-                    <!-- right part start -->
-                    <div class="col-lg-4 d-lg-flex">
-                        <div class="p-a30 m-b30 border-1 contact-area align-self-stretch">
-							<h2 class="m-b10">Contacto rápido</h2>
-							<p>Si tienes algun pregunta usa las siguientes líneas de contacto.</p>
-                            <ul class="no-margin">
-                                <li class="icon-bx-wraper left m-b30">
-                                    <div class="icon-bx-xs bg-primary"> <a href="#" class="icon-cell"><i class="fa fa-map-marker"></i></a> </div>
-                                    <div class="icon-content">
-                                        <h6 class="text-uppercase m-tb0 dez-tilte">Dirección:</h6>
-                                        <p>Esfuerzo no. 13, Colonia Centro, Banderilla, Veracruz, C.P. 91300</p>
-                                    </div>
-                                </li>
-                                <li class="icon-bx-wraper left  m-b30">
-                                    <div class="icon-bx-xs bg-primary"> <a href="#" class="icon-cell"><i class="fa fa-envelope"></i></a> </div>
-                                    <div class="icon-content">
-                                        <h6 class="text-uppercase m-tb0 dez-tilte">Email:</h6>
-                                        <p>ventasbanderilla@laposta.com.mx</p>
-                                    </div>
-                                </li>
-                                <li class="icon-bx-wraper left">
-                                    <div class="icon-bx-xs bg-primary"> <a href="#" class="icon-cell"><i class="fa fa-phone"></i></a> </div>
-                                    <div class="icon-content">
-                                        <h6 class="text-uppercase m-tb0 dez-tilte">Teléfono</h6>
-                                        <p>(228) 8110503, (228) 1922343</p>
-                                    </div>
-                                </li>
-                            </ul>
-							<div class="m-t20">
-								<ul class="dez-social-icon dez-social-icon-lg">
-									<li><a href="javascript:void(0);" class="fa fa-facebook bg-primary"></a></li>
-									<!-- <li><a href="javascript:void(0);" class="fa fa-twitter bg-primary"></a></li>
-									<li><a href="javascript:void(0);" class="fa fa-linkedin bg-primary"></a></li>
-									<li><a href="javascript:void(0);" class="fa fa-pinterest-p bg-primary"></a></li>
-									<li><a href="javascript:void(0);" class="fa fa-google-plus bg-primary"></a></li> -->
-								</ul>
+        <!-- About Company -->
+        <div class="section-full content-inner bg-white">
+            <div class="container">
+				<div class="section-head text-center">
+                    <h3 class="h3 text-uppercase">Nuestros <span class="text-primary">Productos</span></h3>
+                </div>
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 m-b30">
+							<div class="dez-box">
+								<div class="dez-media"> <a href="#"><img src="images/product/vaca.jpg" alt=""></a> </div>
+								<div class="dez-info p-a20 text-center bg-gray">
+									<div class="p-lr20">
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/vacas/vacas.html">Vacas</a></h4>
+									</div>										
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-6 m-b30">
+							<div class="dez-box">
+								<div class="dez-media"> <a href="#"><img src="images/product/cerdo.jpg" alt=""></a> </div>
+								<div class="dez-info p-a20 text-center bg-gray">
+									<div class="p-lr20">
+										<h4 class="m-a0 bg-primary service-head"><a href="#">Cerdos</a></h4>
+									</div>										
+								</div>
 							</div>
                         </div>
+                        <div class="col-lg-4 col-sm-6 m-b30">
+							<div class="dez-box">
+								<div class="dez-media"> <a href="#"><img src="images/product/caballo.jpg" alt=""></a> </div>
+								<div class="dez-info p-a20 text-center bg-gray">
+									<div class="p-lr20">
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/caballos/caballos.html">Caballos</a></h4>
+									</div>										
+								</div>
+							</div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 m-b30">
+							<div class="dez-box">
+								<div class="dez-media"> <a href="#"><img src="images/product/borrego.jpg" alt=""></a> </div>
+								<div class="dez-info p-a20 text-center bg-gray">
+									<div class="p-lr20">
+										<h4 class="m-a0 bg-primary service-head"><a href="#">Borregos</a></h4>
+									</div>										
+								</div>
+							</div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 m-b30">
+							<div class="dez-box">
+								<div class="dez-media"> <a href="#"><img src="images/product/ave.jpg" alt=""></a> </div>
+								<div class="dez-info p-a20 text-center bg-gray">
+									<div class="p-lr20">
+										<h4 class="m-a0 bg-primary service-head"><a href="#">Aves</a></h4>
+									</div>										
+								</div>
+							</div>
+						</div>
                     </div>
-                    <!-- right part END -->
                 </div>
-				<div class="row">
-					<div class="col-lg-12">
-					<!-- Map part start -->
-					<h2>Nuestra ubicación</h2>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.7562151562365!2d-96.94950928510833!3d19.59494224054698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db2fb9690db67d%3A0x9bbffcd419a03f3!2sLa+Posta!5e0!3m2!1ses-419!2smx!4v1492487508962" style="border:0; width:100%; height:400px;" allowfullscreen></iframe>
-					<!-- Map part END -->
-					</div>
-				</div>
             </div>
         </div>
-        <!-- contact area  END -->
+        <!-- About Company END -->
     </div>
     <!-- Content END-->
     <!-- Footer -->
@@ -349,7 +296,7 @@
                 <div class="row">
                     <div class="col-lg-4 text-left"> <span>© 2021 La Posta</span> </div>
                     <div class="col-lg-4 text-center"> <span> Develop by <i class="fa fa-heart text-primary heart"></i> By Iwebyou</span> </div>
-                    <div class="col-lg-4 text-right "> <a href="nosotros.html"> Nosotros</a> <a href="#"> Ayuda</a> <a href="#"> Política de privacidad</a> </div>
+                    <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a> <a href="#"> Ayuda</a> <a href="#"> Política de privacidad</a> </div>
                 </div>
             </div>
         </div>
@@ -375,6 +322,5 @@
 
 <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 <script src="js/dz.carousel.min.js"></script><!-- SORTCODE FUCTIONS  -->
-<script src='https://www.google.com/recaptcha/api.js'></script> <!-- Google API For Recaptcha  -->
 </body>
 </html>

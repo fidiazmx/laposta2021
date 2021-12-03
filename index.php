@@ -48,7 +48,7 @@
 			<div class="container header-contant-block">
 				<div class="row">
 					<div class="col-xl-4 col-lg-3 d-flex align-items-center">
-						<div class="logo-header "><a href="index.html"><img src="images/logo.png" width="193" height="89" alt=""></a></div>
+						<div class="logo-header "><a href="index.php"><img src="images/logo.png" width="193" height="89" alt=""></a></div>
 					</div>
 					<div class="col-xl-8 col-lg-9">
 						<ul class="contact-info clearfix">
@@ -73,7 +73,7 @@
                 <div class="slide-up">
                     <div class="container clearfix">
                         <div class="logo-header mostion">
-							<a href="index.html"><img src="images/logo.png" width="193" height="89" alt=""></a>
+							<a href="index.php"><img src="images/logo.png" width="193" height="89" alt=""></a>
 						</div>
 						<!-- nav toggle button -->
                         <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,17 +103,17 @@
                         <!-- main nav -->
                         <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                             <ul class="nav navbar-nav">
-								<li class="active"> <a href="index.html">Inicio<i class="fa fa-chevron-down"></i></a>									
+								<li class="active"> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
 								</li>
-                                <li class=""> <a href="nosotros.html">Nosotros<i class="fa fa-chevron-down"></i></a>									
+                                <li class=""> <a href="nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
 								</li>
-								<li class=""> <a href="productos.html">Productos<i class="fa fa-chevron-down"></i></a>									
+								<li class=""> <a href="productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
 								</li>
-								<li class=""> <a href="blog.html">Blog<i class="fa fa-chevron-down"></i></a>									
+								<li class=""> <a href="blog.php">Blog<i class="fa fa-chevron-down"></i></a>									
 								</li>
-								<li class=""> <a href="galeria.html">Galería<i class="fa fa-chevron-down"></i></a>									
+								<li class=""> <a href="galeria.php">Galería<i class="fa fa-chevron-down"></i></a>									
 								</li>								
-								<li class=""> <a href="contacto.html">Contacto<i class="fa fa-chevron-down"></i></a>									
+								<li class=""> <a href="contacto.php">Contacto<i class="fa fa-chevron-down"></i></a>									
 								</li>
 							</ul>
                         </div>

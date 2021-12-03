@@ -17,7 +17,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title> La Posta - Productos</title>
+	<title> La Posta - Galería</title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,7 +66,7 @@
             <div class="main-bar clearfix ">
                 <div class="container clearfix">
                     <!-- website logo -->
-                    <div class="logo-header mostion"><a href="index.html"><img src="images/logo.png" width="193" height="89" alt=""></a></div>
+                    <div class="logo-header mostion"><a href="index.php"><img src="images/logo.png" width="193" height="89" alt=""></a></div>
                     <!-- nav toggle button -->
 					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 						<span></span>
@@ -74,32 +74,32 @@
 						<span></span>
 					</button>
                     <!-- extra nav -->
-                    <!-- <div class="extra-nav">
+                    <div class="extra-nav">
                         <div class="extra-cell">
                             <button id="quik-search-btn" type="button" class="site-button-link"><i class="fa fa-search"></i></button>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- Quik search -->
-                    <!-- <div class="dez-quik-search bg-primary">
+                    <div class="dez-quik-search bg-primary">
                         <form action="#">
                             <input name="search" value="" type="text" class="form-control" placeholder="Type to search">
                             <span  id="quik-search-remove"><i class="fa fa-remove"></i></span>
                         </form>
-                    </div> -->
+                    </div>
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li class=""> <a href="index.html">Inicio<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
                             </li>
-                            <li class=""> <a href="nosotros.html">Nosotros<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
                             </li>
-                            <li class="active"> <a href="productos.html">Productos<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
                             </li>
-                            <li class=""> <a href="blog.html">Blog<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="blog.php">Blog<i class="fa fa-chevron-down"></i></a>									
                             </li>
-                            <li class=""> <a href="galeria.html">Galería<i class="fa fa-chevron-down"></i></a>									
+                            <li class="active"> <a href="galeria.php">Galería<i class="fa fa-chevron-down"></i></a>									
                             </li>								
-                            <li class=""> <a href="contacto.html">Contacto<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="contacto.php">Contacto<i class="fa fa-chevron-down"></i></a>									
                             </li>
                         </ul>
                     </div>
@@ -112,10 +112,10 @@
     <!-- Content -->
     <div class="page-content">
         <!-- inner page banner -->
-        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(images/banner/breadcrubs-productos.png);">
+        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(images/banner/bnr1.jpg);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
-                    <h1 class="text-white">Productos</h1>
+                    <h1 class="text-white">Galería</h1>
                 </div>
             </div>
         </div>
@@ -124,75 +124,132 @@
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="#">Inicio</a></li>
-                    <li>Productos</li>
+                    <li><a href="#">Home</a></li>
+                    <li>Galería</li>
                 </ul>
             </div>
         </div>
         <!-- Breadcrumb row END -->
-        <!-- About Company -->
-        <div class="section-full content-inner bg-white">
+        <div class="section-full content-inner">
+            <!-- Left & right section start -->
             <div class="container">
-				<div class="section-head text-center">
-                    <h3 class="h3 text-uppercase">Nuestros <span class="text-primary">Productos</span></h3>
+                <!-- Gallery -->
+                <div class="site-filters clearfix center  m-b40">
+                    <ul class="filters" data-toggle="buttons">
+                        <li data-filter="" class="btn active">
+                            <input type="radio">
+                            <a href="#" class="site-button-secondry"><span>TODO</span></a> </li>
+                        <li data-filter="home" class="btn">
+                            <input type="radio" >
+                            <a href="#" class="site-button-secondry"><span>ACAJETE</span></a> </li>
+                        <li data-filter="office" class="btn">
+                            <input type="radio">
+                            <a href="#" class="site-button-secondry"><span>BANDERILLA</span></a> </li>
+                        <li data-filter="commercial" class="btn">
+                            <input type="radio">
+                            <a href="#" class="site-button-secondry "><span>MATA OSCURA</span></a> </li>                        
+                    </ul>
                 </div>
-                <div class="section-content">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6 m-b30">
-							<div class="dez-box">
-								<div class="dez-media"> <a href="#"><img src="images/product/vaca.jpg" alt=""></a> </div>
-								<div class="dez-info p-a20 text-center bg-gray">
-									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="productos/vacas/vacas.html">Vacas</a></h4>
-									</div>										
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-sm-6 m-b30">
-							<div class="dez-box">
-								<div class="dez-media"> <a href="#"><img src="images/product/cerdo.jpg" alt=""></a> </div>
-								<div class="dez-info p-a20 text-center bg-gray">
-									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="#">Cerdos</a></h4>
-									</div>										
-								</div>
-							</div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 m-b30">
-							<div class="dez-box">
-								<div class="dez-media"> <a href="#"><img src="images/product/caballo.jpg" alt=""></a> </div>
-								<div class="dez-info p-a20 text-center bg-gray">
-									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="productos/caballos/caballos.html">Caballos</a></h4>
-									</div>										
-								</div>
-							</div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 m-b30">
-							<div class="dez-box">
-								<div class="dez-media"> <a href="#"><img src="images/product/borrego.jpg" alt=""></a> </div>
-								<div class="dez-info p-a20 text-center bg-gray">
-									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="#">Borregos</a></h4>
-									</div>										
-								</div>
-							</div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 m-b30">
-							<div class="dez-box">
-								<div class="dez-media"> <a href="#"><img src="images/product/ave.jpg" alt=""></a> </div>
-								<div class="dez-info p-a20 text-center bg-gray">
-									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="#">Aves</a></h4>
-									</div>										
-								</div>
-							</div>
-						</div>
-                    </div>
+                <div class="clearfix">
+                    <ul id="masonry" class="row dez-gallery-listing gallery-grid-4 mfp-gallery m-b0">
+                        <li data-filter="" class="home card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic1.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="office card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow dez-img-effect zoom"> <a href="javascript:void(0);"> <img src="images/gallery/pic2.jpg"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic2.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="children-aid card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic3.jpg"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic3.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="commercial card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic4.jpg"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic4.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="window card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic5.jpg"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic5.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="apartment card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic6.jpg"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic6.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="Cargo card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic1.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="home card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic2.jpg"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic2.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="office card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic9.jpg"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic9.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+                <!-- Gallery END -->
+                <!-- Pagination start -->
+                <div class="pagination-bx m-b30">
+                    <ul class="pagination">
+                        <li class="previous"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                    </ul>
+                </div>
+                <!-- Pagination END -->
             </div>
+            <!-- Left & right section  END -->
         </div>
-        <!-- About Company END -->
     </div>
     <!-- Content END-->
     <!-- Footer -->
@@ -296,13 +353,12 @@
                 <div class="row">
                     <div class="col-lg-4 text-left"> <span>© 2021 La Posta</span> </div>
                     <div class="col-lg-4 text-center"> <span> Develop by <i class="fa fa-heart text-primary heart"></i> By Iwebyou</span> </div>
-                    <div class="col-lg-4 text-right "> <a href="nosotros.html"> Nosotros</a> <a href="#"> Ayuda</a> <a href="#"> Política de privacidad</a> </div>
+                    <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a> <a href="#"> Ayuda</a> <a href="#"> Política de privacidad</a> </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- Footer END-->
-    <!-- scroll top button -->
     <button class="scroltop fa fa-chevron-up" ></button>
 </div>
 <!-- JavaScript  files ========================================= -->
