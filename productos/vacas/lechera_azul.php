@@ -17,7 +17,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title> La Posta - Productos Vacas</title>
+	<title> La Posta - Lechera Azul</title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -89,7 +89,7 @@
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li class="active"> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
+                            <li> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
                             </li>
                             <li class=""> <a href="../../nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
                             </li>

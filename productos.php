@@ -143,7 +143,7 @@
 								<div class="dez-media"> <a href="#"><img src="images/product/vaca.jpg" alt=""></a> </div>
 								<div class="dez-info p-a20 text-center bg-gray">
 									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="productos/vacas/vacas.html">Vacas</a></h4>
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/vacas/vacas.php">Vacas</a></h4>
 									</div>										
 								</div>
 							</div>
@@ -163,7 +163,7 @@
 								<div class="dez-media"> <a href="#"><img src="images/product/caballo.jpg" alt=""></a> </div>
 								<div class="dez-info p-a20 text-center bg-gray">
 									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="productos/caballos/caballos.html">Caballos</a></h4>
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/caballos/caballos.php">Caballos</a></h4>
 									</div>										
 								</div>
 							</div>
@@ -221,7 +221,7 @@
                                     <div class="dez-post-media"> <img src="images/blog/recent-blog/pic1.jpg" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Noticia 1</a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php">Noticia 1</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
@@ -235,7 +235,7 @@
                                     <div class="dez-post-media"> <img src="images/blog/recent-blog/pic2.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Noticia 2</a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php">Noticia 2</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
@@ -249,7 +249,7 @@
                                     <div class="dez-post-media"> <img src="images/blog/recent-blog/pic3.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Noticia 3</a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php">Noticia 3</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>

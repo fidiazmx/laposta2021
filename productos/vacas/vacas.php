@@ -112,7 +112,7 @@
     <!-- Content -->
     <div class="page-content">    
         <!-- inner page banner -->
-        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(images/banner/breadcrubs-productos.png);">
+        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(../../images/banner/breadcumbs-vacas.png);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
                     <h1 class="text-white">Vacas</h1>
@@ -202,40 +202,40 @@
                                 <h4 class="widget-title">Últimas noticias</h4>
                                 <div class="widget-post-bx">
                                     <div class="widget-post clearfix">
-                                        <div class="dez-post-media"> <img src="../../images/blog/recent-blog/pic1.jpg" width="200" height="143" alt=""> </div>
+                                        <div class="dez-post-media"> <img src="../../images/banner/bnr1.jpg" width="200" height="143" alt=""> </div>
                                         <div class="dez-post-info">
                                             <div class="dez-post-header">
-                                                <h6 class="post-title"><a href="#">Noticia 1</a></h6>
+                                                <h6 class="post-title"><a href="../../blog-single.php">Noticia 1</a></h6>
                                             </div>
                                             <div class="dez-post-meta">
                                                 <ul>
-                                                    <li class="post-date">10 de septiembre 2021</li>
+                                                    <li class="post-date">3 de diciembre 2021</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="widget-post clearfix">
-                                        <div class="dez-post-media"> <img src="../../images/blog/recent-blog/pic2.jpg" width="200" height="160" alt=""> </div>
+                                        <div class="dez-post-media"> <img src="../../images/banner/bnr2.jpg" width="200" height="160" alt=""> </div>
                                         <div class="dez-post-info">
                                             <div class="dez-post-header">
-                                                <h6 class="post-title"><a href="#">Noticia 2</a></h6>
+                                                <h6 class="post-title"><a href="../../blog-single-2.php">Noticia 2</a></h6>
                                             </div>
                                             <div class="dez-post-meta">
                                                 <ul>
-                                                    <li class="post-date">14 de Septiembre 2021</li>
+                                                    <li class="post-date">3 de diciembre 2021</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="widget-post clearfix">
-                                        <div class="dez-post-media"> <img src="../../images/blog/recent-blog/pic3.jpg" width="200" height="160" alt=""> </div>
+                                        <div class="dez-post-media"> <img src="../../images/banner/bnr3.jpg" width="200" height="160" alt=""> </div>
                                         <div class="dez-post-info">
                                             <div class="dez-post-header">
-                                                <h6 class="post-title"><a href="#">Noticia 3</a></h6>
+                                                <h6 class="post-title"><a href="../../blog-single-3.php">Noticia 3</a></h6>
                                             </div>
                                             <div class="dez-post-meta">
                                                 <ul>
-                                                    <li class="post-date">18 de Septiembre 2021</li>
+                                                    <li class="post-date">3 de diciembre 2021</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -248,11 +248,11 @@
                             <div class="widget widget_categories">
                                 <h4 class="widget-title">Categorías</h4>
                                 <ul>
-                                    <li><a href="#">Vacas </a> (10)</li>
-                                    <li><a href="#">Cerdos </a> (05) </li>
-                                    <li><a href="#">Caballos </a> (08) </li>
-                                    <li><a href="#">Borregos</a> (06) </li>
-                                    <li><a href="#">Aves </a> (11) </li>                                    
+                                    <li><a href="../vacas/vacas.php">Vacas </a> (10)</li>
+                                    <li><a href="../cerdos/cerdos.php">Cerdos </a> (05) </li>
+                                    <li><a href="../caballos/caballos.php">Caballos </a> (08) </li>
+                                    <li><a href="../borregos/borregos.php">Borregos</a> (06) </li>
+                                    <li><a href="../aves/aves.php">Aves </a> (11) </li>                                    
                                 </ul>
                             </div>
                             <!--<div class="widget widget_gallery">
@@ -306,7 +306,7 @@
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
 										<div class="m-t15">
-											<a href="lechera_azul.html" class="site-button">Ver detalle	</a>
+											<a href="lechera_azul.php" class="site-button">Ver detalle	</a>
 										</div>
 									</div>									
 								</div>
@@ -516,7 +516,7 @@
 						<div class="add-plat text-white shop-add" style="background-image:url(images/banner/bnr4.jpg); background-size:100%;
 						background-position:center;">
 							<h2 class="m-b0">Si tiene alguna duda de clic aquí</h2>
-							<a href="#" class="site-button outline yellow">Solicitar cotización</a>
+							<a href="contacto.php" class="site-button outline yellow">Solicitar cotización</a>
 						</div>
 					</div>
 				</div>
@@ -527,14 +527,16 @@
     </div>
     <!-- Content END-->
     <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-top" style="background-image:url(images/background/bg1.png);">
+	<footer class="site-footer">
+        <div class="footer-top" style="background-image:url(images/logo.png);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <div class="logo-footer"><img src="images/logo.png" alt=""></div>
-                            <p class="m-tb20"><strong>La Posta</strong>  Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus.  cons ectetur elit. Vestibulum nec odios Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec.</p>
+                            <p class="m-tb20"><strong>La Posta</strong>  La Posta se creó en 1987, con la intención de ofrecer al ganadero una opción para la alimentación de su ganado diferente y más rentable. Se inició vendiendo materias primas y medicina veterinaria.
+
+                                A través de los años se añadió una gama de diferentes alimentos balanceados, que en un principio se elaboraban de manera artesanal y al paso de los años el proceso se ha tecnificado...</p>
                             <ul class="dez-social-icon dez-social-icon-lg">
                                 <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
                                 <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
@@ -545,47 +547,47 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget recent-posts-entry">
-                            <h4 class="m-b15 text-uppercase">Noticias recientes</h4>
+                            <h4 class="m-b15 text-uppercase">Últimas publicaciones</h4>
                             <div class="dez-separator bg-primary"></div>
                             <div class="widget-post-bx">
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="images/blog/recent-blog/pic1.jpg" alt="" width="200" height="143"> </div>
+                                    <div class="dez-post-media"> <img src="../../images/banner/bnr1.jpg" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Noticia 1</a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php">¿Qué come el ganado?</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
                                                 <li class="post-author">By <a href="#">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="images/blog/recent-blog/pic2.jpg" alt="" width="200" height="160"> </div>
+                                    <div class="dez-post-media"> <img src="../../images/banner/bnr2.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Noticia 2</a></h6>
+                                            <h6 class="post-title"><a href="blog-single-2.php">México ya es 5° productor mundial de alimentos balanceados</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
                                                 <li class="post-author">By <a href="#">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="images/blog/recent-blog/pic3.jpg" alt="" width="200" height="160"> </div>
+                                    <div class="dez-post-media"> <img src="../../images/banner/bnr3.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Noticia 3</a></h6>
+                                            <h6 class="post-title"><a href="blog-single-3.php">México, cuarto productor de alimentos balanceados en el mundo</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
                                                 <li class="post-author">By <a href="#">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -598,12 +600,11 @@
                             <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="#">Servicio 1</a></li>
-                                <li><a href="#">Servicio 2</a></li>
-                                <li><a href="#">Servicio 3</a></li>
-                                <li><a href="#">Servicio 4</a></li>
-                                <li><a href="#">Servicio 5 </a></li>
-                                <li><a href="#">Servicio 6 </a></li>
+                                <li><a href="productos/vacas/vacas.php">Alimento Vacas</a></li>
+                                <li><a href="productos/cerdos/cerdos.php">Alimento Cerdos</a></li>
+                                <li><a href="productos/caballos/caballos.php">Alimento Caballos</a></li>
+                                <li><a href="productos/borregos/borregos.php">Alimento Borregos</a></li>
+                                <li><a href="productos/aves/aves.php">Alimento Aves</a></li>
                             </ul>
                         </div>
                     </div>
@@ -627,7 +628,7 @@
                 <div class="row">
                     <div class="col-lg-4 text-left"> <span>© 2021 La Posta</span> </div>
                     <div class="col-lg-4 text-center"> <span> Develop by <i class="fa fa-heart text-primary heart"></i> By Iwebyou</span> </div>
-                    <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a> <a href="#"> Ayuda</a> <a href="#"> Política de privacidad</a> </div>
+                    <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a></div>
                 </div>
             </div>
         </div>

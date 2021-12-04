@@ -134,64 +134,79 @@
         <div class="section-full content-inner bg-white contact-style-1">
 			<div class="container">
                 <div class="row">
-                    <!-- Left part start -->
+					<div class="col-lg-12">
+					<!-- Map part start -->
+					<h2>Nuestra ubicación</h2>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.7562151562365!2d-96.94950928510833!3d19.59494224054698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db2fb9690db67d%3A0x9bbffcd419a03f3!2sLa+Posta!5e0!3m2!1ses-419!2smx!4v1492487508962" style="border:0; width:100%; height:400px;" allowfullscreen></iframe>
+					<!-- Map part END -->
+					</div>
+				</div>
+                <div class="row">
+                    <br>
+                </div>
+                <div class="row">
                     <div class="col-lg-8">
-                        <div class="p-a30 bg-gray clearfix m-b30 ">
-							<h2>Envíanos un mensaje</h2>
-							<div class="dzFormMsg"></div>
-							<form method="post" class="dzForm" action="script/contact.php">
-							<input type="hidden" value="Contact" name="dzToDo" >
-                                <div class="row">
-                                    <div class="col-lg-6 col-sm-6">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input name="dzName" type="text" required class="form-control" placeholder="Nombre">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-6">
-                                        <div class="form-group">
-                                            <div class="input-group"> 
-											    <input name="dzEmail" type="email" class="form-control" required  placeholder="Email" >
-                                            </div>
-                                        </div>
-                                    </div>
-									<div class="col-lg-6 col-sm-6">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input name="dzOther[Phone]" type="text" required class="form-control" placeholder="Teléfono">
-                                            </div>
-                                        </div>
-                                    </div>
-									<div class="col-lg-6 col-sm-6">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <input name="dzOther[Subject]" type="text" required class="form-control" placeholder="Asunto">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <textarea name="dzMessage" rows="4" class="form-control" required placeholder="Mensaje..."></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-									<div class="col-lg-12">
-										<div class="form-group">
-											<div class="input-group">
-												<div class="g-recaptcha" data-sitekey="<!-- Put reCaptcha Site Key -->" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-												<input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha">
-											</div>
-										</div>
-									</div>
-                                    <div class="col-lg-12">
-                                        <button name="submit" type="submit" value="Submit" class="site-button "> <span>Enviar</span> </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-UcIXtHzNTA2qymKvB_sGNPaePNyfYofDOnXiu_t0GvXOsA/viewform?embedded=true" width="640" height="947" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
                     </div>
+                    <!-- Left part start -->
+                    <!--
+                            <div class="p-a30 bg-gray clearfix m-b30 ">
+                                <h2>Envíanos un mensaje</h2>
+                                <div class="dzFormMsg"></div>
+                                <form method="post" class="dzForm" action="script/contact.php">
+                                <input type="hidden" value="Contact" name="dzToDo" >
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-6">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input name="dzName" type="text" required class="form-control" placeholder="Nombre">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6">
+                                            <div class="form-group">
+                                                <div class="input-group"> 
+                                                    <input name="dzEmail" type="email" class="form-control" required  placeholder="Email" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input name="dzOther[Phone]" type="text" required class="form-control" placeholder="Teléfono">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-6">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input name="dzOther[Subject]" type="text" required class="form-control" placeholder="Asunto">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <textarea name="dzMessage" rows="4" class="form-control" required placeholder="Mensaje..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="g-recaptcha" data-sitekey=" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                                    <input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <button name="submit" type="submit" value="Submit" class="site-button "> <span>Enviar</span> </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    -->
                     <!-- Left part END -->
                     <!-- right part start -->
                     <!-- right part start -->
@@ -235,14 +250,7 @@
                     </div>
                     <!-- right part END -->
                 </div>
-				<div class="row">
-					<div class="col-lg-12">
-					<!-- Map part start -->
-					<h2>Nuestra ubicación</h2>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.7562151562365!2d-96.94950928510833!3d19.59494224054698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db2fb9690db67d%3A0x9bbffcd419a03f3!2sLa+Posta!5e0!3m2!1ses-419!2smx!4v1492487508962" style="border:0; width:100%; height:400px;" allowfullscreen></iframe>
-					<!-- Map part END -->
-					</div>
-				</div>
+				
             </div>
         </div>
         <!-- contact area  END -->
@@ -274,7 +282,7 @@
                                     <div class="dez-post-media"> <img src="images/blog/recent-blog/pic1.jpg" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Noticia 1</a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php">Noticia 1</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
@@ -288,7 +296,7 @@
                                     <div class="dez-post-media"> <img src="images/blog/recent-blog/pic2.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Noticia 2</a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php">Noticia 2</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
@@ -302,7 +310,7 @@
                                     <div class="dez-post-media"> <img src="images/blog/recent-blog/pic3.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Noticia 3</a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php">Noticia 3</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>

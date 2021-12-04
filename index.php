@@ -237,6 +237,18 @@
 			</div>        
 		</div>        
 		<!-- Slider END -->
+
+		<!--VIDEO-->
+		<div class="section-full content-inner about-info-area bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/3KDve94_c8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--FIN VIDEO-->
 		<!-- Services -->
 		<div class="section-full bg-white content-inner service-style1-area">
             <div class="container">
@@ -252,13 +264,13 @@
 						<div class="icon-bx-wraper service-style1 m-b30 center">
 							<div class="icon-bx-xl"> 
 								<a href="#" class="icon-cell">
-									<img src="images/icon/vaca.png" alt="">
+									<img src="images/icon/icon_vacas.png" alt="">
 								</a> 
 							</div>
 							<div class="icon-content">
 								<h2 class="dez-tilte text-primary">Vacas</h2>
 								<!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>-->
-								<a href="#" class="site-button italic light-gray">Ver más..</a>
+								<a href="productos/vacas/vacas.php" class="site-button italic light-gray">Ver más..</a>
 							</div>
 						</div>
 					</div>
@@ -266,7 +278,7 @@
 						<div class="icon-bx-wraper service-style1 m-b30 center">
 							<div class="icon-bx-xl"> 
 								<a href="#" class="icon-cell">
-									<img src="images/icon/cerdo.png" alt="">
+									<img src="images/icon/icon_cerdos.png" alt="">
 								</a> 
 							</div>
 							<div class="icon-content">
@@ -279,8 +291,8 @@
 					<div class="col-xl-3 col-lg-4 col-md-4 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="icon-bx-wraper service-style1 center">
 							<div class="icon-bx-xl"> 
-								<a href="#" class="icon-cell">
-									<img src="images/icon/caballo.png" alt="">
+								<a href="productos/cerdos/cerdos.php" class="icon-cell">
+									<img src="images/icon/icon_caballos.png" alt="">
 								</a> 
 							</div>
 							<div class="icon-content">
@@ -294,13 +306,13 @@
 						<div class="icon-bx-wraper service-style1 center">
 							<div class="icon-bx-xl"> 
 								<a href="#" class="icon-cell">
-									<img src="images/icon/borrego.png" alt="">
+									<img src="images/icon/icon_borregos.png" alt="">
 								</a> 
 							</div>
 							<div class="icon-content">
 								<h2 class="dez-tilte text-primary">Borregos</h2>
 								<!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>-->
-								<a href="#" class="site-button italic light-gray">Ver más..</a>
+								<a href="productos/borregos/borregos.php" class="site-button italic light-gray">Ver más..</a>
 							</div>
 						</div>
 					</div>
@@ -308,13 +320,13 @@
 						<div class="icon-bx-wraper service-style1 center">
 							<div class="icon-bx-xl"> 
 								<a href="#" class="icon-cell">
-									<img src="images/icon/ave.png" alt="">
+									<img src="images/icon/icon_aves.png" alt="">
 								</a> 
 							</div>
 							<div class="icon-content">
 								<h2 class="dez-tilte text-primary">Aves</h2>
 								<!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>-->
-								<a href="#" class="site-button italic light-gray">Ver más..</a>
+								<a href="productos/aves/aves.php" class="site-button italic light-gray">Ver más..</a>
 							</div>
 						</div>
 					</div>
@@ -333,7 +345,7 @@
 								<div class="dez-separator bg-primary"></div>
 								<p>Pregunta por nuestros productos</p>
 							</div>
-							<a href="#" class="site-button gradient m-b5 m-r10 wow zoomIn" data-wow-delay="2s" data-wow-duration="2s">Contacto</a>
+							<a href="contacto.php" class="site-button gradient m-b5 m-r10 wow zoomIn" data-wow-delay="2s" data-wow-duration="2s">Contacto</a>
 							<!-- <a href="#" class="site-button gradient wow zoomIn" data-wow-delay="2s" data-wow-duration="2s">Learn more</a> -->
 						</div>
 					</div>
@@ -739,10 +751,9 @@
 		</div>-->
 		<!-- Pricing Table END-->
         <!-- Customers and Partners -->
-		<div class="section-full bg-white content-inner">
+		<!--<div class="section-full bg-white content-inner">
 			<div class="container">
 				<div class="section-head style1 text-center">
-					<!-- <h6 class="h6">Happy clients and famous partners</h6> -->
 					<h3 class="h3">Nuestros <span class="text-primary">Clientes</span> y Socios</h3>
 					<div class="dez-separator bg-primary"></div>
 				</div>
@@ -830,7 +841,7 @@
 					</div>
 				</div>
             </div>
-        </div>
+        </div>-->
         <!-- Customers and Partners END -->
     </div>
     <!-- Content END-->
