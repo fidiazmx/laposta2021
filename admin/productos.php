@@ -11,16 +11,16 @@
                 <div class="container">
                     <div class="row">
                         <div class="col s10 m6 l6">
-                            <h5 class="breadcrumbs-title mt-0 mb-0"><span>Nomina semanal</span></h5>
+                            <h5 class="breadcrumbs-title mt-0 mb-0"><span>Productos</span></h5>
                             <ol class="breadcrumbs mb-0">
-                            <li class="breadcrumb-item"><a href="main.php">Home</a>
-                            </li>                  
-                            <li class="breadcrumb-item active">Nomina
-                            </li>
+                                <li class="breadcrumb-item"><a href="main.php">Home</a>
+                                </li>                  
+                                <li class="breadcrumb-item active">Productos
+                                </li>
                             </ol>
                         </div>
                         <div class="col s2 m6 l6">
-                            <!-- <a id="add_inasistencia" href="#modalInasistencia" class="waves-effect waves-light breadcrumbs-btn right btn modal-trigger" style="display:block;">AGREGAR</a> -->
+                            <a id="add_inasistencia" href="#modalInasistencia" class="waves-effect waves-light breadcrumbs-btn right btn modal-trigger" style="display:block;">AGREGAR</a>
                             <!--<a id="add_empleado" href="#modalEmpleado" class="btn dropdown-settings waves-effect waves-light breadcrumbs-btn right modal-trigger" href="#!" data-target="dropdown1">
                                 <i class="material-icons hide-on-med-and-up">library_add</i>
                                 <span class="hide-on-small-onl">Settings</span>
@@ -47,29 +47,24 @@
                                 <div class="responsive-table">
                                     <table id="data-table-simple" class="table">
                                         <thead>
-                                        <tr>
-                                            <th>Empleado</th>
-                                            <th>L</th>
-                                            <th>M</th>
-                                            <th>M</th>                        
-                                            <th>J</th>
-                                            <th>V</th>
-                                            <th>S</th>
-                                            <th>Salario</th>
-                                            <th>Desc.Falt</th>
-                                            <th>Pres.Sem</th>
-                                            <th>Adeud.Ant</th>
-                                            <th>Abo.Cue</th>
-                                            <th>Adeud.Act</th>
-                                            <th>Sal.Fin.</th>
-                                        </tr>
+                                            <tr>
+                                                <th>Producto</th>
+                                                <th>Descripción</th>
+                                                <th>Precio ($)</th>
+                                                <th>Peso Neto</th>
+                                                <th>Ingredientes</th>
+                                                <th>Indicaciones</th>
+                                                <th></th>
+                                            </tr>
                                         </thead>
                                         <tbody>
-                                            <!-- <tr>
-                                                <td></td>
-                                                <td>1</td>
-                                                <td>Fidel D Mendez</td>
-                                                <td>2021-06-21</td>
+                                            <tr>
+                                                <td>Lechera Azul 15%</td>
+                                                <td>Alimento balanceado para ganado bovino</td>
+                                                <td>10.00</td>
+                                                <td>40 KG</td>
+                                                <td>Cereales molidos y rolados, pastas de oleaginosas, subproductos de cereales, agroindustriales, N.N.P., minerales y melaza.</td>
+                                                <td>Suministrar 1 kg de alimento por cada 2.5 litros de leche producidos. Complementar la dieta con forraje de calidad. Consulte al Médico Veterinario.</td>
                                                 <td>
                                                     <div class="invoice-action">
                                                         <a href="#" style="color: blue;" class="invoice-action-edit function_edit">
@@ -80,7 +75,7 @@
                                                         </a>                                        
                                                     </div>
                                                 </td>
-                                            </tr> -->
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -887,5 +882,5 @@
 >    
 
 <?php include 'footer.php';?>
-<script src="app-assets/js/app/nominas.js"></script>
+<script src="app-assets/js/app/productos.js"></script>
 

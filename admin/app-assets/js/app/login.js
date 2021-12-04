@@ -23,8 +23,9 @@ $(document).ready(function() {
     $( "#btnLogin" ).click(function(e) {        
         e.preventDefault();                            
         var usr = $("#txtUsuario").val();
-        var pass = $("#txtPassword").val();        
-                                
+        var pass = $("#txtPassword").val();   
+        window.location.href = "main.php";     
+        /*                                
         if ($("#form-login").valid()) {
             var request = $.ajax({
                 url:          usourl + '/php/login.func.php',                
@@ -50,7 +51,8 @@ $(document).ready(function() {
             });
         } else {
             swal('Ingrese los datos requeridos');      	  
-        }                 
+        }  
+        */               
     });
 
 

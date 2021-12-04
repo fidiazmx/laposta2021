@@ -8,9 +8,10 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="ThemeSelect">
-    <title>Administración | Vidrieria Veracruz</title>
-    <link rel="apple-touch-icon" href="app-assets/images/favicon/apple-touch-icon-152x152.png">
-    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/favicon/favicon-32x32.png">
+    <title>Administración | La Posta</title>
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- BEGIN: VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/vendors.min.css">

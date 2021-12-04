@@ -103,17 +103,17 @@
                         <!-- main nav -->
                         <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                             <ul class="nav navbar-nav">
-								<li class="active"> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
+								<li class="active"> <a href="index.php">Inicio</a>									
 								</li>
-                                <li class=""> <a href="nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
+                                <li class=""> <a href="nosotros.php">Nosotros</a>									
 								</li>
-								<li class=""> <a href="productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
+								<li class=""> <a href="productos.php">Productos</a>									
 								</li>
-								<li class=""> <a href="blog.php">Blog<i class="fa fa-chevron-down"></i></a>									
+								<li class=""> <a href="blog.php">Blog</a>									
 								</li>
-								<li class=""> <a href="galeria.php">Galería<i class="fa fa-chevron-down"></i></a>									
+								<li class=""> <a href="galeria.php">Galería</a>									
 								</li>								
-								<li class=""> <a href="contacto.php">Contacto<i class="fa fa-chevron-down"></i></a>									
+								<li class=""> <a href="contacto.php">Contacto</a>									
 								</li>
 							</ul>
                         </div>

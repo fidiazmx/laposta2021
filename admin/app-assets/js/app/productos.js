@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    genera_asistencia();
+    //genera_asistencia();
 
     var table_inasistencias = $('#data-table-simple').dataTable({             
       "paging": true,         

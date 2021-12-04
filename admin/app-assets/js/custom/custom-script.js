@@ -12,7 +12,7 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR CUSTOM SCRIPT I
 $( document ).ready(function() {
 
 	if ( sessionStorage.getItem("usr") == undefined ) {
-		window.location = "index.php";
+		//window.location = "index.php";
 	} else {
 		$("#spanUsuario").text(sessionStorage.getItem("name"));
 	}

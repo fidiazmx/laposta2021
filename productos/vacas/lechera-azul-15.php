@@ -143,9 +143,11 @@
                             <div class="dez-post-title ">
                                 <h3 class="post-title m-b10"><a href="#">Lechera Azul 15%</a></h3>
                             </div>
-                            <h2 class="m-tb10">$ 10.00 </h2>
+                            <h3>Alimento balanceado para ganado bovino</h3>
+                            <h3>Peso neto al envasar 40 KG.</h3>
+                            <!-- <h2 class="m-tb10">$ 10.00 </h2> -->
                             <div class="dez-post-text">
-                                <p class="m-b10">Peso neto al envasar 40 KG. Hecho en México por forrajera la posta sa de cv.</p>
+                                <p class="m-b10"> Hecho en México por:  Forrajera La Posta S.A. de C.V.</p>
                             </div>
                             <table class="table table-bordered" >
                                 <tr>
