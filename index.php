@@ -284,7 +284,7 @@
 							<div class="icon-content">
 								<h2 class="dez-tilte text-primary">Cerdos</h2>
 								<!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>-->
-								<a href="#" class="site-button italic light-gray">Ver más..</a>
+								<a href="productos/cerdos/cerdos.php" class="site-button italic light-gray">Ver más..</a>
 							</div>
 						</div>
 					</div>
@@ -298,7 +298,7 @@
 							<div class="icon-content">
 								<h2 class="dez-tilte text-primary">Caballos</h2>
 								<!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>-->
-								<a href="#" class="site-button italic light-gray">Ver más..</a>
+								<a href="productos/caballos/caballos.php" class="site-button italic light-gray">Ver más..</a>
 							</div>
 						</div>
 					</div>					
