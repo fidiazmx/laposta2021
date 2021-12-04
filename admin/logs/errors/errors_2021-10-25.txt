@@ -1,0 +1,29 @@
+
+FECHA:		2021-10-25, 16:03:51
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/nominas.php
+METODO:		/php/nominas.func.php?job=get_nomina&filtro=activo&_=1635195831751
+		error message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE tipo_prestamo = 'A') prestamo_semana,
+        (SELECT IFNULL(SUM(monto_abo' at line 11
+
+QUERY:		 SELECT emp.id_empleado, emp.nombre_empleado, emp.adeudo_anterior, emp.adeudo_actual,
+        asis.lun_asis,
+        asis.mar_asis, 
+        asis.mie_asis, 
+        asis.jue_asis, 
+        asis.vie_asis, 
+        asis.sab_asis,
+        emp.sueldo_semanal_empleado salario,
+        (SELECT IFNULL(SUM(monto_prestamo),0.00) monto_prestamo FROM prestamos_empleado WHERE no_semana = asis.no_semana 
+        AND ((dia_semana = 'lun') OR (dia_semana = 'mar') OR (dia_semana = 'mie') OR (dia_semana = 'jue') OR (dia_semana = 'vie') OR (dia_semana = 'sab'))
+        AND prestamos_empleado.fk_id_empleado = emp.id_empleado WHERE tipo_prestamo = 'A') prestamo_semana,
+        (SELECT IFNULL(SUM(monto_abono),0.00) abono_cuenta_empleados FROM abono_cuenta_empleados 
+        WHERE no_semana = asis.no_semana AND abono_cuenta_empleados.fk_id_empleado = emp.id_empleado) abono_cuenta_semana
+        FROM asistencias asis
+        INNER JOIN empleados emp ON asis.fk_id_empleado = emp.id_empleado
+        WHERE fecha_inicio = '2021-10-25' AND fecha_fin = '2021-10-31' 
+        
+

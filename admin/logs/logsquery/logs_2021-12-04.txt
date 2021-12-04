@@ -1,0 +1,66 @@
+
+FECHA:		2021-12-04, 07:59:48
+USUARIO:	0 - mario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/
+METODO:		/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'mario' AND u.password = 'mario2017' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-04, 07:59:56
+USUARIO:	0 - mario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/
+METODO:		/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'mario' AND u.password = 'mario2017' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-04, 08:00:01
+USUARIO:	0 - admin
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/
+METODO:		/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'admin' AND u.password = 'admin2017' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-04, 08:00:38
+USUARIO:	1 - MARIO JIMENEZ
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		1 - Administrador
+LLAMADA:	http://adminvveracruz-webapp.local/
+METODO:		/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'mario' AND u.password = 'mario2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-04, 08:00:48
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/empleados.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1638626448080
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+

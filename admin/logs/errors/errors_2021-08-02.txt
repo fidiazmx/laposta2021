@@ -1,0 +1,179 @@
+
+FECHA:		2021-08-02, 11:18:20
+USUARIO:	0 - MARIO
+HOST:		adminvveracruz-webapp.test
+CLIENTE:	127.0.0.1
+ROL:		0 - rol desconocido
+LLAMADA:	https://adminvveracruz-webapp.test/index.php
+METODO:		/php/login.func.php
+		Unknown column 'r.xid_rol' in 'field list'
+QUERY:		SELECT id, name, r.xid_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'MARIO' AND u.password = '9008e8d748cb6df4c509' AND u.estatus = 'A'
+
+
+FECHA:		2021-08-02, 11:20:29
+USUARIO:	0 - MARIO
+HOST:		adminvveracruz-webapp.test
+CLIENTE:	127.0.0.1
+ROL:		0 - rol desconocido
+LLAMADA:	https://adminvveracruz-webapp.test/index.php
+METODO:		/php/login.func.php
+		message: Unknown column 'r.xid_rol' in 'field list'
+
+QUERY:		SELECT id, name, r.xid_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'MARIO' AND u.password = '9008e8d748cb6df4c509' AND u.estatus = 'A'
+
+
+FECHA:		2021-08-02, 11:21:11
+USUARIO:	0 - MARIO
+HOST:		adminvveracruz-webapp.test
+CLIENTE:	127.0.0.1
+ROL:		0 - rol desconocido
+LLAMADA:	https://adminvveracruz-webapp.test/index.php
+METODO:		/php/login.func.php
+		error message: Unknown column 'r.xid_rol' in 'field list'
+
+QUERY:		SELECT id, name, r.xid_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'MARIO' AND u.password = '9008e8d748cb6df4c509' AND u.estatus = 'A'
+
+
+FECHA:		2021-08-02, 11:22:58
+USUARIO:	0 - IUIOU
+HOST:		adminvveracruz-webapp.test
+CLIENTE:	127.0.0.1
+ROL:		0 - rol desconocido
+LLAMADA:	https://adminvveracruz-webapp.test/index.php
+METODO:		/php/login.func.php
+		error message: Unknown column 'r.xid_rol' in 'field list'
+
+QUERY:		SELECT id, name, r.xid_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'IUIOU' AND u.password = 'OIUIOU' AND u.estatus = 'A'
+
+
+FECHA:		2021-08-02, 11:25:35
+USUARIO:	0 - IUIOU
+HOST:		adminvveracruz-webapp.test
+CLIENTE:	127.0.0.1
+ROL:		0 - rol desconocido
+LLAMADA:	https://adminvveracruz-webapp.test/index.php
+METODO:		/php/login.func.php
+		error message: Unknown column 'r.xid_rol' in 'field list'
+
+QUERY:		SELECT id, name, r.xid_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'IUIOU' AND u.password = 'OIUIOU' AND u.estatus = 'A'
+
+
+FECHA:		2021-08-02, 11:27:34
+USUARIO:	0 - asdasda
+HOST:		adminvveracruz-webapp.test
+CLIENTE:	127.0.0.1
+ROL:		0 - rol desconocido
+LLAMADA:	https://adminvveracruz-webapp.test/index.php
+METODO:		/php/login.func.php
+		error message: Unknown column 'r.xid_rol' in 'field list'
+
+QUERY:		SELECT id, name, r.xid_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'asdasda' AND u.password = 'dasdasd' AND u.estatus = 'A'
+
+
+FECHA:		2021-08-02, 11:27:53
+USUARIO:	0 - asdasda
+HOST:		adminvveracruz-webapp.test
+CLIENTE:	127.0.0.1
+ROL:		0 - rol desconocido
+LLAMADA:	https://adminvveracruz-webapp.test/index.php
+METODO:		/php/login.func.php
+		error message: Unknown column 'r.xid_rol' in 'field list'
+
+QUERY:		SELECT id, name, r.xid_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'asdasda' AND u.password = 'dasdasd' AND u.estatus = 'A'
+
+
+FECHA:		2021-08-02, 11:30:33
+USUARIO:	0 - asdasd
+HOST:		adminvveracruz-webapp.test
+CLIENTE:	127.0.0.1
+ROL:		0 - rol desconocido
+LLAMADA:	https://adminvveracruz-webapp.test/index.php
+METODO:		/php/login.func.php
+		error message: Unknown column 'r.xid_rol' in 'field list'
+
+QUERY:		SELECT id, name, r.xid_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'asdasd' AND u.password = 'asdasd' AND u.estatus = 'A'
+
+
+FECHA:		2021-08-02, 11:30:48
+USUARIO:	0 - asdasd
+HOST:		adminvveracruz-webapp.test
+CLIENTE:	127.0.0.1
+ROL:		0 - rol desconocido
+LLAMADA:	https://adminvveracruz-webapp.test/index.php
+METODO:		/php/login.func.php
+		error message: Unknown column 'r.xid_rol' in 'field list'
+
+QUERY:		SELECT id, name, r.xid_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'asdasd' AND u.password = 'asdasd' AND u.estatus = 'A'
+
+
+FECHA:		2021-08-02, 11:31:22
+USUARIO:	0 - asdasd
+HOST:		adminvveracruz-webapp.test
+CLIENTE:	127.0.0.1
+ROL:		0 - rol desconocido
+LLAMADA:	https://adminvveracruz-webapp.test/index.php
+METODO:		/php/login.func.php
+		error message: Unknown column 'r.xid_rol' in 'field list'
+
+QUERY:		SELECT id, name, r.xid_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'asdasd' AND u.password = 'asdasd' AND u.estatus = 'A'
+
+
+FECHA:		2021-08-02, 11:36:48
+USUARIO:	0 - sdasdasd
+HOST:		adminvveracruz-webapp.test
+CLIENTE:	127.0.0.1
+ROL:		0 - rol desconocido
+LLAMADA:	https://adminvveracruz-webapp.test/index.php
+METODO:		/php/login.func.php
+		error message: Unknown column 'r.xid_rol' in 'field list'
+
+QUERY:		SELECT id, name, r.xid_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'sdasdasd' AND u.password = 'asdasdasd' AND u.estatus = 'A'
+
+
+FECHA:		2021-08-02, 11:37:39
+USUARIO:	0 - asdasd
+HOST:		adminvveracruz-webapp.test
+CLIENTE:	127.0.0.1
+ROL:		0 - rol desconocido
+LLAMADA:	https://adminvveracruz-webapp.test/index.php
+METODO:		/php/login.func.php
+		error message: Unknown column 'r.xid_rol' in 'field list'
+
+QUERY:		SELECT id, name, r.xid_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'asdasd' AND u.password = 'dasdasd' AND u.estatus = 'A'
+
