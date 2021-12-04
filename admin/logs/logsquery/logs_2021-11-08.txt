@@ -1,0 +1,825 @@
+
+FECHA:		2021-11-08, 00:02:30
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/clientes.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636351349977
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 00:10:56
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/clientes.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636351856213
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 00:11:20
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/clientes.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636351880048
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 00:13:38
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/clientes.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636352018664
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 00:13:48
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/clientes.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636352028346
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 00:26:50
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/clientes.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636352810418
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 00:32:34
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/clientes.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636353154068
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 00:32:43
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/clientes.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636353163534
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 00:52:25
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/clientes.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636354344995
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:35:18
+USUARIO:	1 - MARIO JIMENEZ
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		1 - Administrador
+LLAMADA:	http://adminvveracruz-webapp.local/
+METODO:		/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'mario' AND u.password = 'mario2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-11-08, 22:35:34
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/empleados.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636432534474
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:35:43
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636432542891
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:35:43
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636432542892
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:35:47
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636432547333
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:35:47
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636432547334
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:41:58
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636432918387
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:41:58
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636432918388
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:45:01
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=add_inasistencia&slEmpleado=36&txtFecha=2021-11-08&id_usuario=1&_=1636432918389
+QUERY:		INSERT INTO inasistencias (fk_id_empleado, no_semana, dia_semana, descripcion, fecha_inasistencia, estatus, created_at, fk_id_user) 
+        VALUES (36, 45, 'lun', 'ninguna', '2021-11-08', 'A', NOW(), '1') 
+
+
+FECHA:		2021-11-08, 22:45:02
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433102555
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:45:02
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636433102556
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:45:09
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433108921
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:45:09
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636433108922
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:45:10
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433110591
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:45:10
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636433110592
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:45:32
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433131870
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:45:32
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636433131871
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:46:07
+USUARIO:	0 - mario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/
+METODO:		/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'mario' AND u.password = 'mario20221' AND u.estatus = 'A'
+
+
+FECHA:		2021-11-08, 22:46:13
+USUARIO:	1 - MARIO JIMENEZ
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		1 - Administrador
+LLAMADA:	http://adminvveracruz-webapp.local/
+METODO:		/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'mario' AND u.password = 'mario2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-11-08, 22:46:15
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/empleados.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433175451
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:46:16
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433176028
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:46:16
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636433176029
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:46:54
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433214318
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:46:54
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636433214319
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:46:59
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433219025
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:46:59
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636433219026
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:47:54
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433274132
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:47:54
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636433274133
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:48:32
+USUARIO:	1 - MARIO JIMENEZ
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		1 - Administrador
+LLAMADA:	http://adminvveracruz-webapp.local/
+METODO:		/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'mario' AND u.password = 'mario2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-11-08, 22:48:34
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/empleados.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433314174
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:48:35
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433314835
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:48:35
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636433314836
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:50:07
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636433314840
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:50:23
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636433314842
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:50:26
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/nominas.php
+METODO:		/php/asistencias.func.php?job=add_asistencia&filtro=activo&_=1636433426030
+QUERY:		DELETE FROM asistencias WHERE no_semana = 45 
+
+
+FECHA:		2021-11-08, 22:50:26
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/nominas.php
+METODO:		/php/asistencias.func.php?job=add_asistencia&filtro=activo&_=1636433426030
+QUERY:		SELECT * FROM inasistencias WHERE fecha_inasistencia BETWEEN '2021-11-08' AND '2021-11-14' AND estatus = 'A'
+
+
+FECHA:		2021-11-08, 22:50:26
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/nominas.php
+METODO:		/php/asistencias.func.php?job=add_asistencia&filtro=activo&_=1636433426030
+QUERY:		SELECT * FROM empleados WHERE estatus = 'A'
+
+
+FECHA:		2021-11-08, 22:50:26
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/nominas.php
+METODO:		/php/asistencias.func.php?job=add_asistencia&filtro=activo&_=1636433426030
+QUERY:		INSERT INTO asistencias (fk_id_empleado, no_semana, lun_asis, mar_asis, mie_asis, jue_asis, vie_asis, sab_asis, fecha_inicio, fecha_fin) VALUES (1, 45,'1','1','1','1','1','1','2021-11-08','2021-11-14'), (36, 45,'1','1','1','1','1','1','2021-11-08','2021-11-14'); 
+
+
+FECHA:		2021-11-08, 22:50:26
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/nominas.php
+METODO:		/php/nominas.func.php?job=get_nomina&filtro=activo&_=1636433426031
+QUERY:		 SELECT emp.id_empleado, emp.nombre_empleado, emp.adeudo_anterior, emp.adeudo_actual,
+        asis.lun_asis,
+        asis.mar_asis, 
+        asis.mie_asis, 
+        asis.jue_asis, 
+        asis.vie_asis, 
+        asis.sab_asis,
+        emp.sueldo_semanal_empleado salario,
+        (SELECT IFNULL(SUM(monto_prestamo),0.00) monto_prestamo FROM prestamos_empleado WHERE no_semana = asis.no_semana 
+        AND ((dia_semana = 'lun') OR (dia_semana = 'mar') OR (dia_semana = 'mie') OR (dia_semana = 'jue') OR (dia_semana = 'vie') OR (dia_semana = 'sab'))
+        AND prestamos_empleado.fk_id_empleado = emp.id_empleado AND tipo_prestamo = 'A') prestamo_semana,
+        (SELECT IFNULL(SUM(monto_prestamo),0.00) monto_prestamo_global FROM prestamos_empleado WHERE no_semana = asis.no_semana and tipo_prestamo = 'G') prestamo_global_semana,
+        (SELECT IFNULL(SUM(monto_abono),0.00) abono_cuenta_empleados FROM abono_cuenta_empleados 
+        WHERE no_semana = asis.no_semana AND abono_cuenta_empleados.fk_id_empleado = emp.id_empleado) abono_cuenta_semana
+        FROM asistencias asis
+        INNER JOIN empleados emp ON asis.fk_id_empleado = emp.id_empleado
+        WHERE fecha_inicio = '2021-11-08' AND fecha_fin = '2021-11-14' 
+        
+
+
+FECHA:		2021-11-08, 22:50:29
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/prestamos.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433429444
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:50:34
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/prestamos.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433434770
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:50:41
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433441445
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:50:41
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/inasistencias.php
+METODO:		/php/inasistencias.func.php?job=get_inasistencia&filtro=activo&_=1636433441446
+QUERY:		 SELECT '' espacio, i.id_inasistencia, e.nombre_empleado, e.id_empleado, i.descripcion, i.fecha_inasistencia, i.estatus
+        FROM inasistencias i
+        INNER JOIN empleados e ON i.fk_id_empleado = e.id_empleado
+
+
+FECHA:		2021-11-08, 22:50:43
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/nominas.php
+METODO:		/php/asistencias.func.php?job=add_asistencia&filtro=activo&_=1636433443614
+QUERY:		DELETE FROM asistencias WHERE no_semana = 45 
+
+
+FECHA:		2021-11-08, 22:50:43
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/nominas.php
+METODO:		/php/asistencias.func.php?job=add_asistencia&filtro=activo&_=1636433443614
+QUERY:		SELECT * FROM inasistencias WHERE fecha_inasistencia BETWEEN '2021-11-08' AND '2021-11-14' AND estatus = 'A'
+
+
+FECHA:		2021-11-08, 22:50:43
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/nominas.php
+METODO:		/php/asistencias.func.php?job=add_asistencia&filtro=activo&_=1636433443614
+QUERY:		SELECT * FROM empleados WHERE estatus = 'A'
+
+
+FECHA:		2021-11-08, 22:50:43
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/nominas.php
+METODO:		/php/asistencias.func.php?job=add_asistencia&filtro=activo&_=1636433443614
+QUERY:		INSERT INTO asistencias (fk_id_empleado, no_semana, lun_asis, mar_asis, mie_asis, jue_asis, vie_asis, sab_asis, fecha_inicio, fecha_fin) VALUES (1, 45,'1','1','1','1','1','1','2021-11-08','2021-11-14'), (36, 45,'1','1','1','1','1','1','2021-11-08','2021-11-14'); 
+
+
+FECHA:		2021-11-08, 22:50:43
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/nominas.php
+METODO:		/php/nominas.func.php?job=get_nomina&filtro=activo&_=1636433443615
+QUERY:		 SELECT emp.id_empleado, emp.nombre_empleado, emp.adeudo_anterior, emp.adeudo_actual,
+        asis.lun_asis,
+        asis.mar_asis, 
+        asis.mie_asis, 
+        asis.jue_asis, 
+        asis.vie_asis, 
+        asis.sab_asis,
+        emp.sueldo_semanal_empleado salario,
+        (SELECT IFNULL(SUM(monto_prestamo),0.00) monto_prestamo FROM prestamos_empleado WHERE no_semana = asis.no_semana 
+        AND ((dia_semana = 'lun') OR (dia_semana = 'mar') OR (dia_semana = 'mie') OR (dia_semana = 'jue') OR (dia_semana = 'vie') OR (dia_semana = 'sab'))
+        AND prestamos_empleado.fk_id_empleado = emp.id_empleado AND tipo_prestamo = 'A') prestamo_semana,
+        (SELECT IFNULL(SUM(monto_prestamo),0.00) monto_prestamo_global FROM prestamos_empleado WHERE no_semana = asis.no_semana and tipo_prestamo = 'G') prestamo_global_semana,
+        (SELECT IFNULL(SUM(monto_abono),0.00) abono_cuenta_empleados FROM abono_cuenta_empleados 
+        WHERE no_semana = asis.no_semana AND abono_cuenta_empleados.fk_id_empleado = emp.id_empleado) abono_cuenta_semana
+        FROM asistencias asis
+        INNER JOIN empleados emp ON asis.fk_id_empleado = emp.id_empleado
+        WHERE fecha_inicio = '2021-11-08' AND fecha_fin = '2021-11-14' 
+        
+
+
+FECHA:		2021-11-08, 22:50:46
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/prestamos.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433446129
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:51:47
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/prestamos.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433506861
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:51:53
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/abonos-cuenta.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433513454
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 22:54:54
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/clientes.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636433694081
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+
+
+FECHA:		2021-11-08, 23:01:53
+USUARIO:	0 - usuario
+HOST:		adminvveracruz-webapp.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://adminvveracruz-webapp.local/clientes.php
+METODO:		/php/empleados.func.php?job=get_empleados&filtro=activo&_=1636434113739
+QUERY:		 SELECT '' espacio, u.id, u.name, u.email, u.estatus 'uestatus', 
+        e.id_empleado, e.telefono_empleado, e.direccion_empleado, e.adeudo_anterior,
+        e.sueldo_semanal_empleado, e.importe_prestamo_maximo, e.estatus 'eestatus' 
+        FROM users u
+        INNER JOIN empleados e ON u.id = e.fk_id_user
+

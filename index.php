@@ -277,7 +277,7 @@
 					<div class="col-xl-3 col-lg-4 col-md-4 wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="icon-bx-wraper service-style1 m-b30 center">
 							<div class="icon-bx-xl"> 
-								<a href="#" class="icon-cell">
+								<a href="productos/cerdos/vacas.php" class="icon-cell">
 									<img src="images/icon/icon_cerdos.png" alt="">
 								</a> 
 							</div>

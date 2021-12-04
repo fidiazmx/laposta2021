@@ -50,8 +50,20 @@ $(function () {
     "responsive": true,
     "lengthMenu": [
       [10, 25, 50, -1],
-      [10, 25, 50, "All"]
-    ]
+      [10, 25, 50, "Todo"]
+    ],
+    "oLanguage": {
+      "sSearch":         "Buscar:",
+      "oPaginate": {
+        "sFirst":       "Primero",
+        "sPrevious":    "Anterior",
+        "sNext":        "Siguiente",
+        "sLast":        "Último",
+      },
+      "sLengthMenu":    "Mostrar _MENU_ registros",
+      "sInfo":          "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+      "sInfoFiltered":  "(filtrado de un total de _MAX_ registros)"
+    }
   });
 
   // Dynmaic Scroll table

@@ -134,108 +134,79 @@
             <div class="container">
                 <!-- Blog half image -->
                 <div class="blog-post blog-md clearfix">
-                    <div class="dez-post-media dez-img-effect zoom-slow"> <a href="#"><img src="images/blog/grid/pic1.jpg" alt=""></a> </div>
+                    <div class="dez-post-media dez-img-effect zoom-slow"> <a href="#"><img src="images/banner/bnr1.jpg" alt=""></a> </div>
                     <div class="dez-post-info">
 						<div class="dez-post-title ">
-							<h3 class="post-title"><a href="#">Noticia 1</a></h3>
+							<h3 class="post-title"><a href="blog-single.php">¿Qué Come El Ganado?</a></h3>
 						</div>
 						<div class="dez-post-meta ">
 							<ul>
-								<li class="post-date"> <i class="fa fa-calendar"></i>10 de agosto <span>2016</span> </li>
-								<li class="post-author"><i class="fa fa-user"></i>Por <a href="#">demongo</a> </li>
+								<li class="post-date"> <i class="fa fa-calendar"></i>03 de diciembre <span>2021</span> </li>
+								<li class="post-author"><i class="fa fa-user"></i>Por <a href="#">Admin</a> </li>
 								<li class="post-comment"><i class="fa fa-Comentarios"></i> <a href="#">0 Comentarios</a> </li>
 							</ul>
 						</div>
 						<div class="dez-post-text">
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-								text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            El subsector agrícola mexicano proporciona la mayoría de los insumos para alimentar al ganado mexicano, lo que da como resultado colocar a México en el 7mo lugar a nivel mundial en la producción de proteína animal
 							</p>
 						</div>
 						<div class="dez-post-readmore"> 
-							<a href="#" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a> 
+							<a href="blog-single.php" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a> 
 						</div>
 						
 					</div>
                 </div>
                 <div class="blog-post blog-md clearfix">
-                    <div class="dez-post-media dez-img-effect zoom-slow"> <a href="#"><img src="images/blog/grid/pic2.jpg" alt=""></a> </div>
+                    <div class="dez-post-media dez-img-effect zoom-slow"> <a href="#"><img src="images/banner/bnr2.jpg" alt=""></a> </div>
                     <div class="dez-post-info">
 						<div class="dez-post-title ">
-							<h3 class="post-title"><a href="#">Noticia 2</a></h3>
+							<h3 class="post-title"><a href="blog-single-2.php">México Ya Es 5° Productor Mundial De Alimentos Balanceados</a></h3>
 						</div>
 						<div class="dez-post-meta ">
 							<ul>
-								<li class="post-date"> <i class="fa fa-calendar"></i>10 de agosto <span>2016</span> </li>
-								<li class="post-author"><i class="fa fa-user"></i>Por <a href="#">demongo</a> </li>
+								<li class="post-date"> <i class="fa fa-calendar"></i>03 de diciembre <span>2021</span> </li>
+								<li class="post-author"><i class="fa fa-user"></i>Por <a href="#">Admin</a> </li>
 								<li class="post-comment"><i class="fa fa-Comentarios"></i> <a href="#">0 Comentarios</a> </li>
 							</ul>
 						</div>
 						<div class="dez-post-text">
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-								text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            La producción anual de alimentos balanceados para animales ha mantenido un crecimiento promedio de 4% durante los últimos cuatro años, lo cual ha generado beneficios directos, principalmente al sector pecuario, al cubrir la demanda de esta materia prima que requieren para garantizar una proteína animal de calidad para los mexicanos.
 							</p>
 						</div>
 						<div class="dez-post-readmore"> 
-							<a href="#" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a> 
+							<a href="blog-single-2.php" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a> 
 						</div>
 						
 					</div>
                 </div>
 				<div class="blog-post blog-md clearfix">
-                    <div class="dez-post-media dez-img-effect zoom-slow"> <a href="#"><img src="images/blog/grid/pic3.jpg" alt=""></a> </div>
+                    <div class="dez-post-media dez-img-effect zoom-slow"> <a href="#"><img src="images/banner/bnr3.jpg" alt=""></a> </div>
                     <div class="dez-post-info">
 						<div class="dez-post-title ">
-							<h3 class="post-title"><a href="#">Noticia 3</a></h3>
+							<h3 class="post-title"><a href="blog-single-3.php">México, Cuarto Productor De Alimentos Balanceados En El Mundo</a></h3>
 						</div>
 						<div class="dez-post-meta ">
 							<ul>
-								<li class="post-date"> <i class="fa fa-calendar"></i>10 de agosto <span>2016</span> </li>
-								<li class="post-author"><i class="fa fa-user"></i>Por <a href="#">demongo</a> </li>
+								<li class="post-date"> <i class="fa fa-calendar"></i>03 de diciembre <span>2021</span> </li>
+								<li class="post-author"><i class="fa fa-user"></i>Por <a href="#">Admin</a> </li>
 								<li class="post-comment"><i class="fa fa-Comentarios"></i> <a href="#">0 Comentarios</a> </li>
 							</ul>
 						</div>
 						<div class="dez-post-text">
 							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-								text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            Nuestro país tiene una privilegiada posición internacional con una producción anual de alrededor de 38 millones de toneladas anuales.
 							</p>
 						</div>
 						<div class="dez-post-readmore"> 
-							<a href="#" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a> 
-						</div>
-						
-					</div>
-                </div>
-				<div class="blog-post blog-md clearfix">
-                    <div class="dez-post-media dez-img-effect zoom-slow"> <a href="#"><img src="images/blog/grid/pic4.jpg" alt=""></a> </div>
-                    <div class="dez-post-info">
-						<div class="dez-post-title ">
-							<h3 class="post-title"><a href="#">Noticia 4</a></h3>
-						</div>
-						<div class="dez-post-meta ">
-							<ul>
-								<li class="post-date"> <i class="fa fa-calendar"></i>10 de agosto <span>2016</span> </li>
-								<li class="post-author"><i class="fa fa-user"></i>Por <a href="#">demongo</a> </li>
-								<li class="post-comment"><i class="fa fa-Comentarios"></i> <a href="#">0 Comentarios</a> </li>
-							</ul>
-						</div>
-						<div class="dez-post-text">
-							<p>
-								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-								text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-							</p>
-						</div>
-						<div class="dez-post-readmore"> 
-							<a href="#" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a> 
-						</div>
-						
+							<a href="blog-single-3.php" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a> 
+						</div>						
 					</div>
                 </div>
 				<!-- Blog half image END -->
                 <!-- Pagination  -->
-                <div class="pagination-bx m-b30">
+                <!--<div class="pagination-bx m-b30">
                     <ul class="pagination">
                         <li class="previous"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
                         <li class="active"><a href="#">1</a> </li>
@@ -243,7 +214,7 @@
                         <li><a href="#">3</a></li>
                         <li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
                     </ul>
-                </div>
+                </div>-->
                 <!-- Pagination END -->
             </div>
         </div>
@@ -251,110 +222,111 @@
     <!-- Content END-->
 <!-- Footer -->
 <footer class="site-footer">
-    <div class="footer-top" style="background-image:url(images/background/bg1.png);">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="widget widget_about">
-                        <div class="logo-footer"><img src="images/logo.png" alt=""></div>
-                        <p class="m-tb20"><strong>La Posta</strong>  Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus.  cons ectetur elit. Vestibulum nec odios Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec.</p>
-                        <ul class="dez-social-icon dez-social-icon-lg">
-                            <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
-                            <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
-                            <li><a href="javascript:void(0);" class="fa fa-linkedin link-btn"></a></li>
-                            <li><a href="javascript:void(0);" class="fa fa-pinterest-p pin-btn"></a></li> -->
-                        </ul>
+        <div class="footer-top" style="background-image:url(images/logo.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="widget widget_about">
+                            <div class="logo-footer"><img src="images/logo.png" alt=""></div>
+                            <p class="m-tb20"><strong>La Posta</strong>  La Posta se creó en 1987, con la intención de ofrecer al ganadero una opción para la alimentación de su ganado diferente y más rentable. Se inició vendiendo materias primas y medicina veterinaria.
+
+                                A través de los años se añadió una gama de diferentes alimentos balanceados, que en un principio se elaboraban de manera artesanal y al paso de los años el proceso se ha tecnificado...</p>
+                            <ul class="dez-social-icon dez-social-icon-lg">
+                                <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
+                                <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-linkedin link-btn"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-pinterest-p pin-btn"></a></li> -->
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="widget recent-posts-entry">
-                        <h4 class="m-b15 text-uppercase">Noticias recientes</h4>
-                        <div class="dez-separator bg-primary"></div>
-                        <div class="widget-post-bx">
-                            <div class="widget-post clearfix">
-                                <div class="dez-post-media"> <img src="images/blog/recent-blog/pic1.jpg" alt="" width="200" height="143"> </div>
-                                <div class="dez-post-info">
-                                    <div class="dez-post-header">
-                                        <h6 class="post-title"><a href="blog-single.php">Noticia 1</a></h6>
-                                    </div>
-                                    <div class="dez-post-meta">
-                                        <ul>
-                                            <li class="post-author">Por <a href="#">Admin</a></li>
-                                            <li class="post-comment"><i class="fa fa-Comentarios"></i> 28</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-post clearfix">
-                                <div class="dez-post-media"> <img src="images/blog/recent-blog/pic2.jpg" alt="" width="200" height="160"> </div>
-                                <div class="dez-post-info">
-                                    <div class="dez-post-header">
-                                        <h6 class="post-title"><a href="blog-single.php">Noticia 2</a></h6>
-                                    </div>
-                                    <div class="dez-post-meta">
-                                        <ul>
-                                            <li class="post-author">Por <a href="#">Admin</a></li>
-                                            <li class="post-comment"><i class="fa fa-Comentarios"></i> 28</li>
-                                        </ul>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="widget recent-posts-entry">
+                            <h4 class="m-b15 text-uppercase">Últimas publicaciones</h4>
+                            <div class="dez-separator bg-primary"></div>
+                            <div class="widget-post-bx">
+                                <div class="widget-post clearfix">
+                                    <div class="dez-post-media"> <img src="images/banner/bnr1.jpg" alt="" width="200" height="143"> </div>
+                                    <div class="dez-post-info">
+                                        <div class="dez-post-header">
+                                            <h6 class="post-title"><a href="blog-single.php">¿Qué come el ganado?</a></h6>
+                                        </div>
+                                        <div class="dez-post-meta">
+                                            <ul>
+                                                <li class="post-author">By <a href="#">Admin</a></li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="widget-post clearfix">
-                                <div class="dez-post-media"> <img src="images/blog/recent-blog/pic3.jpg" alt="" width="200" height="160"> </div>
-                                <div class="dez-post-info">
-                                    <div class="dez-post-header">
-                                        <h6 class="post-title"><a href="blog-single.php">Noticia 3</a></h6>
+                                <div class="widget-post clearfix">
+                                    <div class="dez-post-media"> <img src="images/banner/bnr2.jpg" alt="" width="200" height="160"> </div>
+                                    <div class="dez-post-info">
+                                        <div class="dez-post-header">
+                                            <h6 class="post-title"><a href="blog-single-2.php">México ya es 5° productor mundial de alimentos balanceados</a></h6>
+                                        </div>
+                                        <div class="dez-post-meta">
+                                            <ul>
+                                                <li class="post-author">By <a href="#">Admin</a></li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="dez-post-meta">
-                                        <ul>
-                                            <li class="post-author">Por <a href="#">Admin</a></li>
-                                            <li class="post-comment"><i class="fa fa-Comentarios"></i> 28</li>
-                                        </ul>
+                                </div>
+                                <div class="widget-post clearfix">
+                                    <div class="dez-post-media"> <img src="images/banner/bnr3.jpg" alt="" width="200" height="160"> </div>
+                                    <div class="dez-post-info">
+                                        <div class="dez-post-header">
+                                            <h6 class="post-title"><a href="blog-single-3.php">México, cuarto productor de alimentos balanceados en el mundo</a></h6>
+                                        </div>
+                                        <div class="dez-post-meta">
+                                            <ul>
+                                                <li class="post-author">By <a href="#">Admin</a></li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="widget widget_services">
-                        <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
-                        <div class="dez-separator bg-primary"></div>
-                        <ul>
-                            <li><a href="#">Servicio 1</a></li>
-                            <li><a href="#">Servicio 2</a></li>
-                            <li><a href="#">Servicio 3</a></li>
-                            <li><a href="#">Servicio 4</a></li>
-                            <li><a href="#">Servicio 5 </a></li>
-                            <li><a href="#">Servicio 6 </a></li>
-                        </ul>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="widget widget_services">
+                            <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
+                            <div class="dez-separator bg-primary"></div>
+                            <ul>
+                                <li><a href="productos/vacas/vacas.php">Alimento Vacas</a></li>
+                                <li><a href="productos/cerdos/cerdos.php">Alimento Cerdos</a></li>
+                                <li><a href="productos/caballos/caballos.php">Alimento Caballos</a></li>
+                                <li><a href="productos/borregos/borregos.php">Alimento Borregos</a></li>
+                                <li><a href="productos/aves/aves.php">Alimento Aves</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="widget widget_getintuch">
-                        <h4 class="m-b15 text-uppercase">Contacto</h4>
-                        <div class="dez-separator bg-primary"></div>
-                        <ul>
-                            <li><i class="fa fa-map-marker"></i><strong>Dirección</strong> Esfuerzo no. 13, Colonia Centro, Banderilla, Veracruz, C.P. 91300</li>
-                            <li><i class="fa fa-phone"></i><strong>Teléfonos</strong>(228) 8110503, (228) 1922343</li>
-                            <li><i class="fa fa-fax"></i><strong>Correo</strong>ventasbanderilla@laposta.com.mx</li>
-                        </ul>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="widget widget_getintuch">
+                            <h4 class="m-b15 text-uppercase">Contacto</h4>
+                            <div class="dez-separator bg-primary"></div>
+                            <ul>
+                                <li><i class="fa fa-map-marker"></i><strong>Dirección</strong> Esfuerzo no. 13, Colonia Centro, Banderilla, Veracruz, C.P. 91300</li>
+                                <li><i class="fa fa-phone"></i><strong>Teléfonos</strong>(228) 8110503, (228) 1922343</li>
+                                <li><i class="fa fa-fax"></i><strong>Correo</strong>ventasbanderilla@laposta.com.mx</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- footer bottom part -->
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 text-left"> <span>© 2021 La Posta</span> </div>
-                <div class="col-lg-4 text-center"> <span> Develop Por <i class="fa fa-heart text-primary heart"></i> Por IwePorou</span> </div>
-                <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a> <a href="#"> Ayuda</a> <a href="#"> Política de privacidad</a> </div>
+        <!-- footer bottom part -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 text-left"> <span>© 2021 La Posta</span> </div>
+                    <div class="col-lg-4 text-center"> <span> Develop by <i class="fa fa-heart text-primary heart"></i> By Iwebyou</span> </div>
+                    <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a></div>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 <!-- Footer END-->
     <button class="scroltop fa fa-chevron-up" ></button>
 </div>
