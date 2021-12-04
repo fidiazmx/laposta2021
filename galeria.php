@@ -139,96 +139,258 @@
                         <li data-filter="" class="btn active">
                             <input type="radio">
                             <a href="#" class="site-button-secondry"><span>TODO</span></a> </li>
-                        <li data-filter="home" class="btn">
+                        <li data-filter="acajete" class="btn">
                             <input type="radio" >
                             <a href="#" class="site-button-secondry"><span>ACAJETE</span></a> </li>
-                        <li data-filter="office" class="btn">
+                        <li data-filter="banderilla" class="btn">
                             <input type="radio">
                             <a href="#" class="site-button-secondry"><span>BANDERILLA</span></a> </li>
-                        <li data-filter="commercial" class="btn">
+                        <li data-filter="mataoscura" class="btn">
                             <input type="radio">
                             <a href="#" class="site-button-secondry "><span>MATA OSCURA</span></a> </li>                        
                     </ul>
                 </div>
                 <div class="clearfix">
                     <ul id="masonry" class="row dez-gallery-listing gallery-grid-4 mfp-gallery m-b0">
-                        <li data-filter="" class="home card-container col-lg-4 col-md-6 col-6">
+                        <li data-filter="" class="home acajete card-container col-lg-4 col-md-6 col-6">
                             <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg"  alt=""> </a>
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/acajete/1.png"  alt=""> </a>
                                     <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic1.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/acajete/1.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li data-filter="" class="office card-container col-lg-4 col-md-6 col-6">
+                        <li data-filter="" class="acajete card-container col-lg-4 col-md-6 col-6">
                             <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow dez-img-effect zoom"> <a href="javascript:void(0);"> <img src="images/gallery/pic2.jpg"  alt=""> </a>
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow dez-img-effect zoom"> <a href="javascript:void(0);"> <img src="images/gallery/acajete/2.png"  alt=""> </a>
                                     <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic2.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/acajete/2.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li data-filter="" class="children-aid card-container col-lg-4 col-md-6 col-6">
+                        <li data-filter="" class="acajete card-container col-lg-4 col-md-6 col-6">
                             <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic3.jpg"  alt=""> </a>
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/acajete/3.png"  alt=""> </a>
                                     <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/pic3.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/acajete/3.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li data-filter="" class="commercial card-container col-lg-4 col-md-6 col-6">
+                        <li data-filter="" class="acajete card-container col-lg-4 col-md-6 col-6">
                             <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic4.jpg"  alt=""> </a>
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/acajete/4.png"  alt=""> </a>
                                     <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic4.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/acajete/4.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li data-filter="" class="window card-container col-lg-4 col-md-6 col-6">
+                        <li data-filter="" class="acajete card-container col-lg-4 col-md-6 col-6">
                             <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic5.jpg"  alt=""> </a>
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/acajete/5.png"  alt=""> </a>
                                     <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic5.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/acajete/5.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li data-filter="" class="apartment card-container col-lg-4 col-md-6 col-6">
+                        <li data-filter="" class="acajete card-container col-lg-4 col-md-6 col-6">
                             <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic6.jpg"  alt=""> </a>
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/acajete/6.png"  alt=""> </a>
                                     <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic6.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/acajete/1.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li data-filter="" class="Cargo card-container col-lg-4 col-md-6 col-6">
+                        <li data-filter="" class="acajete card-container col-lg-4 col-md-6 col-6">
                             <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic1.jpg"  alt=""> </a>
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/acajete/7.png"  alt=""> </a>
                                     <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic1.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/acajete/7.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li data-filter="" class="home card-container col-lg-4 col-md-6 col-6">
+                        <li data-filter="" class="acajete card-container col-lg-4 col-md-6 col-6">
                             <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic2.jpg"  alt=""> </a>
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/acajete/8.png"  alt=""> </a>
                                     <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic2.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/acajete/8.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li data-filter="" class="office card-container col-lg-4 col-md-6 col-6">
+                        <li data-filter="" class="acajete card-container col-lg-4 col-md-6 col-6">
                             <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/pic9.jpg"  alt=""> </a>
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/acajete/9.png"  alt=""> </a>
                                     <div class="overlay-bx">
-                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/pic9.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/acajete/9.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="acajete card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/acajete/10.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/acajete/10.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="banderilla card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/banderilla/1.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/banderilla/1.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="banderilla card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow dez-img-effect zoom"> <a href="javascript:void(0);"> <img src="images/gallery/banderilla/2.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/banderilla/2.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="banderilla card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/banderilla/3.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="images/gallery/banderilla/3.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="banderilla card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/banderilla/4.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/banderilla/4.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="banderilla card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/banderilla/5.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/banderilla/5.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="banderilla card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/banderilla/7.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/banderilla/7.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="banderilla card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/banderilla/8.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/banderilla/8.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="banderilla card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/banderilla/10.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/banderilla/10.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="mataoscura card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/mataoscura/1.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/mataoscura/1.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="mataoscura card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/mataoscura/2.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/mataoscura/2.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="mataoscura card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/mataoscura/3.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/mataoscura/3.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="mataoscura card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/mataoscura/4.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/mataoscura4.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="mataoscura card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/mataoscura/5.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/mataoscura/5.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="mataoscura card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/mataoscura/6.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/mataoscura/6.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="mataoscura card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/mataoscura/7.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/mataoscura/7.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="mataoscura card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/mataoscura/8.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/mataoscura/8.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-filter="" class="mataoscura card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="images/gallery/mataoscura/9.png"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> <a href="javascript:void(0);"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="images/gallery/mataoscura/9.png" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                     </div>
                                 </div>
                             </div>
@@ -237,14 +399,14 @@
                 </div>
                 <!-- Gallery END -->
                 <!-- Pagination start -->
-                <div class="pagination-bx m-b30">
+                <!--<div class="pagination-bx m-b30">
                     <ul class="pagination">
                         <li class="previous"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
                         <li class="active"><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
                         <li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-                    </ul>
+                    </ul>-->
                 </div>
                 <!-- Pagination END -->
             </div>
@@ -254,13 +416,15 @@
     <!-- Content END-->
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-top" style="background-image:url(images/background/bg1.png);">
+        <div class="footer-top" style="background-image:url(images/logo.png);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <div class="logo-footer"><img src="images/logo.png" alt=""></div>
-                            <p class="m-tb20"><strong>La Posta</strong>  Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus.  cons ectetur elit. Vestibulum nec odios Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec.</p>
+                            <p class="m-tb20"><strong>La Posta</strong>  La Posta se creó en 1987, con la intención de ofrecer al ganadero una opción para la alimentación de su ganado diferente y más rentable. Se inició vendiendo materias primas y medicina veterinaria.
+
+                                A través de los años se añadió una gama de diferentes alimentos balanceados, que en un principio se elaboraban de manera artesanal y al paso de los años el proceso se ha tecnificado...</p>
                             <ul class="dez-social-icon dez-social-icon-lg">
                                 <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
                                 <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
@@ -271,47 +435,47 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget recent-posts-entry">
-                            <h4 class="m-b15 text-uppercase">Noticias recientes</h4>
+                            <h4 class="m-b15 text-uppercase">Últimas publicaciones</h4>
                             <div class="dez-separator bg-primary"></div>
                             <div class="widget-post-bx">
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="images/blog/recent-blog/pic1.jpg" alt="" width="200" height="143"> </div>
+                                    <div class="dez-post-media"> <img src="images/banner/bnr1.jpg" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php">Noticia 1</a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php">¿Qué come el ganado?</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
                                                 <li class="post-author">By <a href="#">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="images/blog/recent-blog/pic2.jpg" alt="" width="200" height="160"> </div>
+                                    <div class="dez-post-media"> <img src="images/banner/bnr2.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php">Noticia 2</a></h6>
+                                            <h6 class="post-title"><a href="blog-single-2.php">México ya es 5° productor mundial de alimentos balanceados</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
                                                 <li class="post-author">By <a href="#">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="images/blog/recent-blog/pic3.jpg" alt="" width="200" height="160"> </div>
+                                    <div class="dez-post-media"> <img src="images/banner/bnr3.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php">Noticia 3</a></h6>
+                                            <h6 class="post-title"><a href="blog-single-3.php">México, cuarto productor de alimentos balanceados en el mundo</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
                                                 <li class="post-author">By <a href="#">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -324,12 +488,11 @@
                             <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="#">Servicio 1</a></li>
-                                <li><a href="#">Servicio 2</a></li>
-                                <li><a href="#">Servicio 3</a></li>
-                                <li><a href="#">Servicio 4</a></li>
-                                <li><a href="#">Servicio 5 </a></li>
-                                <li><a href="#">Servicio 6 </a></li>
+                                <li><a href="productos/vacas/vacas.php">Alimento Vacas</a></li>
+                                <li><a href="productos/cerdos/cerdos.php">Alimento Cerdos</a></li>
+                                <li><a href="productos/caballos/caballos.php">Alimento Caballos</a></li>
+                                <li><a href="productos/borregos/borregos.php">Alimento Borregos</a></li>
+                                <li><a href="productos/aves/aves.php">Alimento Aves</a></li>
                             </ul>
                         </div>
                     </div>
@@ -353,7 +516,7 @@
                 <div class="row">
                     <div class="col-lg-4 text-left"> <span>© 2021 La Posta</span> </div>
                     <div class="col-lg-4 text-center"> <span> Develop by <i class="fa fa-heart text-primary heart"></i> By Iwebyou</span> </div>
-                    <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a> <a href="#"> Ayuda</a> <a href="#"> Política de privacidad</a> </div>
+                    <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a></div>
                 </div>
             </div>
         </div>

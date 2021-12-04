@@ -295,10 +295,10 @@
                                     </div>
                                 </div>
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="images/blog/recent-blog/pic2.jpg" alt="" width="200" height="160"> </div>
+                                    <div class="dez-post-media"> <img src="images/banner/bnr2.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php">Noticia 2</a></h6>
+                                            <h6 class="post-title"><a href="blog-single-2.php">México ya es 5° productor mundial de alimentos balanceados</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
@@ -309,10 +309,10 @@
                                     </div>
                                 </div>
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="images/blog/recent-blog/pic3.jpg" alt="" width="200" height="160"> </div>
+                                    <div class="dez-post-media"> <img src="images/banner/bnr3.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php">Noticia 3</a></h6>
+                                            <h6 class="post-title"><a href="blog-single-3.php">México, cuarto productor de alimentos balanceados en el mundo</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
@@ -358,7 +358,7 @@
                 <div class="row">
                     <div class="col-lg-4 text-left"> <span>© 2021 La Posta</span> </div>
                     <div class="col-lg-4 text-center"> <span> Develop by <i class="fa fa-heart text-primary heart"></i> By Iwebyou</span> </div>
-                    <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a> <a href="#"> Ayuda</a> <a href="#"> Política de privacidad</a> </div>
+                    <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a></div>
                 </div>
             </div>
         </div>
