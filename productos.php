@@ -153,7 +153,7 @@
 								<div class="dez-media"> <a href="#"><img src="images/product/cerdo.jpg" alt=""></a> </div>
 								<div class="dez-info p-a20 text-center bg-gray">
 									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="#">Cerdos</a></h4>
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/cerdos/cerdos.php">Cerdos</a></h4>
 									</div>										
 								</div>
 							</div>
@@ -173,7 +173,7 @@
 								<div class="dez-media"> <a href="#"><img src="images/product/borrego.jpg" alt=""></a> </div>
 								<div class="dez-info p-a20 text-center bg-gray">
 									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="#">Borregos</a></h4>
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/borregos/borregos.php">Borregos</a></h4>
 									</div>										
 								</div>
 							</div>
@@ -183,7 +183,7 @@
 								<div class="dez-media"> <a href="#"><img src="images/product/ave.jpg" alt=""></a> </div>
 								<div class="dez-info p-a20 text-center bg-gray">
 									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="#">Aves</a></h4>
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/aves/aves.php">Aves</a></h4>
 									</div>										
 								</div>
 							</div>

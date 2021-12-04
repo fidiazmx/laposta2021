@@ -182,7 +182,12 @@
 						</div>
 					</div>
 				</div>
-                <div class="row">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="dez-post-media dez-img-effect zoom-slow"> <a href="#"><img src="../../productos/cerdos/info_cerdos.png" alt=""></a> </div>
+					</div>
+				</div>
+                <div class="row">					
 					<div class="col-lg-3 col-md-4 col-sm-6">
 						<aside class="side-bar">
                             <!--<div class="widget">
@@ -306,7 +311,7 @@
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
 										<div class="m-t15">
-											<a href="lechera-azul-15.php" class="site-button">Ver detalle	</a>
+											<a href="reproductora-lactancia.php" class="site-button">Ver detalle	</a>
 										</div>
 									</div>									
 								</div>
@@ -319,7 +324,7 @@
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
 										<div class="m-t15">
-											<a href="lechera-naranja-16.php" class="site-button">Ver detalle	</a>
+											<a href="reproductora-gestacion.php" class="site-button">Ver detalle	</a>
 										</div>
 									</div>									
 								</div>
@@ -332,7 +337,7 @@
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
 										<div class="m-t15">
-											<a href="lechera-dorada-18.php" class="site-button">Ver detalle	</a>
+											<a href="iniciador-1.php" class="site-button">Ver detalle	</a>
 										</div>
 									</div>									
 								</div>
@@ -345,7 +350,7 @@
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
 										<div class="m-t15">
-											<a href="lechera-20.php" class="site-button">Ver detalle	</a>
+											<a href="iniciador-2.php" class="site-button">Ver detalle	</a>
 										</div>
 									</div>									
 								</div>
@@ -358,7 +363,7 @@
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
 										<div class="m-t15">
-											<a href="lechera-22.php" class="site-button">Ver detalle	</a>
+											<a href="porquicrec.php" class="site-button">Ver detalle	</a>
 										</div>
 									</div>									
 								</div>
@@ -371,7 +376,7 @@
 									<div class="dez-info p-a20 text-center">
 										<h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#"></a></h4>
 										<div class="m-t15">
-											<a href="preiniciador-becerras.php" class="site-button">Ver detalle	</a>
+											<a href="porquifin.php" class="site-button">Ver detalle	</a>
 										</div>
 									</div>									
 								</div>
@@ -384,7 +389,7 @@
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
 										<div class="m-t15">
-											<a href="becerra.php" class="site-button">Ver detalle	</a>
+											<a href="econocrece.php" class="site-button">Ver detalle	</a>
 										</div>
 									</div>									
 								</div>
@@ -397,7 +402,7 @@
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
 										<div class="m-t15">
-											<a href="becerras-recria.php" class="site-button">Ver detalle	</a>
+											<a href="econofin.php" class="site-button">Ver detalle	</a>
 										</div>
 									</div>									
 								</div>
@@ -410,7 +415,7 @@
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
 										<div class="m-t15">
-											<a href="engorda-ganado.php" class="site-button">Ver detalle	</a>
+											<a href="finalizador-plus.php" class="site-button">Ver detalle	</a>
 										</div>
 									</div>									
 								</div>
