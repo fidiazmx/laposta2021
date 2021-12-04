@@ -17,7 +17,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title> La Posta - Lechera Azul</title>
+	<title> La Posta - Engorda Ganado</title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -115,7 +115,7 @@
         <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(images/banner/breadcrubs-productos.png);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
-                    <h1 class="text-white">Lechera Azul</h1>
+                    <h1 class="text-white">Engorda Ganado</h1>
                 </div>
             </div>
         </div>
@@ -127,7 +127,7 @@
                     <li><a href="#">Inicio</a></li>
                     <li>Productos</li>
 					<li>Vacas</li>
-					<li>Lechera Azul</li>
+					<li>Engorda Ganado</li>
                 </ul>
             </div>
         </div>
@@ -138,15 +138,14 @@
             <div class="container woo-entry">
                 <div class=" m-b30">
                     <div class="row blog-post blog-md date-style-2">
-                        <div class="col-lg-4 col-md-4 m-b30"> <a href="#"><img src="etiqueta-lechera-azul15.png" alt=""></a> </div>
+                        <div class="col-lg-4 col-md-4 m-b30"> <a href="#"><img src="etiqueta-engorda-ganado.png" alt=""></a> </div>
                         <div class="col-lg-8 col-md-8">
                             <div class="dez-post-title ">
-                                <h3 class="post-title m-b10"><a href="#">Lechera Azul</a></h3>
+                                <h3 class="post-title m-b10"><a href="#">Engorda Ganado</a></h3>
                             </div>
                             <h2 class="m-tb10">$ 10.00 </h2>
                             <div class="dez-post-text">
-                                <p class="m-b10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
-                                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p class="m-b10">Peso neto al envasar 40 KG. Hecho en México por forrajera la posta sa de cv.</p>
                             </div>
                             <table class="table table-bordered" >
                                 <tr>
@@ -177,14 +176,14 @@
                             <ul class="nav nav-tabs ">
                                 <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#ingredientes"><i class="fa fa-globe"></i> <span class="title-head">Ingredientes</span></a></li>
                                 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#indicaciones"><i class="fa fa-photo"></i> <span class="title-head"> Indicaciones</span></a></li>
-                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#comentarios"><i class="fa fa-cog"></i> <span class="title-head"> Comentarios del producto</span></a></li>
+                                <!--<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#comentarios"><i class="fa fa-cog"></i> <span class="title-head"> Comentarios del producto</span></a></li>-->
                             </ul>
                             <div class="tab-content">
                                 <div id="ingredientes" class="tab-pane active">
                                     <p>Cereales molidos y rolados, pastas de oleaginosas, subproductos de cereales, agroindustriales, N.N.P., minerales y melaza.</p>        
                                 </div>
                                 <div id="indicaciones" class="tab-pane">
-                                    <p>Suministrar 1 kg de alimento por cada 2.5 litros de leche producidos. Complementar la dieta con forraje de calidad.
+                                    <p>Suministrar de 4 a 8 kgs de alimento diarios, de acuerdo a la calidad de la pradera y el peso del animal.
 										Consulte al Médico Veterinario.</p>
                                 </div>
                                 <div id="comentarios" class="tab-pane">
@@ -268,13 +267,15 @@
     <!-- Content END-->
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-top" style="background-image:url(images/background/bg1.png);">
+        <div class="footer-top" style="background-image:url(images/logo.png);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <div class="logo-footer"><img src="images/logo.png" alt=""></div>
-                            <p class="m-tb20"><strong>La Posta</strong>  Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus.  cons ectetur elit. Vestibulum nec odios Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec.</p>
+                            <p class="m-tb20"><strong>La Posta</strong>  La Posta se creó en 1987, con la intención de ofrecer al ganadero una opción para la alimentación de su ganado diferente y más rentable. Se inició vendiendo materias primas y medicina veterinaria.
+
+                                A través de los años se añadió una gama de diferentes alimentos balanceados, que en un principio se elaboraban de manera artesanal y al paso de los años el proceso se ha tecnificado...</p>
                             <ul class="dez-social-icon dez-social-icon-lg">
                                 <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
                                 <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
@@ -285,47 +286,47 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget recent-posts-entry">
-                            <h4 class="m-b15 text-uppercase">Noticias recientes</h4>
+                            <h4 class="m-b15 text-uppercase">Últimas publicaciones</h4>
                             <div class="dez-separator bg-primary"></div>
                             <div class="widget-post-bx">
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="images/blog/recent-blog/pic1.jpg" alt="" width="200" height="143"> </div>
+                                    <div class="dez-post-media"> <img src="../../images/banner/bnr1.jpg" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Noticia 1</a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php">¿Qué come el ganado?</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
                                                 <li class="post-author">By <a href="#">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="images/blog/recent-blog/pic2.jpg" alt="" width="200" height="160"> </div>
+                                    <div class="dez-post-media"> <img src="../../images/banner/bnr2.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Noticia 2</a></h6>
+                                            <h6 class="post-title"><a href="blog-single-2.php">México ya es 5° productor mundial de alimentos balanceados</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
                                                 <li class="post-author">By <a href="#">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="images/blog/recent-blog/pic3.jpg" alt="" width="200" height="160"> </div>
+                                    <div class="dez-post-media"> <img src="../../images/banner/bnr3.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Noticia 3</a></h6>
+                                            <h6 class="post-title"><a href="blog-single-3.php">México, cuarto productor de alimentos balanceados en el mundo</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
                                                 <li class="post-author">By <a href="#">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -338,12 +339,11 @@
                             <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="#">Servicio 1</a></li>
-                                <li><a href="#">Servicio 2</a></li>
-                                <li><a href="#">Servicio 3</a></li>
-                                <li><a href="#">Servicio 4</a></li>
-                                <li><a href="#">Servicio 5 </a></li>
-                                <li><a href="#">Servicio 6 </a></li>
+                                <li><a href="productos/vacas/vacas.php">Alimento Vacas</a></li>
+                                <li><a href="productos/cerdos/cerdos.php">Alimento Cerdos</a></li>
+                                <li><a href="productos/caballos/caballos.php">Alimento Caballos</a></li>
+                                <li><a href="productos/borregos/borregos.php">Alimento Borregos</a></li>
+                                <li><a href="productos/aves/aves.php">Alimento Aves</a></li>
                             </ul>
                         </div>
                     </div>
@@ -367,7 +367,7 @@
                 <div class="row">
                     <div class="col-lg-4 text-left"> <span>© 2021 La Posta</span> </div>
                     <div class="col-lg-4 text-center"> <span> Develop by <i class="fa fa-heart text-primary heart"></i> By Iwebyou</span> </div>
-                    <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a> <a href="#"> Ayuda</a> <a href="#"> Política de privacidad</a> </div>
+                    <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a></div>
                 </div>
             </div>
         </div>

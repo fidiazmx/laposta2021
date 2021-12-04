@@ -17,7 +17,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title> La Posta - Productos Vacas</title>
+	<title> La Posta - Productos Cerdos</title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -112,10 +112,10 @@
     <!-- Content -->
     <div class="page-content">    
         <!-- inner page banner -->
-        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(../../images/banner/breadcumbs-vacas.png);">
+        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(../../images/banner/breadcumbs-cerdos.png);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
-                    <h1 class="text-white">Vacas</h1>
+                    <h1 class="text-white">Cerdos</h1>
                 </div>
             </div>
         </div>
@@ -126,7 +126,7 @@
                 <ul class="list-inline">
                     <li><a href="#">Inicio</a></li>
                     <li>Productos</li>
-                    <li>Vacas</li>
+                    <li>Cerdos</li>
                 </ul>
             </div>
         </div>
@@ -301,7 +301,7 @@
 							<div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/lechera_azul.png" alt="">										
+										<img src="../../productos/cerdos/reproductora_lactancia.png" alt="">										
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
@@ -314,7 +314,7 @@
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/lechera_naranja.png" alt="">										
+										<img src="../../productos/cerdos/reproductora_gestacion.png" alt="">										
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
@@ -327,7 +327,7 @@
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/lechera18.png" alt="">										
+										<img src="../../productos/cerdos/iniciador1.png" alt="">										
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
@@ -340,7 +340,7 @@
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/lechera20.png" alt="">										
+										<img src="../../productos/cerdos/iniciador2.png" alt="">										
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
@@ -353,7 +353,7 @@
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/lechera22.png" alt="">										
+										<img src="../../productos/cerdos/porquicrec.png" alt="">										
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
@@ -366,7 +366,7 @@
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/preiniciador_becerras.png" alt="">										
+										<img src="../../productos/cerdos/porquifin.png" alt="">										
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#"></a></h4>
@@ -379,7 +379,7 @@
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/becerra.png" alt="">										
+										<img src="../../productos/cerdos/econocrece.png" alt="">										
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
@@ -392,7 +392,7 @@
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/recria_becerras.png" alt="">										
+										<img src="../../productos/cerdos/econofin.png" alt="">										
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
@@ -405,7 +405,7 @@
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/engorda_ganado.png" alt="">										
+										<img src="../../productos/cerdos/finalizador_plus.png" alt="">										
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
