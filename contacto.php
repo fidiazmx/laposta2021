@@ -258,13 +258,15 @@
     <!-- Content END-->
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-top" style="background-image:url(images/background/bg1.png);">
+        <div class="footer-top" style="background-image:url(images/logo.png);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <div class="logo-footer"><img src="images/logo.png" alt=""></div>
-                            <p class="m-tb20"><strong>La Posta</strong>  Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus.  cons ectetur elit. Vestibulum nec odios Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec.</p>
+                            <p class="m-tb20"><strong>La Posta</strong>  La Posta se creó en 1987, con la intención de ofrecer al ganadero una opción para la alimentación de su ganado diferente y más rentable. Se inició vendiendo materias primas y medicina veterinaria.
+
+                                A través de los años se añadió una gama de diferentes alimentos balanceados, que en un principio se elaboraban de manera artesanal y al paso de los años el proceso se ha tecnificado...</p>
                             <ul class="dez-social-icon dez-social-icon-lg">
                                 <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
                                 <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
@@ -275,19 +277,19 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget recent-posts-entry">
-                            <h4 class="m-b15 text-uppercase">Noticias recientes</h4>
+                            <h4 class="m-b15 text-uppercase">Últimas publicaciones</h4>
                             <div class="dez-separator bg-primary"></div>
                             <div class="widget-post-bx">
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="images/blog/recent-blog/pic1.jpg" alt="" width="200" height="143"> </div>
+                                    <div class="dez-post-media"> <img src="images/banner/bnr1.jpg" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php">Noticia 1</a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php">¿Qué come el ganado?</a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
                                                 <li class="post-author">By <a href="#">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -301,7 +303,7 @@
                                         <div class="dez-post-meta">
                                             <ul>
                                                 <li class="post-author">By <a href="#">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -315,7 +317,7 @@
                                         <div class="dez-post-meta">
                                             <ul>
                                                 <li class="post-author">By <a href="#">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
+                                                <li class="post-comment"><i class="fa fa-comments"></i> 0</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -328,12 +330,11 @@
                             <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="#">Servicio 1</a></li>
-                                <li><a href="#">Servicio 2</a></li>
-                                <li><a href="#">Servicio 3</a></li>
-                                <li><a href="#">Servicio 4</a></li>
-                                <li><a href="#">Servicio 5 </a></li>
-                                <li><a href="#">Servicio 6 </a></li>
+                                <li><a href="productos/vacas/vacas.php">Alimento Vacas</a></li>
+                                <li><a href="productos/cerdos/cerdos.php">Alimento Cerdos</a></li>
+                                <li><a href="productos/caballos/caballos.php">Alimento Caballos</a></li>
+                                <li><a href="productos/borregos/borregos.php">Alimento Borregos</a></li>
+                                <li><a href="productos/aves/aves.php">Alimento Aves</a></li>
                             </ul>
                         </div>
                     </div>
