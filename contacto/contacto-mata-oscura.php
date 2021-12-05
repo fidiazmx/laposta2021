@@ -66,7 +66,7 @@
             <div class="main-bar clearfix ">
                 <div class="container clearfix">
                     <!-- website logo -->
-                    <div class="logo-header mostion"><a href="index.php"><img src="../images/logo.png" width="193" height="89" alt=""></a></div>
+                    <div class="logo-header mostion"><a href="../index.php"><img src="../images/logo.png" width="193" height="89" alt=""></a></div>
                     <!-- nav toggle button -->
 					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 						<span></span>
@@ -89,21 +89,21 @@
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li class=""> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
                             </li>
-                            <li class=""> <a href="nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
                             </li>
-                            <li class=""> <a href="productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
                             </li>
-                            <li class=""> <a href="blog.php">Blog<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../blog.php">Blog<i class="fa fa-chevron-down"></i></a>									
                             </li>
-                            <li class=""> <a href="galeria.php">Galería<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../galeria.php">Galería<i class="fa fa-chevron-down"></i></a>									
                             </li>								
                             <li> <a href="javascript:;">Contacto<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-                                    <li><a href="contacto/contacto-banderilla.php">Banderilla</a></li>
-                                    <li><a href="contacto/contacto-acajete.php">Acajete</a></li>
-                                    <li><a href="contacto/contacto-mata-oscura.php">Mata oscura</a></li>
+                                    <li><a href="contacto-banderilla.php">Banderilla</a></li>
+                                    <li><a href="contacto-acajete.php">Acajete</a></li>
+                                    <li><a href="contacto-mata-oscura.php">Mata oscura</a></li>
 								</ul>
 							</li>
                         </ul>
