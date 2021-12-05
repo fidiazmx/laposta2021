@@ -99,8 +99,13 @@
                             </li>
                             <li class=""> <a href="galeria.php">Galería<i class="fa fa-chevron-down"></i></a>									
                             </li>								
-                            <li class=""> <a href="contacto.php">Contacto<i class="fa fa-chevron-down"></i></a>									
-                            </li>
+                            <li> <a href="javascript:;">Contacto<i class="fa fa-chevron-down"></i></a>
+								<ul class="sub-menu">
+                                    <li><a href="contacto/contacto-banderilla.php">Banderilla</a></li>
+                                    <li><a href="contacto/contacto-acajete.php">Acajete</a></li>
+                                    <li><a href="contacto/contacto-mata-oscura.php">Mata oscura</a></li>
+								</ul>
+							</li>
                         </ul>
                     </div>
                 </div>
