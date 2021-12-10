@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <title>Panel de Control | Vidrieria Veracruz</title>
+    <title>Panel de Control | La Posta</title>
     <link rel="apple-touch-icon" href="app-assets/images/favicon/apple-touch-icon-152x152.png">
     <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/favicon/favicon-32x32.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -39,7 +39,7 @@
                         <ul class="search-list collection display-none"></ul>
                     </div>-->
                     <ul class="navbar-list right">
-                        <li><span id="spanUsuario" style="color:black;">USUARIO ADMIN</span></li>
+                        <li><span id="spanUsuario" style="color:black;">...</span></li>
                         <li><a class="waves-effect waves-block waves-light profile-button" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="app-assets/images/avatar/avatar-7.png" alt="avatar"><i></i></span></a></li>
                     </ul>
                     <!-- profile-dropdown-->
@@ -165,7 +165,7 @@
             <div class="col s12">
                 <div class="container">
                     <div class="section">
-                        <!--card stats start-->
+                        <!--card stats start
                         <div id="card-stats" class="pt-0">
                             <div class="row">
                                 <div class="col s12 m6 l6 xl3">
@@ -237,7 +237,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                         <!--card stats end-->
                         
                         <!--end container-->
@@ -253,7 +253,7 @@
 
     <footer class="page-footer footer footer-static footer-light navbar-border navbar-shadow">
         <div class="footer-copyright">
-            <div class="container"><span>&copy; 2021 <a href="#" target="_blank">Vidrieria Veracruz</a> All rights reserved.</span><span class="right hide-on-small-only">Design and Developed by <a href="#">Iwebyou</a></span></div>
+            <div class="container"><span>&copy; 2021 <a href="#" target="_blank">La Posta</a> All rights reserved.</span><span class="right hide-on-small-only">Design and Developed by <a href="#">Iwebyou</a></span></div>
         </div>
     </footer>
 

@@ -1,7 +1,7 @@
-const urlbaseprod     = "adminvveracruz-webapp2.herokuapp.com";
+const urlbaseprod     = "laposta2021.herokuapp.com";
 const urlbaseproddev  = "develop.zzz.com";
-const urlbasedev      = "adminvveracruz-webapp.local";
-const urlbasedevlocal = "adminvveracruz-webapp.local";
+const urlbasedev      = "laposta.local/admin";
+const urlbasedevlocal = "laposta.local/admin";
 //const urlbasedev      = "localhost";
 //const urlbasedevlocal = "localhost";
 

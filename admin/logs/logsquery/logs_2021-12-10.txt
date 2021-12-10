@@ -1,0 +1,364 @@
+
+FECHA:		2021-12-10, 10:54:52
+USUARIO:	0 - guillermo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'guillermo' AND u.password = 'guillermo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 10:55:13
+USUARIO:	0 - guillermo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'guillermo' AND u.password = 'guillermo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 12:57:10
+USUARIO:	0 - guillermo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://laposta.local/admin/
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'guillermo' AND u.password = 'guillermo21' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 12:57:37
+USUARIO:	0 - guillermo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://laposta.local/admin/
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'guillermo' AND u.password = 'guillermo21' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 12:58:09
+USUARIO:	0 - guillermo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://laposta.local/admin/
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'guillermo' AND u.password = 'guillermo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 12:59:05
+USUARIO:	0 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://laposta.local/admin/
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 13:01:12
+USUARIO:	0 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://laposta.local/admin/
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 13:04:31
+USUARIO:	0 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://laposta.local/admin/
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 13:04:54
+USUARIO:	0 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://laposta.local/admin/
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 13:06:31
+USUARIO:	 - 
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 13:29:41
+USUARIO:	 - 
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 13:34:43
+USUARIO:	 - 
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'meo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 13:36:26
+USUARIO:	 - 
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 13:38:08
+USUARIO:	0 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 13:38:14
+USUARIO:	0 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		0 - rol desconocido
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 13:50:34
+USUARIO:	 - 
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php
+QUERY:		SELECT id, name, r.id_rol 'idrol', r.descripcion_rol 'descripcionrol'   
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A'
+
+
+FECHA:		2021-12-10, 14:00:59
+USUARIO:	1 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		1 - ADMINISTRADOR
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php?job=login&txtUsuario=memo&txtPassword=memo2021&_=1639166454421
+QUERY:		SELECT u.id, u.fk_id_rol, u.name, u.usuario, u.password, r.descripcion_rol
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.estatus = 'A' 
+
+
+FECHA:		2021-12-10, 14:00:59
+USUARIO:	1 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php?job=login&txtUsuario=memo&txtPassword=memo2021&_=1639166454421
+QUERY:		SELECT u.id, u.fk_id_rol, u.name, u.usuario, u.password, r.descripcion_rol
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.estatus = 'A' 
+
+
+FECHA:		2021-12-10, 14:02:49
+USUARIO:	1 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		1 - ADMINISTRADOR
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php?job=login&txtUsuario=memo&txtPassword=memo2021&_=1639166454422
+QUERY:		SELECT u.id, u.fk_id_rol, u.name, u.usuario, u.password, r.descripcion_rol
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.estatus = 'A' 
+
+
+FECHA:		2021-12-10, 14:02:49
+USUARIO:	1 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php?job=login&txtUsuario=memo&txtPassword=memo2021&_=1639166454422
+QUERY:		SELECT u.id, u.fk_id_rol, u.name, u.usuario, u.password, r.descripcion_rol
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.estatus = 'A' 
+
+
+FECHA:		2021-12-10, 14:05:38
+USUARIO:	1 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php?job=login&txtUsuario=memo&txtPassword=memo2021&_=1639166684266
+QUERY:		SELECT u.id, u.fk_id_rol, u.name, u.usuario, u.password, r.descripcion_rol
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A' 
+
+
+FECHA:		2021-12-10, 14:10:56
+USUARIO:	1 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/
+METODO:		/admin/php/login.func.php?job=login&txtUsuario=memo&txtPassword=memo2021&_=1639167051072
+QUERY:		SELECT u.id, u.fk_id_rol, u.name, u.usuario, u.password, r.descripcion_rol
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A' 
+
+
+FECHA:		2021-12-10, 14:13:23
+USUARIO:	1 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php?job=login&txtUsuario=memo&txtPassword=memo2021&_=1639167198843
+QUERY:		SELECT u.id, u.fk_id_rol, u.name, u.usuario, u.password, r.descripcion_rol
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A' 
+
+
+FECHA:		2021-12-10, 14:14:26
+USUARIO:	1 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php?job=login&txtUsuario=memo&txtPassword=memo2021&_=1639167262107
+QUERY:		SELECT u.id, u.fk_id_rol, u.name, u.usuario, u.password, r.descripcion_rol
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A' 
+
+
+FECHA:		2021-12-10, 14:15:01
+USUARIO:	1 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php?job=login&txtUsuario=memo&txtPassword=memo2021&_=1639167296834
+QUERY:		SELECT u.id, u.fk_id_rol, u.name, u.usuario, u.password, r.descripcion_rol
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A' 
+
+
+FECHA:		2021-12-10, 14:15:26
+USUARIO:	1 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php?job=login&txtUsuario=memo&txtPassword=memo2021&_=1639167309871
+QUERY:		SELECT u.id, u.fk_id_rol, u.name, u.usuario, u.password, r.descripcion_rol
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A' 
+
+
+FECHA:		2021-12-10, 17:08:23
+USUARIO:	1 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/
+METODO:		/admin/php/login.func.php?job=login&txtUsuario=memo&txtPassword=memo2021&_=1639177697238
+QUERY:		SELECT u.id, u.fk_id_rol, u.name, u.usuario, u.password, r.descripcion_rol
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A' 
+
+
+FECHA:		2021-12-10, 17:08:31
+USUARIO:	1 - memo
+HOST:		laposta.local
+CLIENTE:	::1
+ROL:		 - 
+LLAMADA:	http://laposta.local/admin/index.php
+METODO:		/admin/php/login.func.php?job=login&txtUsuario=memo&txtPassword=memo2021&_=1639177706204
+QUERY:		SELECT u.id, u.fk_id_rol, u.name, u.usuario, u.password, r.descripcion_rol
+                    FROM users u
+                    INNER JOIN roles r ON u.fk_id_rol = r.id_rol
+                    WHERE u.usuario= 'memo' AND u.password = 'memo2021' AND u.estatus = 'A' 
+

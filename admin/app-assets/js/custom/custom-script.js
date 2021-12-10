@@ -11,16 +11,11 @@ PLACE HERE YOUR OWN JS CODES AND IF NEEDED.
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR CUSTOM SCRIPT IT'S BETTER LIKE THIS. */
 $( document ).ready(function() {
 
-	if ( sessionStorage.getItem("usr") == undefined ) {
-		//window.location = "index.php";
+	if ( sessionStorage.getItem("usuario") == undefined ) {
+		window.location = "index.php";
 	} else {
-		$("#spanUsuario").text(sessionStorage.getItem("name"));
+		$("#spanUsuario").text(sessionStorage.getItem("usuario") + " ["+ sessionStorage.getItem("descrol") + "]");
 	}
-
-	$.validator.addMethod("importe2dec", function(value, element, param) {
-		//return this.optional(element) || /^([a-zA-Z0-9 ]*)/.test(value);
-		return this.optional(element) || /^[0-9]+(\.[0-9]{1,2})?$/.test(value);
-	}, "Ingrese un importe válido");	
 
 	$(".switch").find("input[type=checkbox]").on("change",function() {        
 		var id = this.id;

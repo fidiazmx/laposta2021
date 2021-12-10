@@ -1,12 +1,13 @@
-$(document).ready(function() {    
-    
+$(document).ready(function(){        
+
     $("#form-login").validate({
         rules: {
             txtUsuario: {
                 required: true                
             },
             txtPassword: {
-                required: true                
+                required: true
+                //alphanumeric: true                
             }            
         },        
         errorElement : 'div',
@@ -18,32 +19,32 @@ $(document).ready(function() {
             error.insertAfter(element);
           }
         }        
-    });
+    });    
 
-    $( "#btnLogin" ).click(function(e) {        
+    $(document).on('click','#btnLogin',function(e){      
         e.preventDefault();                            
         var usr = $("#txtUsuario").val();
-        var pass = $("#txtPassword").val();   
-        window.location.href = "main.php";     
-        /*                                
+        var pass = $("#txtPassword").val();        
+                                
         if ($("#form-login").valid()) {
             var request = $.ajax({
-                url:          usourl + '/php/login.func.php',                
-                data:         $("#form-login").serialize() + "&job=login_usuario",     
-                type:         'POST'
+                url:          usourl + '/php/login.func.php?job=login',
+                cache:        false,
+                data:         'txtUsuario='+usr+'&txtPassword='+pass,
+                dataType:     'json',
+                contentType:  'application/json; charset=utf-8',
+                type:         'get'
             });
-            request.done(function(output){
-                output = JSON.parse(output);    		
+            request.done(function(output){    		
                 if (output.result == 'success'){	                                                  
-                    sessionStorage.setItem("usr", usr);	                    
-                    sessionStorage.setItem("idusuario", output.data[0].id);
-                    sessionStorage.setItem("idrol", output.data[0].idrol);
-                    sessionStorage.setItem("name", output.data[0].name);     
-                    sessionStorage.setItem("descripcionrol", output.data[0].descripcionrol);                
+                    sessionStorage.setItem("id", output.data[0].id);
+                    sessionStorage.setItem("rol", output.data[0].fk_id_rol);     
+                    sessionStorage.setItem("usuario", output.data[0].usuario); 
+                    sessionStorage.setItem("descrol", output.data[0].descrol);                
                     window.location.href = "main.php";                                            
                 } else {                    
                     swal('No se encontraron datos');	        	
-                    $("#form-login")[0].reset();                    
+                    $("#login-form")[0].reset();                    
                 }
             });
             request.fail(function(jqXHR, textStatus){
@@ -51,9 +52,7 @@ $(document).ready(function() {
             });
         } else {
             swal('Ingrese los datos requeridos');      	  
-        }  
-        */               
+        }                 
     });
-
 
 });
