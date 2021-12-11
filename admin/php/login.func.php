@@ -31,7 +31,7 @@ if ($job != ''){
 		$result  = 'error';
 		$message = 'Failed to connect to database: ' . mysqli_connect_error();
         $job     = '';
-        LOGS($con, $message, $result, 0, "usuario log", 0, "rol log");
+        //LOGS($con, $message, $result, 0, "usuario log", 0, "rol log");
 	}
 
 	mysqli_set_charset($con,"utf8");
@@ -52,7 +52,7 @@ if ($job != ''){
             if (!$resusr){
                 $result  = 'error';
                 $message = 'query error';
-                LOGS($con, $queryusr, $resusr, 0, $usuario, 0, "rol log");
+                //LOGS($con, $queryusr, $resusr, 0, $usuario, 0, "rol log");
             } else {
                 $result  = 'success';
 			    $message = 'query valido usuario';
@@ -69,9 +69,9 @@ if ($job != ''){
                 /*} else {
                     $result  = 'error';
                     $message = 'Los datos del usuario son incorrectos';                            
-                    LOGS($con, $queryusr, $resusr, $rowpwd['id'], $usuario, $rowpwd['fk_id_rol'], $rowpwd['descripcion_rol']);
+                    //LOGS($con, $queryusr, $resusr, $rowpwd['id'], $usuario, $rowpwd['fk_id_rol'], $rowpwd['descripcion_rol']);
                 }*/       
-                LOGS($con, $queryusr, $resusr, $rowpwd['id'], $usuario, "", "");
+                //LOGS($con, $queryusr, $resusr, $rowpwd['id'], $usuario, "", "");
             }   
         } else {
             $result  = 'error';

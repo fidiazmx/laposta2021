@@ -26,21 +26,21 @@
                 </ul>
             </div>
         </li> -->
-        <li class="bold"><a class="waves-effect waves-cyan " href="inicio.php">
+        <li class="bold"><a class="waves-effect waves-cyan " href="editar-inicio.php">
             <i class="material-icons">home</i><span class="menu-title" data-i18n="Contacts">Inicio</span></a>
         </li>
-        <li class="bold"><a class="waves-effect waves-cyan " href="nosotros.php">
+        <li class="bold"><a class="waves-effect waves-cyan " href="editar-nosotros.php">
             <i class="material-icons">people</i><span class="menu-title" data-i18n="Calendar">Nosotros</span></a>
-        <li class="bold"><a class="waves-effect waves-cyan " href="productos.php">
+        <li class="bold"><a class="waves-effect waves-cyan " href="editar-productos.php">
             <i class="material-icons">format_list_numbered</i><span class="menu-title" data-i18n="Calendar">Productos</span></a>
         </li>
-        <li class="bold"><a class="waves-effect waves-cyan " href="blog.php">
+        <li class="bold"><a class="waves-effect waves-cyan " href="editar-blog.php">
             <i class="material-icons">thumb_up</i><span class="menu-title" data-i18n="Calendar">Blog</span></a>
         </li>
-        <li class="bold"><a class="waves-effect waves-cyan " href="galeria.php">
+        <li class="bold"><a class="waves-effect waves-cyan " href="editar-galeria.php">
             <i class="material-icons">image</i><span class="menu-title" data-i18n="Calendar">Galería</span></a>
         </li>
-        <li class="bold"><a class="waves-effect waves-cyan " href="#">
+        <li class="bold"><a class="waves-effect waves-cyan " href="editar-contacto.php">
             <i class="material-icons">contact_mail</i><span class="menu-title" data-i18n="Calendar">Contacto</span></a>
         </li>
     </ul>
