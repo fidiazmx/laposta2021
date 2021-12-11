@@ -7,7 +7,7 @@ const urlbasedevlocal = "laposta.local/admin";
 
 //var usourl = window.location.hostname == urlbase  ? urlbase : urldev;
 var usourl;
-usourl = 'https://' + urlbaseprod
+usourl = 'http://' + urlbaseprod
 /*
 switch (window.location.hostname) {
     case urlbaseprod:
