@@ -1,7 +1,7 @@
 <?php
 
 require_once ('../_inc/dbconfig.php');
-require_once ('log-sql.php');
+//require_once ('log-sql.php');
 
 
 
