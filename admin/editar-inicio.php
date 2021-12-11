@@ -15,6 +15,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- BEGIN: VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/katex.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/monokai-sublime.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/quill.bubble.css">    
     <!-- END: VENDOR CSS-->
     <!-- BEGIN: Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-gradient-menu-template/materialize.css">
@@ -205,13 +209,69 @@
                                                         <input class="validate" required id="txtLinea1" name="txtLinea1" type="text" placeholder="">
                                                     </div> 
                                                     <div class="input-field col s12">
-                                                        <label for="txtLinea1">Texto línea 2</label>
-                                                        <input class="validate" required id="txtLinea1" name="txtLinea1" type="text" placeholder="">
+                                                        <label for="txtLinea2">Texto línea 2</label>
+                                                        <input class="validate" required id="txtLinea2" name="txtLinea2" type="text" placeholder="">
                                                     </div> 
                                                     <div class="input-field col s12">
-                                                        <label for="txtLinea1">Texto línea 3</label>
-                                                        <input class="validate" required id="txtLinea1" name="txtLinea1" type="text" placeholder="">
-                                                    </div>                                                    
+                                                        <label for="txtLinea3">Texto línea 3</label>
+                                                        <input class="validate" required id="txtLinea3" name="txtLinea3" type="text" placeholder="">
+                                                    </div>  
+                                                    <div class="input-field col s12">
+                                                        <label for="txtLineaVideoYoutube">Url Video Youtube</label>
+                                                        <input class="validate" required id="txtLineaVideoYoutube" name="txtLineaVideoYoutube" type="text" placeholder="">
+                                                    </div>      
+                                                    <!-- full Editor start -->
+                                                    <section class="full-editor">
+                                                        <div class="row">
+                                                            <div class="col s12">
+                                                                <div class="card">
+                                                                    <div class="card-content">
+                                                                        <h4 class="card-title">Texto contacto</h4>                                                                        
+                                                                        <div class="row">
+                                                                            <div class="col s12">
+                                                                                <div id="full-wrapper">
+                                                                                    <div id="full-container">
+                                                                                        <div id="contenido-editor" class="editor">
+                                                                                            <!--contenido-->
+                                                                                            
+                                                                                            <!--fin contenido-->
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <!-- full Editor end -->   
+                                                    <!-- full Editor start 2 -->
+                                                    <section class="full-editor">
+                                                        <div class="row">
+                                                            <div class="col s12">
+                                                                <div class="card">
+                                                                    <div class="card-content">
+                                                                        <h4 class="card-title">Texto Historia</h4>                                                                        
+                                                                        <div class="row">
+                                                                            <div class="col s12">
+                                                                                <div id="full-wrapper">
+                                                                                    <div id="full-container-historia">
+                                                                                        <div id="contenido-editor-historia" class="editor">
+                                                                                            <!--contenido-->
+                                                                                            xxx
+                                                                                            <!--fin contenido-->
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <!-- full Editor end 2 -->                                                                                              
                                                     <div class="input-field col s12">
                                                         <button id="#btnGuardaPrimerBloque" class="btn waves-effect waves-light right" type="button" name="action">Actualizar
                                                             <i class="material-icons right">send</i>
@@ -224,147 +284,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--FIN PRIMER BLOQUE-->            
-                        <!-- VIDEO  -->
-                        <div class="row">
-                            <div class="col s12">
-                                <div id="html-validations" class="card card-tabs">
-                                    <div class="card-content">
-                                        <div class="card-title">
-                                            <div class="row">
-                                                <div class="col s12 m6 l10">
-                                                    <h4 class="card-title">URL VIDEO</h4>
-                                                </div>
-                                                <div class="col s12 m6 l2">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="html-view-validations">
-                                            <form id="form-primer-bloque">
-                                                <div class="row">
-                                                    <div class="input-field col s12">
-                                                        <label for="txtVideo">VIDEO</label>
-                                                        <input class="validate" required id="txtVideo" name="txtVideo" type="text" placeholder="">
-                                                    </div>                                                                                                      
-                                                    <div class="input-field col s12">
-                                                        <button id="#btnGuardaVideo" class="btn waves-effect waves-light right" type="button" name="action">Actualizar
-                                                            <i class="material-icons right">send</i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--FIN VIDEO-->
-                        <!-- TEXTO CONTACTO  -->
-                        <div class="row">
-                            <div class="col s12">
-                                <div id="html-validations" class="card card-tabs">
-                                    <div class="card-content">
-                                        <div class="card-title">
-                                            <div class="row">
-                                                <div class="col s12 m6 l10">
-                                                    <h4 class="card-title">TEXTO CONTACTO</h4>
-                                                </div>
-                                                <div class="col s12 m6 l2">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="html-view-validations">
-                                            <form id="form-primer-bloque">
-                                                <div class="row">
-                                                    <div class="input-field col s12">
-                                                        <label for="txtMensajeContacto">Mensaje contacto</label>
-                                                        <input class="validate" required id="txtMensajeContacto" name="txtMensajeContacto" type="text" placeholder="">
-                                                    </div>                                                                                                      
-                                                    <div class="input-field col s12">
-                                                        <button id="#btnGuardaMensajeContacto" class="btn waves-effect waves-light right" type="button" name="action">Actualizar
-                                                            <i class="material-icons right">send</i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--TEXTO CONTACTO-->
-                        <!-- HISTORIA POSTA  -->
-                        <div class="row">
-                            <div class="col s12">
-                                <div id="html-validations" class="card card-tabs">
-                                    <div class="card-content">
-                                        <div class="card-title">
-                                            <div class="row">
-                                                <div class="col s12 m6 l10">
-                                                    <h4 class="card-title">SECCION HISTORIA</h4>
-                                                </div>
-                                                <div class="col s12 m6 l2">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="html-view-validations">
-                                            <form id="form-primer-bloque">
-                                                <div class="row">
-                                                    <div class="input-field col s12">
-                                                        <label for="txtHistoria">TEXTO HISTORIA</label>
-                                                        <input class="validate" required id="txtHistoria" name="txtHistoria" type="text" placeholder="">
-                                                    </div> 
-                                                    <div class="input-field col s12">
-                                                        <label for="txtImagenHistoria">Imagen </label>
-                                                        <input class="validate" required id="txtImagenHistoria" name="txtImagenHistoria" type="text" placeholder="">
-                                                    </div>                                                                                                      
-                                                    <div class="input-field col s12">
-                                                        <button id="#btnGuardaHistoria" class="btn waves-effect waves-light right" type="button" name="action">Actualizar
-                                                            <i class="material-icons right">send</i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>                                                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--HISTORIA-->
-                        <!-- ESTADISTICAS POSTA  -->
-                        <div class="row">
-                            <div class="col s12">
-                                <div id="html-validations" class="card card-tabs">
-                                    <div class="card-content">
-                                        <div class="card-title">
-                                            <div class="row">
-                                                <div class="col s12 m6 l10">
-                                                    <h4 class="card-title">ESTADISTICAS</h4>
-                                                </div>
-                                                <div class="col s12 m6 l2">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="html-view-validations">
-                                            <form id="form-primer-bloque">
-                                                <div class="row">
-                                                    <div class="input-field col s12">
-                                                        <label for="txtHistoria">TEXTO ESTADISTICAS</label>
-                                                        <input class="validate" required id="txtHistoria" name="txtHistoria" type="text" placeholder="">
-                                                    </div>                                                                                                                                                     
-                                                    <div class="input-field col s12">
-                                                        <button id="#btnGuardaEstadistica" class="btn waves-effect waves-light right" type="button" name="action">Actualizar
-                                                            <i class="material-icons right">send</i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>                                                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--ESTADISTICAS-->
+                        <!--FIN PRIMER BLOQUE-->                                                            
                     </div>
                 </div>
                                 
@@ -388,6 +308,9 @@
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
     <script src="app-assets/vendors/chartjs/chart.min.js"></script>
+    <script src="app-assets/vendors/quill/katex.min.js"></script>
+    <script src="app-assets/vendors/quill/highlight.min.js"></script>
+    <script src="app-assets/vendors/quill/quill.min.js"></script>
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN THEME  JS-->
     <script src="app-assets/js/plugins.js"></script>
@@ -395,7 +318,8 @@
     <script src="app-assets/js/custom/custom-script.js"></script>
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <!--<script src="app-assets/js/scripts/dashboard-ecommerce.js"></script>-->
+    <script src="app-assets/js/urlbase.js"></script>
+    <script src="app-assets/js/app/editar-inicio.js"></script>
     <!-- END PAGE LEVEL JS-->
 </body>
 

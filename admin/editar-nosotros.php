@@ -19,7 +19,8 @@
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/katex.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/monokai-sublime.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/quill.snow.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/quill.bubble.css">    <!-- END: VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/quill.bubble.css">    
+    <!-- END: VENDOR CSS-->
     <!-- BEGIN: Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-gradient-menu-template/materialize.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-gradient-menu-template/style.css">
@@ -192,13 +193,16 @@
                             <div class="row">
                                 <div class="col s12">
                                     <div class="card">
-                                        <div class="card-content">   
+                                        <div class="card-content">
+                                            <h4 class="card-title">Texto ¿Por qué elegirnos?</h4>                                                                        
                                             <div class="row">
                                                 <div class="col s12">
                                                     <div id="full-wrapper">
                                                         <div id="full-container">
-                                                            <div class="editor">
-                                                                ***                                                             
+                                                            <div id="contenido-editor" class="editor">
+                                                                <!--contenido-->
+                                                                <div class="ql-editor" data-gramm="false" contenteditable="true"><p> <span style="color: rgb(142, 142, 142);">Ofrecemos al ganadero una opción para la alimentación de su ganado diferente y más rentable, siempre con la mejor calidad.</span></p></div>
+                                                                <!--fin contenido-->
                                                             </div>
                                                         </div>
                                                     </div>
@@ -209,7 +213,91 @@
                                 </div>
                             </div>
                         </section>
-                        <!-- full Editor end -->
+                        <!-- full Editor end -->  
+                        <!-- full Editor start -->
+                        <section class="full-editor">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <h4 class="card-title">Texto Misión</h4>                                                                        
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div id="full-wrapper">
+                                                        <div id="full-container-mision">
+                                                            <div id="contenido-editor" class="editor">
+                                                                <!--contenido-->
+                                                                <div class="ql-editor" data-gramm="false" contenteditable="true"><p> <span style="color: rgb(142, 142, 142);">Producimos una amplia gama de soluciones nutrimentales de alta calidad para los mercados ganaderos.</span></p></div>
+                                                                <!--fin contenido-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- full Editor end -->  
+                        <!-- full Editor start -->
+                        <section class="full-editor">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <h4 class="card-title">Texto Visión</h4>                                                                        
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div id="full-wrapper">
+                                                        <div id="full-container-vision">
+                                                            <div id="contenido-editor" class="editor">
+                                                                <!--contenido-->
+                                                                <div class="ql-editor" data-gramm="false" contenteditable="true"><p> <span style="color: rgb(142, 142, 142);">Ser reconocidos como la mejor opción de nutrición animal balanceada y saludable para el mejoramiento del hato ganadero.</span></p></div>
+                                                                <!--fin contenido-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- full Editor end --> 
+                        <!-- full Editor start -->
+                        <section class="full-editor">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <h4 class="card-title">Texto Valores</h4>                                                                        
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div id="full-wrapper">
+                                                        <div id="full-container-valores">
+                                                            <div id="contenido-editor" class="editor">
+                                                                <!--contenido-->
+                                                                <div id="contenido-editor" class="editor ql-container ql-snow"><div class="ql-editor" data-gramm="false" contenteditable="true"><ul><li><strong>Higiene. </strong><span style="color: rgb(142, 142, 142);">En cada una de las etapas del proceso de producción.</span></li><li>Compromiso. <span style="color: rgb(142, 142, 142);">Con nuestros clientes, proveedores y colaboradores.</span></li><li>Responsabilidad. <span style="color: rgb(142, 142, 142);">Con el ambiente y con la sociedad.</span></li><li>Honestidad. <span style="color: rgb(142, 142, 142);">Cumplimos escrupulosamente nuestras mezclas nutrimentales, cuidando cada detalle.</span></li></ul></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+                                                                <!--fin contenido-->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- full Editor end -->  
+                        <!-- full Editor end 2 -->                                                                                              
+                        <div class="input-field col s12">
+                            <button id="#btnGuardaPrimerBloque" class="btn waves-effect waves-light right" type="button" name="action">Actualizar
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
                     </div><!-- START RIGHT SIDEBAR NAV -->
                     <aside id="right-sidebar-nav">
                         <div id="slide-out-right" class="slide-out-right-sidenav sidenav rightside-navigation">
@@ -740,8 +828,8 @@
     <script src="app-assets/js/custom/custom-script.js"></script>
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="app-assets/js/scripts/form-editor.js"></script>
-    <!-- END PAGE LEVEL JS-->
+    <script src="app-assets/js/urlbase.js"></script>
+    <script src="app-assets/js/app/editar-nosotros.js"></script>    <!-- END PAGE LEVEL JS-->
 </body>
 
 </html>

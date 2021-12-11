@@ -47,8 +47,8 @@ $(document).ready(function(){
         theme: 'snow'
     });
 
-    var fullEditorHistoria = new Quill('#full-container-historia .editor', {
-        bounds: '#full-container-historia .editor',
+    var fullEditorMision = new Quill('#full-container-mision .editor', {
+        bounds: '#full-container-mision .editor',
         modules: {
         'formula': true,
         'syntax': true,
@@ -93,8 +93,54 @@ $(document).ready(function(){
         theme: 'snow'
     });
 
-    var fullEditorHistoria = new Quill('#full-container-estats .editor', {
-        bounds: '#full-container-estats .editor',
+    var fullEditorVision = new Quill('#full-container-vision .editor', {
+        bounds: '#full-container-vision .editor',
+        modules: {
+        'formula': true,
+        'syntax': true,
+        'toolbar': [
+            [{
+            'font': []
+            }, {
+            'size': []
+            }],
+            ['bold', 'italic', 'underline', 'strike'],
+            [{
+            'color': []
+            }, {
+            'background': []
+            }],
+            [{
+            'script': 'super'
+            }, {
+            'script': 'sub'
+            }],
+            [{
+            'header': '1'
+            }, {
+            'header': '2'
+            }, 'blockquote', 'code-block'],
+            [{
+            'list': 'ordered'
+            }, {
+            'list': 'bullet'
+            }, {
+            'indent': '-1'
+            }, {
+            'indent': '+1'
+            }],
+            ['direction', {
+            'align': []
+            }],
+            ['link', 'image', 'video', 'formula'],
+            ['clean']
+        ],
+        },
+        theme: 'snow'
+    });
+
+    var fullEditorValores = new Quill('#full-container-valores .editor', {
+        bounds: '#full-container-valores .editor',
         modules: {
         'formula': true,
         'syntax': true,

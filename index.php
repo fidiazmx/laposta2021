@@ -352,7 +352,9 @@
 								<div class="dez-separator bg-primary"></div>
 								<p>Pregunta por nuestros productos</p>
 							</div>
-							<a href="contacto.php" class="site-button gradient m-b5 m-r10 wow zoomIn" data-wow-delay="2s" data-wow-duration="2s">Contacto</a>
+							<a href="contacto/contacto-banderilla.php" class="site-button gradient m-b5 m-r10 wow zoomIn" data-wow-delay="2s" data-wow-duration="2s">Contacto Banderilla</a>
+							<a href="contacto/contacto-acajete.php" class="site-button gradient m-b5 m-r10 wow zoomIn" data-wow-delay="2s" data-wow-duration="2s">Contacto Acajete</a>
+							<a href="contacto/contacto-mata-oscura.php" class="site-button gradient m-b5 m-r10 wow zoomIn" data-wow-delay="2s" data-wow-duration="2s">Contacto Mata Oscura</a>
 							<!-- <a href="#" class="site-button gradient wow zoomIn" data-wow-delay="2s" data-wow-duration="2s">Learn more</a> -->
 						</div>
 					</div>
@@ -363,10 +365,9 @@
 		<!-- About info -->
         <div class="section-full content-inner about-info-area bg-white">
             <div class="container">
-				<div class="row">
+				<div id="contenido-historia" class="row">
 					<div class="col-lg-6">
-						<div class="section-head style1 text-left wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="2s">
-							<!-- <h6 class="h6">What we can do</h6> -->
+						<div  class="section-head style1 text-left wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="2s">							
 							<h3 class="h3"><span class="text-primary">La Posta</span></h3>
 							<div class="dez-separator bg-primary"></div>
 							<p>
@@ -379,81 +380,7 @@
 								que en un principio se elaboraban de manera artesanal y al paso de los años el 
 								proceso se ha tecnificado...
 							</p>
-						</div>
-						<!-- <ul class="about-list-info wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="2s">
-							<li class="wow fadeInUp" data-wow-delay="1.1s" data-wow-duration="2s">
-								<div class="icon">
-									<i class="fa fa-certificate"></i>
-								</div>
-								<div class="clearfix">
-									<h4 class="title">Pest and weeds</h4>
-									<p>Pest control and weeds removal</p>
-								</div>
-							</li>
-							<li class="wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="2s">
-								<div class="icon">
-									<i class="fa fa-certificate"></i>
-								</div>
-								<div class="clearfix">
-									<h4 class="title">Gardening Design</h4>
-									<p>Landscaping Design & Promenade</p>
-								</div>
-							</li>
-							<li class="wow fadeInUp" data-wow-delay="1.3s" data-wow-duration="2s">
-								<div class="icon">
-									<i class="fa fa-certificate"></i>
-								</div>
-								<div class="clearfix">
-									<h4 class="title">Maintenance</h4>
-									<p>Hedge Trimming & Maintenance</p>
-								</div>
-							</li>
-							<li class="wow fadeInUp" data-wow-delay="1.4s" data-wow-duration="2s">
-								<div class="icon">
-									<i class="fa fa-certificate"></i>
-								</div>
-								<div class="clearfix">
-									<h4 class="title">Water fountain</h4>
-									<p>Water & drip irrigation system</p>
-								</div>
-							</li>
-							<li class="wow fadeInUp" data-wow-delay="1.5s" data-wow-duration="2s">
-								<div class="icon">
-									<i class="fa fa-certificate"></i>
-								</div>
-								<div class="clearfix">
-									<h4 class="title">Soil erosion</h4>
-									<p>Arresting Soil erosion & mulching</p>
-								</div>
-							</li>
-							<li class="wow fadeInUp" data-wow-delay="1.6s" data-wow-duration="2s">
-								<div class="icon">
-									<i class="fa fa-certificate"></i>
-								</div>
-								<div class="clearfix">
-									<h4 class="title">Restoration methods</h4>
-									<p>Lawn maintenance & restoration</p>
-								</div>
-							</li>
-							<li class="wow fadeInUp" data-wow-delay="1.7s" data-wow-duration="2s">
-								<div class="icon">
-									<i class="fa fa-certificate"></i>
-								</div>
-								<div class="clearfix">
-									<h4 class="title">Watering plants</h4>
-									<p>Watering plants and sprucing up</p>
-								</div>
-							</li>
-							<li class="wow fadeInUp" data-wow-delay="1.8s" data-wow-duration="2s">
-								<div class="icon">
-									<i class="fa fa-certificate"></i>
-								</div>
-								<div class="clearfix">
-									<h4 class="title">Garden fencing</h4>
-									<p>Picket fencing or hedge?</p>
-								</div>
-							</li>
-						</ul> -->
+						</div>						
 					</div>
 					<div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
 						<img class="img-cover" src="images/about/home-about.png" alt="">
