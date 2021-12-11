@@ -1,4 +1,4 @@
-const urlbaseprod     = "laposta2021.herokuapp.com";
+const urlbaseprod     = "laposta2021.herokuapp.com/admin";
 const urlbaseproddev  = "develop.zzz.com";
 const urlbasedev      = "laposta.local/admin";
 const urlbasedevlocal = "laposta.local/admin";
