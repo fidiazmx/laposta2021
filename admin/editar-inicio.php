@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- BEGIN: VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/sweetalert/sweetalert.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/katex.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/monokai-sublime.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/quill.snow.css">
@@ -273,7 +274,7 @@
                                                     </section>
                                                     <!-- full Editor end 2 -->                                                                                              
                                                     <div class="input-field col s12">
-                                                        <button id="#btnGuardaPrimerBloque" class="btn waves-effect waves-light right" type="button" name="action">Actualizar
+                                                        <button id="btnGuardaPrimerBloque" name="btnGuardaPrimerBloque" type="button" class="btn waves-effect waves-light right">Actualizar
                                                             <i class="material-icons right">send</i>
                                                         </button>
                                                     </div>
@@ -318,6 +319,7 @@
     <script src="app-assets/js/custom/custom-script.js"></script>
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
+    <script src="app-assets/vendors/sweetalert/sweetalert.min.js"></script>
     <script src="app-assets/js/urlbase.js"></script>
     <script src="app-assets/js/app/editar-inicio.js"></script>
     <!-- END PAGE LEVEL JS-->

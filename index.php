@@ -1,3 +1,34 @@
+<?php
+
+require_once ('admin/_inc/dbconfig.php');
+
+$mysql_data = array();
+$con = mysqli_connect($db_server, $db_username, $db_password, $db_name);
+if (mysqli_connect_errno()){
+	$result  = 'error';
+	$message = 'Failed to connect to database: ' . mysqli_connect_error();
+	$job     = '';
+}
+
+$query =  "SELECT * FROM empresa WHERE id_empresa = 1"; 
+$resultado = mysqli_query($con, $query);        
+if (!$resultado){
+	$result  = 'error';
+	$message = 'query error';
+} else {
+	$result  = 'success';
+	$message = 'query success';   
+	$row = mysqli_fetch_array($resultado);                                                              
+	$mysql_data[] = array(                           
+		"texto_principal_linea1"     => $row['texto_principal_linea1'],
+		"texto_principal_linea2"     => $row['texto_principal_linea2'],
+		"texto_principal_linea3"     => $row['texto_principal_linea3'],
+		"url_video_principal"        => $row['url_video_principal'],
+		"mensaje_principal_contacto" => $row['mensaje_principal_contacto'],
+		"texto_historia"             => $row['texto_historia']
+	);            
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -188,7 +219,7 @@
 										data-paddingbottom="[10,10,10,10]"
 										data-paddingleft="[25,25,20,25]"
 
-										style="z-index: 7; background:linear-gradient(90deg, rgba(250,180,0,1) 0%, rgba(229,245,3,1) 100%); font-family:Roboto; white-space: wrap; font-weight: 500; border-radius: 10px;">Bienvenidos a </div>
+										style="z-index: 7; background:linear-gradient(90deg, rgba(250,180,0,1) 0%, rgba(229,245,3,1) 100%); font-family:Roboto; white-space: wrap; font-weight: 500; border-radius: 10px;"><?php echo $row['texto_principal_linea1']; ?> </div>
 										
 									<!-- LAYER NR. 3 -->
 									<div class="tp-caption NotGeneric-Title   tp-resizeme" 
@@ -211,7 +242,7 @@
 										data-paddingbottom="[25,25,20,20]"
 										data-paddingleft="[50,50,40,40]"
 
-										style="z-index: 7; background-color: #fff; font-family:Roboto; color: rgb(250, 180, 0); white-space: wrap; border-radius: 10px;">La Posta</div>
+										style="z-index: 7; background-color: #fff; font-family:Roboto; color: rgb(250, 180, 0); white-space: wrap; border-radius: 10px;"><?php echo $row['texto_principal_linea2']; ?> </div>
 										
 									
 									<!-- LAYER NR. 3 -->
@@ -235,7 +266,7 @@
 										data-paddingbottom="[20,20,15,20]"
 										data-paddingleft="[35,35,30,35]"
 
-										style="z-index: 8; white-space: nowrap; font-weight: 500; font-family:Roboto; background-color: #252220; border-radius: 10px;">Calidad, Compromiso, Higiene, Responsabilidad</div>
+										style="z-index: 8; white-space: nowrap; font-weight: 500; font-family:Roboto; background-color: #252220; border-radius: 10px;"><?php echo $row['texto_principal_linea3']; ?> </div>
 								</li>
 							</ul>
 						<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
@@ -250,7 +281,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/3KDve94_c8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo substr($row['url_video_principal'],32,11);?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>

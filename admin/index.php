@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html class="loading" lang="es" data-textdirection="ltr">
+    <!DOCTYPE html>
 <!-- BEGIN: Head-->
 
 <head>

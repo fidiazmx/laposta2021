@@ -6,7 +6,7 @@ $job = '';
 $id  = '';
 if (isset($_GET['job'])) {
     $job = $_GET['job'];
-    if ($job == 'get_data_inicio') {
+    if ($job == 'get_data_inicio' || $job == 'update_inicio') {
         if (isset($_GET['id'])){
             $id = $_GET['id'];
             if (!is_numeric($id)){
@@ -53,7 +53,29 @@ if ($job != '') {
                 "texto_historia"             => $row['texto_historia']
             );            
         }
-    } 
+    } else if ($job == 'update_inicio') {
+        $transaction_flag = false;    
+
+        $queryInicio = "UPDATE Empresa 
+        SET texto_principal_linea1 = '".$_GET['txtLinea1']."', texto_principal_linea2 = '".$_GET['txtLinea2']."', texto_principal_linea3 = '".$_GET['txtLinea3']."',
+        url_video_principal = '".$_GET['txtLineaVideoYoutube']."'
+        WHERE id_empresa = 1";
+        $resInicio = mysqli_query($con, $queryInicio);
+
+        if (!$resInicio){
+            $result  = 'error';
+            $message = 'query error U';  
+            mysqli_rollback($con);                       
+        } else {            
+            $transaction_flag = true;
+            if ($transaction_flag) {
+                mysqli_commit($con);
+            }
+
+            $result  = 'success';
+            $message = 'query success';               
+        }
+    }
 }
 
 // Prepare data

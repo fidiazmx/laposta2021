@@ -93,53 +93,51 @@ $(document).ready(function(){
         theme: 'snow'
     });
 
-    var fullEditorHistoria = new Quill('#full-container-estats .editor', {
-        bounds: '#full-container-estats .editor',
-        modules: {
-        'formula': true,
-        'syntax': true,
-        'toolbar': [
-            [{
-            'font': []
-            }, {
-            'size': []
-            }],
-            ['bold', 'italic', 'underline', 'strike'],
-            [{
-            'color': []
-            }, {
-            'background': []
-            }],
-            [{
-            'script': 'super'
-            }, {
-            'script': 'sub'
-            }],
-            [{
-            'header': '1'
-            }, {
-            'header': '2'
-            }, 'blockquote', 'code-block'],
-            [{
-            'list': 'ordered'
-            }, {
-            'list': 'bullet'
-            }, {
-            'indent': '-1'
-            }, {
-            'indent': '+1'
-            }],
-            ['direction', {
-            'align': []
-            }],
-            ['link', 'image', 'video', 'formula'],
-            ['clean']
-        ],
-        },
-        theme: 'snow'
-    });
-
     getInfoInicio();
+
+    $( "#btnGuardaPrimerBloque" ).click(function() {        
+
+        swal({   title: "¿Está seguro que desea guardar?",
+        text: "",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#0053A0",
+        confirmButtonText: "SI",
+        cancelButtonText: "NO",
+        closeOnConfirm: false,
+        showLoaderOnConfirm: true,
+        closeOnCancel: false },
+        function(isConfirm){
+            if (isConfirm) {                    
+               var contTextCont = $("#contenido-editor").html();
+               var contTextHist = $("#contenido-editor-historia").html();
+                var form_data = $("#form-primer-bloque").serialize();
+                var request   = $.ajax({
+                    url:         usourl + '/php/editar-inicio.func.php?job=update_inicio',
+                    data:        form_data,                    
+                    cache:        false,                        
+                    dataType:     'json',
+                    contentType:  'application/json; charset=utf-8',
+                });
+                request.done(function(output){
+                    // output = JSON.parse(output);    		
+                    if (output.result == 'success'){                            
+                        swal({
+                            title: "Los cambios fueron guardados correctamente",                                
+                            type: "success"
+                            },
+                            function(){                                                                       
+                                window.location = "editar-inicio.php";
+                        });                            
+                    } else {                            
+                        swal("Error", "No se pudo realizar la acción", "error");
+                    }
+                });
+            } else {
+                swal("Cancelado", "No se realizó ninguna acción", "error");
+            }
+        });
+    });
 
 });
 
