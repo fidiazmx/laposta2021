@@ -233,9 +233,7 @@
                                                                                 <div id="full-wrapper">
                                                                                     <div id="full-container">
                                                                                         <div id="contenido-editor" class="editor">
-                                                                                            <!--contenido-->
-                                                                                            XXXXX
-                                                                                            <!--fin contenido-->
+                                                                                            
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -260,7 +258,7 @@
                                                                                     <div id="full-container-historia">
                                                                                         <div id="contenido-editor-historia" class="editor">
                                                                                             <!--contenido-->
-                                                                                            xxx
+                                                                                            
                                                                                             <!--fin contenido-->
                                                                                         </div>
                                                                                     </div>

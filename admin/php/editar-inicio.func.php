@@ -58,7 +58,7 @@ if ($job != '') {
 
         $queryInicio = "UPDATE Empresa 
         SET texto_principal_linea1 = '".$_POST['txtLinea1']."', texto_principal_linea2 = '".$_POST['txtLinea2']."', texto_principal_linea3 = '".$_POST['txtLinea3']."',
-        url_video_principal = '".$_POST['txtLineaVideoYoutube']."', mensaje_principal_contacto = '".$_POST['textoContacto']."'
+        url_video_principal = '".$_POST['txtLineaVideoYoutube']."', mensaje_principal_contacto = '".$_POST['textoContacto']."', texto_historia = '".$_POST['textoHistoria']."'
         WHERE id_empresa = 1";
         $resInicio = mysqli_query($con, $queryInicio);
 

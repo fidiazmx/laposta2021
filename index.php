@@ -403,20 +403,7 @@ if (!$resultado){
             <div class="container">
 				<div id="contenido-historia" class="row">
 					<div class="col-lg-6">
-						<div  class="section-head style1 text-left wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="2s">							
-							<h3 class="h3"><span class="text-primary">La Posta</span></h3>
-							<div class="dez-separator bg-primary"></div>
-							<p>
-								La Posta se creó en 1987, con la intención de ofrecer al ganadero una opción para la 
-								alimentación de su ganado diferente y más rentable. Se inició vendiendo materias 
-								primas y medicina veterinaria.
-							</p>
-							<p>
-								A través de los años se añadió una gama de diferentes alimentos balanceados, 
-								que en un principio se elaboraban de manera artesanal y al paso de los años el 
-								proceso se ha tecnificado...
-							</p>
-						</div>						
+						<?php echo $row['texto_historia'];?>					
 					</div>
 					<div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
 						<img class="img-cover" src="images/about/home-about.png" alt="">
