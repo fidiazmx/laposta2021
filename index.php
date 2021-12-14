@@ -378,11 +378,16 @@ if (!$resultado){
                 <div class="row">
 					<div class="col-lg-6 offset-lg-6 col-md-9 offset-md-3 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="dez-support style1 bg-white">
+							<?php 
+								echo $row['mensaje_principal_contacto'];
+							?>
+							<!--
 							<div class="section-head style1 text-left text-black">
 								<h3 class="h3">Alimenta con productos de calidad <span class="text-primary">La Posta</span></h3>
 								<div class="dez-separator bg-primary"></div>
 								<p>Pregunta por nuestros productos</p>
 							</div>
+							-->
 							<a href="contacto/contacto-banderilla.php" class="site-button gradient m-b5 m-r10 wow zoomIn" data-wow-delay="2s" data-wow-duration="2s">Contacto Banderilla</a>
 							<a href="contacto/contacto-acajete.php" class="site-button gradient m-b5 m-r10 wow zoomIn" data-wow-delay="2s" data-wow-duration="2s">Contacto Acajete</a>
 							<a href="contacto/contacto-mata-oscura.php" class="site-button gradient m-b5 m-r10 wow zoomIn" data-wow-delay="2s" data-wow-duration="2s">Contacto Mata Oscura</a>

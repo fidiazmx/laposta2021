@@ -114,13 +114,14 @@ $(document).ready(function(){
                 var form_data = $("#form-primer-bloque").serialize();
                 var request   = $.ajax({
                     url:         usourl + '/php/editar-inicio.func.php?job=update_inicio',
-                    data:        form_data,                    
-                    cache:        false,                        
-                    dataType:     'json',
-                    contentType:  'application/json; charset=utf-8',
+                    data:        form_data+'&textoContacto='+contTextCont,                    
+                    type:        'POST'
+                    //cache:        false,                        
+                    //dataType:     'json',
+                    //contentType:  'application/json; charset=utf-8',
                 });
                 request.done(function(output){
-                    // output = JSON.parse(output);    		
+                    output = JSON.parse(output);    		
                     if (output.result == 'success'){                            
                         swal({
                             title: "Los cambios fueron guardados correctamente",                                

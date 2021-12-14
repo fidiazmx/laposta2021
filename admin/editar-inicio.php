@@ -234,7 +234,7 @@
                                                                                     <div id="full-container">
                                                                                         <div id="contenido-editor" class="editor">
                                                                                             <!--contenido-->
-                                                                                            
+                                                                                            XXXXX
                                                                                             <!--fin contenido-->
                                                                                         </div>
                                                                                     </div>
