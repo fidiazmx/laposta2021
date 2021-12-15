@@ -182,118 +182,71 @@
                                 </li>
                             </ol>
                         </div>
+                        <div class="col s12 m12 l12 ">
+                            <a id="add_producto" href="#modalProducto" class="waves-effect waves-light breadcrumbs-btn right btn modal-trigger" style="display:block;">AGREGAR</a>                            
+                            <ul class="dropdown-content" id="dropdown1" tabindex="0">                            
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col s12">
-                <div class="container">
-                    <!-- users list start -->
-                    <section class="users-list-wrapper section">
-                    <div class="users-list-table">
-                        <div class="card">
-                            <div class="card-content">
-                                <!-- datatable start -->
+                <div class="card">
+                    <div class="card-content">
+                        <!--<h4 class="card-title">Page Length Options</h4>-->
+                        <div class="row">
+                            <div class="col s12">
                                 <table id="data-table-simple" class="display">
-                                        <thead>
+                                    <thead>
                                         <tr>
                                             <th>Id</th>
-                                            <th>Categoria</th>
-                                            <th>Imagen Cat</th>
-                                            <th>Imagen Prod</th>
+                                            <th>Imd Det.</th>
+                                            <th>Img Prod.</th>
                                             <th>Desc.</th>
-                                            <!--<th>Detalle</th>
-                                            <th>Detalle2</th>
-                                            <th>Precio</th>
-                                            <th>Ingred.</th>
-                                            <th>Indic.</th>-->
+                                            <th>Categ.</th>
+                                            <th>Ing.</th>
+                                            <th>Indic.</th>
                                             <th>Estatus</th>
                                             <th>Acciones</th>
                                         </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>                
-                                                <td>VACAS</td>
-                                                <td>XX</td>
-                                                <td>XX2</td>
-                                                <td>LA LECHERA 15%</td>  
-                                                <!--<td>Alimento balanceado para ganado bovino Peso neto al envasar 40 KG.</td> 
-                                                <td>Hecho en México por: Forrajera La Posta S.A. de C.V.</td>       
-                                                <td>12.00</td>
-                                                <td>Cereales molidos y rolados, pastas de oleaginosas, subproductos de cereales, agroindustriales, N.N.P., minerales y melaza.</td>
-                                                <td>Suministrar 1 kg de alimento por cada 2.5 litros de leche producidos. Complementar la dieta con forraje de calidad. Consulte al Médico Veterinario.  </td>-->
-                                                <td>Activo</td>
-                                                <td>
-                                                    <div class="invoice-action">
-                                                        <a href="#" style="color: blue;" class="invoice-action-edit function_edit">
-                                                            <i class="material-icons">edit</i>
-                                                        </a>
-                                                        <a href="#" style="color: red;" class="invoice-action-view mr-4 function_delete">
-                                                            <i class="material-icons">cancel</i>
-                                                        </a>                                        
-                                                    </div>
-                                                </td>
-                                            </tr> 
-                                            <tr>
-                                                <td>1</td>                
-                                                <td>VACAS</td>
-                                                <td>XX</td>
-                                                <td>XX2</td>
-                                                <td>LA LECHERA 15%</td>  
-                                                <!--<td>Alimento balanceado para ganado bovino Peso neto al envasar 40 KG.</td> 
-                                                <td>Hecho en México por: Forrajera La Posta S.A. de C.V.</td>       
-                                                <td>12.00</td>
-                                                <td>Cereales molidos y rolados, pastas de oleaginosas, subproductos de cereales, agroindustriales, N.N.P., minerales y melaza.</td>
-                                                <td>Suministrar 1 kg de alimento por cada 2.5 litros de leche producidos. Complementar la dieta con forraje de calidad. Consulte al Médico Veterinario.  </td>-->
-                                                <td>Activo</td>
-                                                <td>
-                                                    <div class="invoice-action">
-                                                        <a href="#" style="color: blue;" class="invoice-action-edit function_edit">
-                                                            <i class="material-icons">edit</i>
-                                                        </a>
-                                                        <a href="#" style="color: red;" class="invoice-action-view mr-4 function_delete">
-                                                            <i class="material-icons">cancel</i>
-                                                        </a>                                        
-                                                    </div>
-                                                </td>
-                                            </tr> 
-                                            <tr>
-                                                <td>1</td>                
-                                                <td>VACAS</td>
-                                                <td>XX</td>
-                                                <td>XX2</td>
-                                                <td>LA LECHERA 15%</td>  
-                                                <!--<td>Alimento balanceado para ganado bovino Peso neto al envasar 40 KG.</td> 
-                                                <td>Hecho en México por: Forrajera La Posta S.A. de C.V.</td>       
-                                                <td>12.00</td>
-                                                <td>Cereales molidos y rolados, pastas de oleaginosas, subproductos de cereales, agroindustriales, N.N.P., minerales y melaza.</td>
-                                                <td>Suministrar 1 kg de alimento por cada 2.5 litros de leche producidos. Complementar la dieta con forraje de calidad. Consulte al Médico Veterinario.  </td>-->
-                                                <td>Activo</td>
-                                                <td>
-                                                    <div class="invoice-action">
-                                                        <a href="#" style="color: blue;" class="invoice-action-edit function_edit">
-                                                            <i class="material-icons">edit</i>
-                                                        </a>
-                                                        <a href="#" style="color: red;" class="invoice-action-view mr-4 function_delete">
-                                                            <i class="material-icons">cancel</i>
-                                                        </a>                                        
-                                                    </div>
-                                                </td>
-                                            </tr>                                          
-                                        </tbody>
-                                </table>                                
-                                <!-- datatable ends -->
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>x</td>
+                                            <td>x2</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>activo</td>
+                                            <td>xx</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>x</td>
+                                            <td>x2</td>
+                                            <td>Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>activo</td>
+                                            <td>xx</td>
+                                        </tr>
+                                    </tbody>
+                                    <!--<tfoot>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </tfoot>-->
+                                </table>
                             </div>
                         </div>
-                    </div>
-                    </section>
-                    <div style="bottom: 50px; right: 19px; display: none;" class="fixed-action-btn direction-top"><a class="btn-floating btn-large gradient-45deg-light-blue-cyan gradient-shadow"><i class="material-icons">add</i></a>
-                        <ul>
-                            <li><a href="css-helpers.html" class="btn-floating blue"><i class="material-icons">help_outline</i></a></li>
-                            <li><a href="cards-extended.html" class="btn-floating green"><i class="material-icons">widgets</i></a></li>
-                            <li><a href="app-calendar.html" class="btn-floating amber"><i class="material-icons">today</i></a></li>
-                            <li><a href="app-email.html" class="btn-floating red"><i class="material-icons">mail_outline</i></a></li>
-                        </ul>
                     </div>
                 </div>
                 <div class="content-overlay"></div>
@@ -301,6 +254,86 @@
         </div>
     </div>
     <!-- END: Page Main-->
+
+    <div id="modalProducto" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h6 class="card-title">Información</h4>
+            <form id="form-productos">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input placeholder="" id="txtDescripcion" name="txtDescripcion" type="text" maxlength="120">
+                        <label for="txtDescripcion" class="active">Descripción</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <select id="slCategoria" name="slCategoria">
+                            <option value="" disabled selected>Seleccione</option>
+                            <option value="1">VACAS</option>
+                            <option value="2">CERDOS</option>
+                            <option value="3">CABALLOS</option>
+                            <option value="4">BORREGOS</option>
+                            <option value="5">AVES</option>
+                        </select>
+                        <label>Categoría</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="" id="txtIngred" name="txtIngred" type="text" maxlength="120">
+                        <label for="txtIngred" class="active">Ingredientes</label>                        
+                    </div>
+                </div>                
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input placeholder="" id="txtDetProd" name="txtDetProd" type="text" maxlength="120">
+                        <label for="txtDetProd" class="active">Detalle producto</label>
+                    </div>           
+                    <div class="input-field col s4">
+                        <input placeholder="" id="txtDetEspec" name="txtDetEspec" type="text">
+                        <label for="txtDetEspec" class="active">Detalle específico</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="" id="txtIndic" name="txtIndic" type="text" maxlength="120">
+                        <label for="txtIndic" class="active">Indicaciones</label>
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input placeholder="" id="txtPrecio" name="txtPrecio" type="text" maxlenngth="14">
+                        <label for="txtPrecio" class="active">($) Precio</label>
+                    </div>
+                    <div class="input-field col s4">
+                    <select id="slDisponible" name="slDisponible">
+                            <option value="" disabled selected>Seleccione</option>
+                            <option value="DISPONIBLE">Disponible</option>
+                            <option value="NO DISPONIBLE">No Disponible</option>                            
+                        </select>
+                        <label>Estatus</label>
+                    </div>
+                    <div class="col s4">
+                        <div class="switch mb-1">
+                            <label>
+                                Inactivo
+                                <input checked type="checkbox" id="swActivo" name="swActivo">
+                                <span class="lever"></span>
+                                Activo
+                            </label>
+                        </div>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="input-field col s6">
+                        <img id="imgdetalle" width="50%" height="50%" class="responsive-img" src="../productos/vacas/lechera_azul.png" alt="">
+                    </div>                               
+                    <div class="input-field col s6">
+                        <img id="imgprod" width="50%" height="50%" class="responsive-img" src="../productos/vacas/etiqueta-lechera-azul15.png" alt="">
+                    </div>                               
+                </div>                                                         
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a id="btnGuardar" href="#" class="modal-action waves-effect waves-red btn-flat ">Guardar</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
+        </div>
+    </div>
+
 
     <!-- BEGIN: Footer-->
 
@@ -325,7 +358,9 @@
     <script src="app-assets/js/custom/custom-script.js"></script>
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="app-assets/js/scripts/data-tables.js"></script>
+    <!--<script src="app-assets/js/scripts/data-tables.js"></script>-->
+    <script src="app-assets/js/urlbase.js"></script>
+    <script src="app-assets/js/app/editar-productos.js"></script>
     <!-- END PAGE LEVEL JS-->
 </body>
 

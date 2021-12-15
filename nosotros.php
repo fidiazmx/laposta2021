@@ -1,3 +1,32 @@
+<?php
+
+require_once ('admin/_inc/dbconfig.php');
+
+$mysql_data = array();
+$con = mysqli_connect($db_server, $db_username, $db_password, $db_name);
+if (mysqli_connect_errno()){
+	$result  = 'error';
+	$message = 'Failed to connect to database: ' . mysqli_connect_error();
+	$job     = '';
+}
+
+$query =  "SELECT * FROM empresa_nosotros WHERE id_nosotros = 1 AND fk_id_empresa = 1"; 
+$resultado = mysqli_query($con, $query);        
+if (!$resultado){
+	$result  = 'error';
+	$message = 'query error';
+} else {
+	$result  = 'success';
+	$message = 'query success';   
+	$row = mysqli_fetch_array($resultado);                                                              
+	$mysql_data[] = array(                           
+		"texto_por_que" => $row['texto_por_que'],
+		"texto_mision"  => $row['texto_mision'],
+		"texto_vision"  => $row['texto_vision'],
+		"texto_valores" => $row['texto_valores']		
+	);            
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -149,7 +178,8 @@
 						<div class="col-lg-6 col-md-12 m-b30 align-self-center">
 							<h2 class="h2 mt-0 p-b20">¿Por qué elegirnos?</h2>
 							<!--<div class="p-b20 font-18"><i>Garden Lorem ipsum dolor sit amet, cons ectetur elit. ..</i></div>-->
-							<p>Ofrecemos al ganadero una opción para la alimentación de su ganado diferente y más rentable, siempre con la mejor calidad.</p>
+                            <?php echo $row['texto_por_que']; ?>
+							<!--p>Ofrecemos al ganadero una opción para la alimentación de su ganado diferente y más rentable, siempre con la mejor calidad.</p>-->
 							<!--<a href="#" class="site-button">Read More</a>-->
 						</div>
 					</div>
@@ -157,20 +187,25 @@
 					<div class="row">
 						<div class="col-lg-6 col-md-12 m-b30 align-self-center">
 							<h2 class="h2 mt-0 p-b20">Misión</h2>
-							<p>Producimos una amplia gama de soluciones nutrimentales de alta calidad para los mercados ganaderos.</p>
+                            <?php echo $row['texto_mision']; ?>
+							<!--<p>Producimos una amplia gama de soluciones nutrimentales de alta calidad para los mercados ganaderos.</p>-->
                         </div>
                         <div class="col-lg-6 col-md-12 m-b30 align-self-center">
 							<h2 class="h2 mt-0 p-b20">Visión</h2>
-							<p>Ser reconocidos como la mejor opción de nutrición animal balanceada y saludable para el mejoramiento del hato ganadero.</p>
+                            <?php echo $row['texto_vision']; ?>
+							<!--<p>Ser reconocidos como la mejor opción de nutrición animal balanceada y saludable para el mejoramiento del hato ganadero.</p>-->
 						</div>
 						<div class="col-lg-6 col-md-12 m-b30 align-self-center">
 							<h2 class="h2 mt-0 p-b20">Valores</h2>
+                            <?php echo $row['texto_valores']; ?>
+                            <!--
                             <ul class="list-angle-right">
                                 <li><strong>Higiene</strong> En cada una de las etapas del proceso de producción.</li>
                                 <li><strong>Compromiso</strong> Con nuestros clientes, proveedores y colaboradores.</li>
                                 <li><strong>Responsabilidad</strong> Con el ambiente y con la sociedad.</li>
                                 <li><strong>Honestidad</strong> Cumplimos escrupulosamente nuestras mezclas nutrimentales, cuidando cada detalle.</li>
                             </ul>
+                            -->
 						</div>
 					</div>
 				</div>
