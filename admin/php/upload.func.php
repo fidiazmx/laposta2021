@@ -30,38 +30,20 @@ mysqli_set_charset($con,"utf8");
 		$imgact    = $_POST['imgact'];
 		$desccampo = $_POST['desccampo'];
 
+		$filePathAnt = '../..'.$urlact.$imgact;
 		$filePath = '../..'.$urlact.$fileNew; 
 		//$filePath = '../uploads/'.$fileNew; 
 
 		if (in_array($fileActExt, $allowImg)) {
 		    if ($_FILES['file']['size'] > 0  && $_FILES['file']['error']==0) {  
 				if (move_uploaded_file($_FILES['file']['tmp_name'], $filePath)) {
+						unlink($filePathAnt);
 						echo '<img src="'.$filePath.'" style="width:320px;height:300px;"/>';
 
 						//query
 						$queryImg = "UPDATE productos SET $desccampo = '".$fileNew."' ";
 						$queryImg .= "WHERE id_producto = ".$idprod." ";
 						$resImg = mysqli_query($con, $queryImg);
-
-						if (!$resImg){
-							$result  = 'error';
-							$message = 'query error U';  
-							mysqli_rollback($con);                       
-						} else {            										
-							$result  = 'success';
-							$message = 'query success';       
-							
-							$data = array(
-								"result"  => $result,
-								"message" => $message,
-								//"data"    => $mysql_data
-							);
-							  
-							// Convert PHP array to JSON array
-							$json_data = json_encode($data);
-							print $json_data;
-						}
-
 				}else{
 					echo "La imagen no se pudo actualizar, intente de nuevo.";
 				}	

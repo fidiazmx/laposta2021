@@ -262,7 +262,7 @@
             <form id="form-productos">
                 <div class="row">
                     <div class="input-field col s4">
-                        <input placeholder="" id="txtDescripcion" name="txtDescripcion" type="text" maxlength="120">
+                        <input placeholder="" id="txtDescripcion" name="txtDescripcion" type="text" maxlength="250">
                         <label for="txtDescripcion" class="active">Descripción</label>
                     </div>
                     <div class="input-field col s4">
@@ -277,13 +277,13 @@
                         <label>Categoría</label>
                     </div>
                     <div class="input-field col s4">
-                        <input placeholder="" id="txtIngred" name="txtIngred" type="text" maxlength="120">
+                        <input placeholder="" id="txtIngred" name="txtIngred" type="text" maxlength="250">
                         <label for="txtIngred" class="active">Ingredientes</label>                        
                     </div>
                 </div>                
                 <div class="row">
                     <div class="input-field col s4">
-                        <input placeholder="" id="txtDetProd" name="txtDetProd" type="text" maxlength="120">
+                        <input placeholder="" id="txtDetProd" name="txtDetProd" type="text" maxlength="250">
                         <label for="txtDetProd" class="active">Detalle producto</label>
                     </div>           
                     <div class="input-field col s4">
@@ -291,7 +291,7 @@
                         <label for="txtDetEspec" class="active">Detalle específico</label>
                     </div>
                     <div class="input-field col s4">
-                        <input placeholder="" id="txtIndic" name="txtIndic" type="text" maxlength="120">
+                        <input placeholder="" id="txtIndic" name="txtIndic" type="text" maxlength="250">
                         <label for="txtIndic" class="active">Indicaciones</label>
                     </div>
                 </div>  

@@ -6,7 +6,7 @@ $job = '';
 $id  = '';
 if (isset($_GET['job'])) {
     $job = $_GET['job'];
-    if ($job == 'get_productos') {
+    if ($job == 'get_productos' || $job == 'add_producto' || $job == 'update_producto' || $job == 'delete_producto') {
         if (isset($_GET['id'])){
             $id = $_GET['id'];
             if (!is_numeric($id)){
@@ -80,7 +80,7 @@ if ($job != '') {
                         href="#" style="color: blue;" class="invoice-action-edit function_edit">
                         <i class="material-icons">edit</i>
                     </a>
-                    <a href="#" data-idempleado="'.$row['id_producto'].'"  style="color: red;" class="invoice-action-view mr-4 function_delete">
+                    <a href="#" data-idproducto="'.$row['id_producto'].'" data-imgproducto="'.$row['imagen_catalogo'].'" data-imgdetalle="'.$row['imagen_detalle'].'" data-urlimg="'.$preurl.'"  style="color: red;" class="invoice-action-view mr-4 function_delete">
                         <i class="material-icons">cancel</i>
                     </a>                                        
                 </div>';                
@@ -90,7 +90,7 @@ if ($job != '') {
                 $estatusdesc = "";
                 if ($row['activo'] == 'A') {
                     $estatusdesc = "ACTIVO";
-                } else if ($row['activo'] == 'I') {
+                } else {
                     $estatusdesc = "INACTIVO"; 
                 }
                 
@@ -107,15 +107,15 @@ if ($job != '') {
                 );
             }
         }
-    } else if ($job == 'update_productos') {
+    } else if ($job == 'update_producto') {
         $transaction_flag = false;    
 
         $queryInicio = "UPDATE productos
         SET fk_id_categoria = '".$_POST['slCategoria']."', descripcion_producto = '".$_POST['txtDescripcion']."', 
         detalle_producto = '".$_POST['txtDetProd']."', detalle2_producto = '".$_POST['txtDetEspec']."',
         ingredientes = '".$_POST['txtIngred']."', indicaciones = '".$_POST['txtIndic']."', precio = '".$_POST['txtPrecio']."',
-        estatus = '".$_POST['slEstatus']."', activo = '".$_POST['swActivo']."'
-        WHERE id_nosotros = 1 AND fk_id_empresa = 1";
+        estatus = '".$_POST['slDisponible']."', activo = '".$_POST['swActivo']."'
+        WHERE id_producto = ".$id." ";
         $resInicio = mysqli_query($con, $queryInicio);
 
         if (!$resInicio){
@@ -131,7 +131,47 @@ if ($job != '') {
             $result  = 'success';
             $message = 'query success';               
         }
-    }
+    } else if ($job == 'add_producto') {
+  		$query = "INSERT INTO productos (fk_id_categoria, descripcion_producto, detalle_producto, detalle2_producto, precio, estatus, ingredientes, indicaciones, activo) 
+        values
+        ('".$_POST['slCategoria']."','".$_POST['txtDescripcion']."','".$_POST['txtDetProd']."','".$_POST['txtDetEspec']."','".$_POST['txtPrecio']."',
+        '".$_POST['slEstatus']."','".$_POST['txtIngred']."','".$_POST['txtIndic']."','".$_POST['swActivo']."')";
+        $resultado = mysqli_query($con, $query);       	
+        if (!$resultado){
+            $result  = 'error';
+            $message = 'query error';
+        } else {
+            $result  = 'success';
+            $message = 'query success';
+        }  
+    } elseif ($job == 'delete_producto'){  
+        $transaction_flag = false;
+        mysqli_autocommit($con, false);
+
+	    if ($id == ''){
+	      	$result  = 'error';
+	      	$message = 'id missing';
+	    } else {
+	      	$query = "DELETE FROM productos WHERE id_producto = '".$id."'";
+			$resultado = mysqli_query($con, $query);       	
+	      	if (!$resultado){
+	        	$result  = 'error';
+	        	$message = 'query error';
+                mysqli_rollback($con);                
+	      	} else {
+                $transaction_flag = true;
+                if ($transaction_flag) {
+                    mysqli_commit($con);
+                }
+
+                //unlink imagenes subidas
+                
+                
+                $result  = 'success';
+                $message = 'query success';                        
+	      	}
+	    }  
+  	} 
 }
 
 // Prepare data
