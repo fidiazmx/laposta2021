@@ -80,7 +80,7 @@ if ($job != '') {
                         href="#" style="color: blue;" class="invoice-action-edit function_edit">
                         <i class="material-icons">edit</i>
                     </a>
-                    <a href="#" data-idempleado="'.$row['id_producto'].'" style="color: red;" class="invoice-action-view mr-4 function_delete">
+                    <a href="#" data-idempleado="'.$row['id_producto'].'"  style="color: red;" class="invoice-action-view mr-4 function_delete">
                         <i class="material-icons">cancel</i>
                     </a>                                        
                 </div>';                
@@ -96,8 +96,8 @@ if ($job != '') {
                 
                 $mysql_data[] = array(                           
                     "id_producto"           => $row['id_producto'],
-                    "imagen_detalle"        => "<img width='80px' height='120px' src='".$urlimgdet."' />",
-                    "imagen_catalogo"       => "<img width='100px' height='120px' src='".$urlimgcat."' />",
+                    "imagen_detalle"        => "<img width='80px' height='120px' src='".$urlimgdet."' /><div class='center-align'><a class='function_edit_img modal-trigger' data-idproducto='".$row['id_producto']."' data-urlimg='".$preurl."' data-imgactual='".$row['imagen_detalle']."' data-desccampo='imagen_detalle' href='#modalImagen'>Modificar</a></div>",
+                    "imagen_catalogo"       => "<img width='100px' height='120px' src='".$urlimgcat."' /><div class='center-align'><a class='function_edit_img modal-trigger' data-idproducto='".$row['id_producto']."' data-urlimg='".$preurl."' data-imgactual='".$row['imagen_detalle']."' data-desccampo='imagen_catalogo' href='#modalImagen'>Modificar</a></div>",
                     "descripcion_producto"  => $row['descripcion_producto'],
                     "descripcion_categoria" => $row['descripcion_categoria'],
                     "ingredientes"          => $row['ingredientes'],                                                
@@ -107,7 +107,31 @@ if ($job != '') {
                 );
             }
         }
-    } 
+    } else if ($job == 'update_productos') {
+        $transaction_flag = false;    
+
+        $queryInicio = "UPDATE productos
+        SET fk_id_categoria = '".$_POST['slCategoria']."', descripcion_producto = '".$_POST['txtDescripcion']."', 
+        detalle_producto = '".$_POST['txtDetProd']."', detalle2_producto = '".$_POST['txtDetEspec']."',
+        ingredientes = '".$_POST['txtIngred']."', indicaciones = '".$_POST['txtIndic']."', precio = '".$_POST['txtPrecio']."',
+        estatus = '".$_POST['slEstatus']."', activo = '".$_POST['swActivo']."'
+        WHERE id_nosotros = 1 AND fk_id_empresa = 1";
+        $resInicio = mysqli_query($con, $queryInicio);
+
+        if (!$resInicio){
+            $result  = 'error';
+            $message = 'query error U';  
+            mysqli_rollback($con);                       
+        } else {            
+            $transaction_flag = true;
+            if ($transaction_flag) {
+                mysqli_commit($con);
+            }
+
+            $result  = 'success';
+            $message = 'query success';               
+        }
+    }
 }
 
 // Prepare data

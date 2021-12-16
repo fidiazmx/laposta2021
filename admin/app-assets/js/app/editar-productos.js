@@ -68,6 +68,96 @@ $(document).ready(function(){
 
         $("#imgdetalle").attr("src", $(this).data("urlimg") + $(this).data("imgdetalle"));
         $("#imgprod").attr("src", $(this).data("urlimg") + $(this).data("imgproducto"));
-      });
+    });
+
+    $(document).on('click', 'a.function_edit_img', function(e){ 
+        $("#hdidprod").val($(this).data("idproducto")); 
+        $("#hdurlact").val($(this).data("urlimg")); 
+        $("#hdimgact").val($(this).data("imgactual")); 
+        $("#hddesccampo").val($(this).data("desccampo")); 
+    });
+
+    $( "#btnGuardar" ).click(function() {        
+        //if ($("#form-productos").valid()) {                    
+            swal({   title: "¿Está seguro que desea guardar?",
+            text: "",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#0053A0",
+            confirmButtonText: "SI",
+            cancelButtonText: "NO",
+            closeOnConfirm: false,
+            showLoaderOnConfirm: true,
+            closeOnCancel: false },
+            function(isConfirm){
+                if (isConfirm) {    
+                    var accion_cat;     
+                    if (sessionStorage.getItem("accion") == "nuevo") {
+                        accion_cat = "add_producto";
+                    } else if (sessionStorage.getItem("accion") == "editar") {
+                        accion_cat = "update_producto";
+                    }
+                    var form_data = $("#form-productos").serialize();
+                    var request   = $.ajax({
+                      url:          usourl + '/php/editar-productos.func.php?job='+accion_cat,
+                      data:         form_data,
+                      type:         'POST'
+                      //cache:        false,                        
+                      //dataType:     'json',
+                      //contentType:  'application/json; charset=utf-8',
+                    });
+                    request.done(function(output){
+                      // output = JSON.parse(output);    		
+                      if (output.result == 'success'){                            
+                          swal({
+                              title: "Los cambios fueron guardados correctamente",                                
+                              type: "success"
+                              },
+                              function(){                                                                       
+                                  window.location = "editar-nosotros.php";
+                          });                            
+                      } else {                            
+                          swal("Error", "No se pudo realizar la acción", "error");
+                      }
+                    });
+                } else {
+                    swal("Cancelado", "No se realizó ninguna acción", "error");
+                }
+            });        
+        //}    
+    });
+
+    $("#submitForm").on("submit", function(e){
+        e.preventDefault();                
+        //var formData = new FormData(this);
+        var file_data = $('#image').prop('files')[0];   
+        var form_data = new FormData();      
+        form_data.append('file', file_data);   
+        form_data.append('idproducto', $("#hdidprod").val());
+        form_data.append('urlact', $("#hdurlact").val());
+        form_data.append('imgact', $("#hdimgact").val());
+        form_data.append('desccampo', $("#hddesccampo").val());
+        $.ajax({
+            url  : "../../admin/php/upload.func.php",
+            dataType: 'text',
+            cache:false,
+            contentType : false, // you can also use multipart/form-data replace of false
+            processData: false,
+            data :form_data,
+            type : "POST",
+            success:function(response){
+                $("#preview").show();
+                $("#imageView").html(response);
+                $("#image").val('');
+                
+                table_productos.api().ajax.reload(function(){            
+                    //alert("Préstamo borrado correctamente.");
+                    swal({
+                      title: "La imagen fue actualizada correctamente",                                
+                      type: "success"});
+                }, true);
+            }
+        });
+    });
 
 });

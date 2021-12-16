@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- BEGIN: VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/sweetalert/sweetalert.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/flag-icon/css/flag-icon.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css">
@@ -334,6 +335,40 @@
         </div>
     </div>
 
+    <div id="modalImagen" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h6 class="card-title">Actualizar imagen</h4>
+            <div class="row">
+                <div class="col s12">
+                    <form id="submitForm">
+                        <input type="hidden" id="hdidprod" name="hdidprod">
+                        <input type="hidden" id="hdurlact" name="hdurlact">
+                        <input type="hidden" id="hdimgact" name="hdimgact">
+                        <input type="hidden" id="hddesccampo" name="hddesccampo">
+                        <div class="form-group">
+                        <label for="file">Select File</label>
+                        <input type="file" class="form-control" name="file" id="image" required="">
+                        </div>
+                        <div class="form-group">
+                        <button type="submit" class="btn btn-success btn btn-block">Upload</button>
+                        </div>  
+                    </form>
+                </div>                    
+            </div>     
+            <div class="row">
+                <div class="col-md-4"></div>  
+                <div class="card col-md-4" id="preview" style="display: none;">
+                    <div class="card-body" id="imageView">
+                            
+                    </div>
+                </div>    
+            </div>           
+        </div>
+        <!--<div class="modal-footer">
+            <button type="button" id="btnGuardarImg" href="#" class="modal-action waves-effect waves-red btn-flat">Guardar</button>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
+        </div>-->
+    </div>
 
     <!-- BEGIN: Footer-->
 
@@ -359,6 +394,7 @@
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
     <!--<script src="app-assets/js/scripts/data-tables.js"></script>-->
+    <script src="app-assets/vendors/sweetalert/sweetalert.min.js"></script>
     <script src="app-assets/js/urlbase.js"></script>
     <script src="app-assets/js/app/editar-productos.js"></script>
     <!-- END PAGE LEVEL JS-->
