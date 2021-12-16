@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     var table_productos = $('#data-table-simple').dataTable({             
         "paging": true,         
-        "ajax": usourl + "/php/editar-productos.func.php?job=get_productos&filtro=activo",   
+        "ajax": usourl + "/php/editar-productos.func.php?job=get_notas&filtro=activo",   
         "columns": [      
             { "data": "id_producto" },  
             { "data": "imagen_detalle" },

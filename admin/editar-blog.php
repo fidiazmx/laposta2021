@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html class="loading" lang="es" data-textdirection="ltr">
+    <!DOCTYPE html>
 <!-- BEGIN: Head-->
 
 <head>
@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/data-tables/css/select.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/trix-editor/css/trix.css">
     <!-- END: VENDOR CSS-->
     <!-- BEGIN: Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-gradient-menu-template/materialize.css">
@@ -183,6 +184,11 @@
                             </ol>
                         </div>
                     </div>
+                    <div class="col s12 m12 l12 ">
+                        <a id="add_nota" href="#modalNota" class="waves-effect waves-light breadcrumbs-btn right btn modal-trigger" style="display:block;">AGREGAR</a>                            
+                        <ul class="dropdown-content" id="dropdown1" tabindex="0">                            
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="col s12">
@@ -201,8 +207,8 @@
                                             <th>Titulo</th>
                                             <th>Texto</th>
                                             <th>Usuario.</th>                                            
-                                            <th>Estatus</th>
                                             <th>Fecha Alta</th>
+                                            <th>Estatus</th>
                                             <th>Acciones</th>
                                         </tr>
                                         </thead>
@@ -248,6 +254,64 @@
     </div>
     <!-- END: Page Main-->
 
+    <div id="modalNota" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h6 class="card-title">Información</h4>
+            <form id="form-notas">
+                <div class="row">
+                    <div class="input-field col s10 txtDescripcion">
+                        <input id="txtTituloNota" name="txtTituloNota" type="text" placeholder="">
+                        <label for="txtTituloNota">Titulo nota</label>                            
+                    </div>                        
+                    <div class="col s2 bloqueo">                            
+                        <div class="switch">Activa :
+                            <label>Off<input type="checkbox" value="A" id="swActivo" name="swActivo"><span class="lever"></span> On</label>
+                        </div>
+                    </div>                                           
+                </div>  
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="textonota" name="textonota" type="hidden" name="content">
+                        <trix-editor input="textonota"></trix-editor>                            
+                    </div>
+                </div>                                                            
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a id="btnGuardarNota" href="#" class="modal-action waves-effect waves-red btn-flat ">Guardar</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
+        </div>
+    </div>
+
+    <div id="modalImagen" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h6 class="card-title">Actualizar imagen</h4>
+            <div class="row">
+                <div class="col s12">
+                    <form id="submitForm">
+                        <input type="hidden" id="hdidnota" name="hdidnota">
+                        <input type="hidden" id="hdurlact" name="hdurlact">
+                        <input type="hidden" id="hdimgact" name="hdimgact">                        
+                        <div class="form-group">
+                        <label for="file">Select File</label>
+                        <input type="file" class="form-control" name="file" id="image" required="">
+                        </div>
+                        <div class="form-group">
+                        <button type="submit" class="btn btn-success btn btn-block">Upload</button>
+                        </div>  
+                    </form>
+                </div>                    
+            </div>     
+            <div class="row">
+                <div class="col-md-4"></div>  
+                <div class="card col-md-4" id="preview" style="display: none;">
+                    <div class="card-body" id="imageView">
+                            
+                    </div>
+                </div>    
+            </div>           
+        </div>
+
     <!-- BEGIN: Footer-->
 
     <footer class="page-footer footer footer-static footer-light navbar-border navbar-shadow">
@@ -271,7 +335,11 @@
     <script src="app-assets/js/custom/custom-script.js"></script>
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="app-assets/js/scripts/data-tables.js"></script>
+    <!--<script src="app-assets/js/scripts/data-tables.js"></script>-->
+    <script src="app-assets/vendors/trix-editor/js/trix.js"></script>
+    <script src="app-assets/vendors/sweetalert/sweetalert.min.js"></script>
+    <script src="app-assets/js/urlbase.js"></script>
+    <script src="app-assets/js/app/editar-blog.js"></script>
     <!-- END PAGE LEVEL JS-->
 </body>
 
