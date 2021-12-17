@@ -15,11 +15,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- BEGIN: VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/sweetalert/sweetalert.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/flag-icon/css/flag-icon.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/katex.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/monokai-sublime.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/quill.snow.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/quill.bubble.css">    <!-- END: VENDOR CSS-->
+    <!-- END: VENDOR CSS-->
     <!-- BEGIN: Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-gradient-menu-template/materialize.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-gradient-menu-template/style.css">
@@ -186,34 +184,153 @@
             </div>
             <div class="col s12">
                 <div class="container">
-                    <div class="section">                        
-                        <!-- full Editor start -->
-                        <section class="full-editor">
+                    <div class="section">     
+                        <form id="form-contacto">                
+                            <!-- BAND -->
                             <div class="row">
                                 <div class="col s12">
                                     <div class="card">
-                                        <div class="card-content">   
+                                        <div class="card-content">
+                                            <h4 class="card-title">Contacto Banderilla</h4>                                                                        
                                             <div class="row">
                                                 <div class="col s12">
-                                                    <div id="full-wrapper">
-                                                        <div id="full-container">
-                                                            <div class="editor">
-                                                                ***                                                             
-                                                            </div>
-                                                        </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s6">
+                                                            <label for="txtTelBand">Tel. Banderilla</label>
+                                                            <input class="validate" required id="txtTelBand" name="txtTelBand" type="text" placeholder="">
+                                                        </div> 
+                                                        <div class="input-field col s6">
+                                                            <label for="txtCorreoBand">Correo Banderilla</label>
+                                                            <input class="validate" required id="txtCorreoBand" name="txtCorreoBand" type="text" placeholder="">
+                                                        </div> 
                                                     </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s4">
+                                                            <label for="txtHor1Band">Horario Lun-Vie</label>
+                                                            <input class="validate" required id="txtHor1Band" name="txtHor1Band" type="text" placeholder="">
+                                                        </div>  
+                                                        <div class="input-field col s4">
+                                                            <label for="txtHor2Band">Horario Sab.</label>
+                                                            <input class="validate" required id="txtHor2Band" name="txtHor2Band" type="text" placeholder="">
+                                                        </div>  
+                                                        <div class="input-field col s4">
+                                                            <label for="txtHor3Band">Horario Dom.</label>
+                                                            <input class="validate" required id="txtHor3Band" name="txtHor3Band" type="text" placeholder="">
+                                                        </div>      
+                                                    </div>
+                                                    <div class="row">   
+                                                        <div class="input-field col s12">
+                                                            <label for="txtDirBand">Dirección Banderilla</label>
+                                                            <input class="validate" required id="txtDirBand" name="txtDirBand" type="text" placeholder="">
+                                                        </div>  
+                                                    </div>                                                                                                   
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                        <!-- full Editor end -->
-                    </div>                   
+                            <!-- BAND -->  
+                            <!-- BAND -->
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <h4 class="card-title">Contacto Acajete</h4>                                                                        
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div class="row">
+                                                        <div class="input-field col s6">
+                                                            <label for="txtTelAcaj">Tel. Acajete</label>
+                                                            <input class="validate" required id="txtTelAcaj" name="txtTelAcaj" type="text" placeholder="">
+                                                        </div> 
+                                                        <div class="input-field col s6">
+                                                            <label for="txtCorreoAcaj">Correo Acajete</label>
+                                                            <input class="validate" required id="txtCorreoAcaj" name="txtCorreoAcaj" type="text" placeholder="">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s4">
+                                                            <label for="txtHor1Acaj">Horario Lun-Vie</label>
+                                                            <input class="validate" required id="txtHor1Acaj" name="txtHor1Acaj" type="text" placeholder="">
+                                                        </div>  
+                                                        <div class="input-field col s4">
+                                                            <label for="txtHor2Acaj">Horario Sab.</label>
+                                                            <input class="validate" required id="txtHor2Acaj" name="txtHor2Acaj" type="text" placeholder="">
+                                                        </div>  
+                                                        <div class="input-field col s4">
+                                                            <label for="txtHor3Acaj">Horario Dom.</label>
+                                                            <input class="validate" required id="txtHor3Acaj" name="txtHor3Acaj" type="text" placeholder="">
+                                                        </div>      
+                                                    </div>
+                                                    <div class="row">   
+                                                        <div class="input-field col s12">
+                                                            <label for="txtDirAcaj">Dirección Acajete</label>
+                                                            <input class="validate" required id="txtDirAcaj" name="txtDirAcaj" type="text" placeholder="">
+                                                        </div>  
+                                                    </div>                                                                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- BAND -->  
+                            <!-- BAND -->
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <h4 class="card-title">Contacto Mataoscura</h4>                                                                        
+                                            <div class="row">
+                                                <div class="col s12">
+                                                    <div class="row">
+                                                        <div class="input-field col s6">
+                                                            <label for="txtTelMata">Tel. Mataoscura</label>
+                                                            <input class="validate" required id="txtTelMata" name="txtTelMata" type="text" placeholder="">
+                                                        </div> 
+                                                        <div class="input-field col s6">
+                                                            <label for="txtCorreoMata">Correo Mataoscura</label>
+                                                            <input class="validate" required id="txtCorreoMata" name="txtCorreoMata" type="text" placeholder="">
+                                                        </div> 
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="input-field col s4">
+                                                            <label for="txtHor1Mata">Horario Lun-Vie</label>
+                                                            <input class="validate" required id="txtHor1Mata" name="txtHor1Mata" type="text" placeholder="">
+                                                        </div>  
+                                                        <div class="input-field col s4">
+                                                            <label for="txtHor2Mata">Horario Sab.</label>
+                                                            <input class="validate" required id="txtHor2Mata" name="txtHor2Mata" type="text" placeholder="">
+                                                        </div>  
+                                                        <div class="input-field col s4">
+                                                            <label for="txtHor3Mata">Horario Dom.</label>
+                                                            <input class="validate" required id="txtHor3Mata" name="txtHor3Mata" type="text" placeholder="">
+                                                        </div>      
+                                                    </div>
+                                                    <div class="row">   
+                                                        <div class="input-field col s12">
+                                                            <label for="txtDirMata">Dirección Mataoscura</label>
+                                                            <input class="validate" required id="txtDirMata" name="txtDirMata" type="text" placeholder="">
+                                                        </div>  
+                                                    </div>                                                                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- BAND -->                                                                              
+                            <div class="input-field col s12">
+                                <button id="btnGuarda" name="btnGuarda" type="button" class="btn waves-effect waves-light right">Actualizar
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>                    
                 </div>
                 <div class="content-overlay"></div>
-            </div>            
+            </div>             
         </div>
     </div>
     <!-- END: Page Main-->
@@ -231,9 +348,7 @@
     <script src="app-assets/js/vendors.min.js"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="app-assets/vendors/quill/katex.min.js"></script>
-    <script src="app-assets/vendors/quill/highlight.min.js"></script>
-    <script src="app-assets/vendors/quill/quill.min.js"></script>
+
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN THEME  JS-->
     <script src="app-assets/js/plugins.js"></script>
@@ -241,7 +356,9 @@
     <script src="app-assets/js/custom/custom-script.js"></script>
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="app-assets/js/scripts/form-editor.js"></script>
+    <script src="app-assets/vendors/sweetalert/sweetalert.min.js"></script>
+    <script src="app-assets/js/urlbase.js"></script>
+    <script src="app-assets/js/app/editar-contacto.js"></script>
     <!-- END PAGE LEVEL JS-->
 </body>
 
