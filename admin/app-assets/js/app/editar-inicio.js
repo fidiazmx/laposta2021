@@ -1,53 +1,5 @@
-(function (window, document, $) {
-    'use strict';
-  
-    var Font = Quill.import('formats/font');
-    Font.whitelist = ['sofia', 'slabo', 'roboto', 'inconsolata', 'ubuntu'];
-    Quill.register(Font, true);
-    
-    // Full Editor
-  
-    var fullEditor = new Quill('#full-container .editor', {
-      bounds: '#full-container .editor',
-      modules: {
-        'formula': false,
-        'syntax': true,
-        'toolbar': [
-            [ {'font': []}, {'size': []} ], 
-            ['bold', 'italic', 'underline', 'strike'],
-            [ {'color': []}, {'background': []}],
-            [ {'header': '1'}, {'header': '2'}],
-            [ {'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
-            ['direction', {'align': []}]
-            //['link', 'image', 'video']        
-        ],
-      },
-      theme: 'snow'
-    });
+$(document).ready(function(){
 
-    var fullEditorHistoria = new Quill('#full-container-historia .editor', {
-        bounds: '#full-container-historia .editor',
-        modules: {
-          'formula': false,
-          'syntax': true,
-          'toolbar': [
-              [ {'font': []}, {'size': []} ], 
-              ['bold', 'italic', 'underline', 'strike'],
-              [ {'color': []}, {'background': []}],
-              [ {'header': '1'}, {'header': '2'}],
-              [ {'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
-              ['direction', {'align': []}]
-              //['link', 'image', 'video']        
-          ],
-        },
-        theme: 'snow'
-      });
-    // add browser default class to quill select 
-    var quillSelect = $("select[class^='ql-'], input[data-link]" );
-    quillSelect.addClass("browser-default");
-  
-    var editors = [fullEditor, fullEditorHistoria];
-  
     getInfoInicio();
 
     $( "#btnGuardaPrimerBloque" ).click(function() {        
@@ -64,8 +16,8 @@
         closeOnCancel: false },
         function(isConfirm){
             if (isConfirm) {                    
-               var contTextCont = $("#contenido-editor").html();
-               var contTextHist = $("#contenido-editor-historia").html();
+               var contTextCont = $("#contenido-editor").val();
+               var contTextHist = $("#contenido-editor-historia").val();
                 var form_data = $("#form-primer-bloque").serialize();
                 var request   = $.ajax({
                     url:         usourl + '/php/editar-inicio.func.php?job=update_inicio',
@@ -94,9 +46,7 @@
             }
         });
     });
-
-
-})(window, document, jQuery);
+});
 
 function getInfoInicio(){
     var request   = $.ajax({
@@ -113,8 +63,14 @@ function getInfoInicio(){
             $("#txtLinea2").val(output.data[0].texto_principal_linea2);
             $("#txtLinea3").val(output.data[0].texto_principal_linea3);
             $("#txtLineaVideoYoutube").val(output.data[0].url_video_principal);
-            $("#contenido-editor").html(output.data[0].mensaje_principal_contacto);
-            $("#contenido-editor-historia").html(output.data[0].texto_historia);
+
+            var element = document.getElementById("trix-contenido");
+            $("#contenido-editor").val(output.data[0].mensaje_principal_contacto);
+            element.editor.insertHTML(output.data[0].mensaje_principal_contacto);
+
+            var element2 = document.getElementById("trix-contenido-historia");
+            $("#contenido-editor-historia").val(output.data[0].texto_historia);
+            element2.editor.insertHTML(output.data[0].texto_historia);
 		} else {
 		    alert('Add request failed');          
 		}

@@ -17,10 +17,7 @@
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/sweetalert/sweetalert.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/flag-icon/css/flag-icon.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/katex.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/monokai-sublime.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/quill.snow.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/quill.bubble.css">    
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/trix-editor/css/trix.css">
     <!-- END: VENDOR CSS-->
     <!-- BEGIN: Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-gradient-menu-template/materialize.css">
@@ -198,15 +195,9 @@
                                             <div class="card-content">
                                                 <h4 class="card-title">Texto ¿Por qué elegirnos?</h4>                                                                        
                                                 <div class="row">
-                                                    <div class="col s12">
-                                                        <div id="full-wrapper">
-                                                            <div id="full-container-porque">
-                                                                <div id="contenido-editor-porque" class="editor">
-                                                                    <!--contenido-->
-                                                                    <!--fin contenido-->
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <div class="col s12">                                                        
+                                                        <input id="contenido-editor-porque" name="contenido-editor-porque" type="hidden" name="content">
+                                                        <trix-editor id="trix-porque" input="contenido-editor-porque"></trix-editor>  
                                                     </div>
                                                 </div>
                                             </div>
@@ -223,15 +214,9 @@
                                             <div class="card-content">
                                                 <h4 class="card-title">Texto Misión</h4>                                                                        
                                                 <div class="row">
-                                                    <div class="col s12">
-                                                        <div id="full-wrapper">
-                                                            <div id="full-container-mision">
-                                                                <div id="contenido-editor-mision" class="editor">
-                                                                    <!--contenido-->
-                                                                    <!--fin contenido-->
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <div class="col s12">                                                        
+                                                        <input id="contenido-editor-mision" name="contenido-editor-mision" type="hidden" name="content">
+                                                        <trix-editor id="trix-mision" input="contenido-editor-mision"></trix-editor>  
                                                     </div>
                                                 </div>
                                             </div>
@@ -248,15 +233,9 @@
                                             <div class="card-content">
                                                 <h4 class="card-title">Texto Visión</h4>                                                                        
                                                 <div class="row">
-                                                    <div class="col s12">
-                                                        <div id="full-wrapper">
-                                                            <div id="full-container-vision">
-                                                                <div id="contenido-editor-vision" class="editor">
-                                                                    <!--contenido-->
-                                                                    <!--fin contenido-->
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <div class="col s12">                                                        
+                                                        <input id="contenido-editor-vision" name="contenido-editor-vision" type="hidden" name="content">
+                                                        <trix-editor id="trix-vision" input="contenido-editor-vision"></trix-editor>  
                                                     </div>
                                                 </div>
                                             </div>
@@ -273,15 +252,9 @@
                                             <div class="card-content">
                                                 <h4 class="card-title">Texto Valores</h4>                                                                        
                                                 <div class="row">
-                                                    <div class="col s12">
-                                                        <div id="full-wrapper">
-                                                            <div id="full-container-valores">
-                                                                <div id="contenido-editor-valores" class="editor">
-                                                                    <!--contenido-->
-                                                                    <!--fin contenido-->
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                    <div class="col s12">                                                        
+                                                        <input id="contenido-editor-valores" name="contenido-editor-valores" type="hidden" name="content">
+                                                        <trix-editor id="trix-valores" input="contenido-editor-valores"></trix-editor>  
                                                     </div>
                                                 </div>
                                             </div>
@@ -318,9 +291,7 @@
     <script src="app-assets/js/vendors.min.js"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="app-assets/vendors/quill/katex.min.js"></script>
-    <script src="app-assets/vendors/quill/highlight.min.js"></script>
-    <script src="app-assets/vendors/quill/quill.min.js"></script>
+    
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN THEME  JS-->
     <script src="app-assets/js/plugins.js"></script>
@@ -328,6 +299,7 @@
     <script src="app-assets/js/custom/custom-script.js"></script>
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
+    <script src="app-assets/vendors/trix-editor/js/trix.js"></script>
     <script src="app-assets/vendors/sweetalert/sweetalert.min.js"></script>
     <script src="app-assets/js/urlbase.js"></script>
     <script src="app-assets/js/app/editar-nosotros.js"></script>    <!-- END PAGE LEVEL JS-->

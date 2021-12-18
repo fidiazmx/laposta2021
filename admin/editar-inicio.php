@@ -16,10 +16,7 @@
     <!-- BEGIN: VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/sweetalert/sweetalert.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/katex.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/monokai-sublime.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/quill.snow.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/quill/quill.bubble.css">    
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/trix-editor/css/trix.css">
     <!-- END: VENDOR CSS-->
     <!-- BEGIN: Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="app-assets/css/themes/vertical-gradient-menu-template/materialize.css">
@@ -229,14 +226,9 @@
                                                                     <div class="card-content">
                                                                         <h4 class="card-title">Texto contacto</h4>                                                                        
                                                                         <div class="row">
-                                                                            <div class="col s12">
-                                                                                <div id="full-wrapper">
-                                                                                    <div id="full-container">
-                                                                                        <div id="contenido-editor" class="editor">
-                                                                                            
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
+                                                                            <div class="col s12">                                                                                
+                                                                                <input id="contenido-editor" name="contenido-editor" type="hidden" name="content">
+                                                                                <trix-editor id="trix-contenido" input="contenido-editor"></trix-editor>    
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -253,16 +245,9 @@
                                                                     <div class="card-content">
                                                                         <h4 class="card-title">Texto Historia</h4>                                                                        
                                                                         <div class="row">
-                                                                            <div class="col s12">
-                                                                                <div id="full-wrapper">
-                                                                                    <div id="full-container-historia">
-                                                                                        <div id="contenido-editor-historia" class="editor">
-                                                                                            <!--contenido-->
-                                                                                            
-                                                                                            <!--fin contenido-->
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
+                                                                            <div class="col s12">                                                                                
+                                                                                <input id="contenido-editor-historia" name="contenido-editor-historia" type="hidden" name="content">
+                                                                                <trix-editor id="trix-contenido-historia" input="contenido-editor-historia"></trix-editor>                                                                                    
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -306,10 +291,6 @@
     <script src="app-assets/js/vendors.min.js"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="app-assets/vendors/chartjs/chart.min.js"></script>
-    <script src="app-assets/vendors/quill/katex.min.js"></script>
-    <script src="app-assets/vendors/quill/highlight.min.js"></script>
-    <script src="app-assets/vendors/quill/quill.min.js"></script>
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN THEME  JS-->
     <script src="app-assets/js/plugins.js"></script>
@@ -317,6 +298,7 @@
     <script src="app-assets/js/custom/custom-script.js"></script>
     <!-- END THEME  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
+    <script src="app-assets/vendors/trix-editor/js/trix.js"></script>
     <script src="app-assets/vendors/sweetalert/sweetalert.min.js"></script>
     <script src="app-assets/js/urlbase.js"></script>
     <script src="app-assets/js/app/editar-inicio.js"></script>
