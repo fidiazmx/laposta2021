@@ -28,6 +28,28 @@ if (!$resultado){
 		"texto_historia"             => $row['texto_historia']
 	);            
 }
+
+//DATOS BANDERILLA
+$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'BANDERILLA'"; 
+$resBand = mysqli_query($con, $queryBand);        
+if (!$resBand){
+	$result  = 'error';
+	$message = 'query error';
+} else {
+	$result  = 'success';
+	$message = 'query success';   
+	$rowband = mysqli_fetch_array($resBand);                                                              
+	$mysql_data[] = array(                           
+		"ubicacion"           => $rowband['ubicacion'],
+		"telefono_ubicacion"  => $rowband['telefono_ubicacion'],
+		"correo_ubicacion"    => $rowband['correo_ubicacion'],
+		"horario_1_ubicacion" => $rowband['horario_1_ubicacion'],
+		"horario_2_ubicacion" => $rowband['horario_2_ubicacion'],
+		"horario_3_ubicacion" => $rowband['horario_3_ubicacion'],
+		"direccion_ubicacion" => $rowband['direccion_ubicacion']
+	);            
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -86,12 +108,12 @@ if (!$resultado){
 							<li>
 								<i class="fa fa-envelope-o"></i>
 								<h4 class="m-a0"> Oficinas</h4>
-								<span>Esfuerzo 13, Centro, Banderilla, Ver</span> 
+								<span><?php echo $rowband['direccion_ubicacion'] ?></span> 
 							</li>
 							<li>
 								<i class="fa fa-phone"></i>
 								<h4 class="m-a0"> Teléfonos</h4>
-								<span>(228) 8110503</span>                                 
+								<span style="font-size:13px !important;"><?php echo $rowband['telefono_ubicacion'] ?></span>                                 
 							</li>
 						</ul>
 					</div>
@@ -811,8 +833,8 @@ if (!$resultado){
 						<div class="footer-logo wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="2s">
 							<img src="images/logo.png" alt="">
 						</div>
-						<p class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="2s">LLámanos: (228) 8110503, (228) 1922343</p>
-						<p class="wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="2s">Esfuerzo no. 13, Colonia Centro, Banderilla, Veracruz, C.P. 91300</p>
+						<p class="wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="2s">LLámanos: <?php echo $rowband['telefono_ubicacion'] ?></p>
+						<p class="wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="2s"><?php echo $rowband['direccion_ubicacion'] ?></p>
 						<!-- <a href="#" class="site-button gradient wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="2s">Get a Free Quote</a> -->
 						<!-- <ul class="social-line wow fadeInUp" data-wow-delay="1.0s" data-wow-duration="2s">
 							<li><a class="site-button"><i class="fa fa-facebook"></i></a></li>

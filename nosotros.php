@@ -26,6 +26,61 @@ if (!$resultado){
 		"texto_valores" => $row['texto_valores']		
 	);            
 }
+
+//DATOS BANDERILLA
+$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'BANDERILLA'"; 
+$resBand = mysqli_query($con, $queryBand);        
+if (!$resBand){
+	$result  = 'error';
+	$message = 'query error';
+} else {
+	$result  = 'success';
+	$message = 'query success';   
+	$rowband = mysqli_fetch_array($resBand);                                                              
+	$mysql_data[] = array(                           
+		"ubicacion"           => $rowband['ubicacion'],
+		"telefono_ubicacion"  => $rowband['telefono_ubicacion'],
+		"correo_ubicacion"    => $rowband['correo_ubicacion'],
+		"horario_1_ubicacion" => $rowband['horario_1_ubicacion'],
+		"horario_2_ubicacion" => $rowband['horario_2_ubicacion'],
+		"horario_3_ubicacion" => $rowband['horario_3_ubicacion'],
+		"direccion_ubicacion" => $rowband['direccion_ubicacion']
+	);            
+}
+
+//DATOS HISTORIA
+$queryhist =  "SELECT * FROM empresa WHERE id_empresa = 1"; 
+$reshist = mysqli_query($con, $queryhist);        
+if (!$reshist){
+	$result  = 'error';
+	$message = 'query error';
+} else {
+	$result  = 'success';
+	$message = 'query success';   
+	$rowhist = mysqli_fetch_array($reshist);                                                              
+	$mysql_data[] = array(                           
+		"texto_principal_linea1"     => $rowhist['texto_principal_linea1'],
+		"texto_principal_linea2"     => $rowhist['texto_principal_linea2'],
+		"texto_principal_linea3"     => $rowhist['texto_principal_linea3'],
+		"url_video_principal"        => $rowhist['url_video_principal'],
+		"mensaje_principal_contacto" => $rowhist['mensaje_principal_contacto'],
+		"texto_historia"             => $rowhist['texto_historia']
+	);            
+}
+
+//ULTIMOS TRES POST
+$queryblog =  "SELECT * FROM blog b
+INNER JOIN users u ON b.fk_id_user = u.id
+ORDER BY b.id_nota_blog DESC LIMIT 3"; 
+$resblog = mysqli_query($con, $queryblog);        
+// if (!$resblog){
+// 	$result  = 'error';
+// 	$message = 'query error';
+// } else {
+// 	$result  = 'success';
+// 	$message = 'query success';       
+// }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,19 +128,19 @@ if (!$resultado){
                 <div class="row justify-content-between">
                     <div class="dez-topbar-left">
                         <ul class="social-line text-center pull-right">
-                            <li><a href="javascript:void(0);"><i class="fa fa-phone"></i> <span>(228) 8110503, (228) 1922343</span> </a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-clock-o"></i> <span>ventasbanderilla@laposta.com.mx</span></a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-envelope-o"></i> <span>Lun - Vie: 08.00 - 17.00, Sab: 08.00 - 17.00, Dom: Cerrado</span></a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-phone"></i> <span><?php echo $rowband['telefono_ubicacion']; ?></span> </a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-clock-o"></i> <span><?php echo $rowband['correo_ubicacion']; ?></span></a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-envelope-o"></i> <span><?php echo $rowband['horario_1_ubicacion']; ?>&nbsp;<?php echo $rowband['horario_2_ubicacion']; ?>&nbsp;<?php echo $rowband['horario_3_ubicacion']; ?></span></a></li>
                         </ul>
                     </div>
-                    <div class="dez-topbar-right">
+                    <!-- <div class="dez-topbar-right">
                         <ul class="social-line text-center pull-right">
                             <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                            <!-- <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
+                            <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
                             <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                            <li><a href="javascript:void(0);" class="fa fa-google-plus"></a></li> -->
+                            <li><a href="javascript:void(0);" class="fa fa-google-plus"></a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -223,9 +278,7 @@ if (!$resultado){
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <div class="logo-footer"><img src="images/logo.png" alt=""></div>
-                            <p class="m-tb20"><strong>La Posta</strong>  La Posta se creó en 1987, con la intención de ofrecer al ganadero una opción para la alimentación de su ganado diferente y más rentable. Se inició vendiendo materias primas y medicina veterinaria.
-
-                                A través de los años se añadió una gama de diferentes alimentos balanceados, que en un principio se elaboraban de manera artesanal y al paso de los años el proceso se ha tecnificado...</p>
+                            <p class="m-tb20"><?php echo $rowhist['texto_historia']; ?></p>
                             <ul class="dez-social-icon dez-social-icon-lg">
                                 <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
                                 <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
@@ -239,6 +292,32 @@ if (!$resultado){
                             <h4 class="m-b15 text-uppercase">Últimas publicaciones</h4>
                             <div class="dez-separator bg-primary"></div>
                             <div class="widget-post-bx">
+                                <!--
+                                $mysql_data[] = array(                           
+                                        "texto_principal_linea1"     => $rowblog['texto_principal_linea1'],
+                                        "texto_principal_linea2"     => $rowblog['texto_principal_linea2']		
+                                );  
+                                -->          
+                                <?php
+                                while ($rowblog = mysqli_fetch_array($resblog)) {                                                                 
+                                ?>
+                                <div class="widget-post clearfix">
+                                    <div class="dez-post-media"> <img src="blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
+                                    <div class="dez-post-info">
+                                        <div class="dez-post-header">
+                                            <h6 class="post-title"><a href="blog-single.php?id=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo $rowblog['titulo_nota'];?></a></h6>
+                                        </div>
+                                        <div class="dez-post-meta">
+                                            <ul>
+                                                <li class="post-author">Por <a href="#"><?php echo $rowblog['name'];?></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php
+                                }
+                                ?>
+                                <!--
                                 <div class="widget-post clearfix">
                                     <div class="dez-post-media"> <img src="images/banner/bnr1.jpg" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
@@ -281,6 +360,7 @@ if (!$resultado){
                                         </div>
                                     </div>
                                 </div>
+                                -->
                             </div>
                         </div>
                     </div>
@@ -302,9 +382,9 @@ if (!$resultado){
                             <h4 class="m-b15 text-uppercase">Contacto</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><i class="fa fa-map-marker"></i><strong>Dirección</strong> Esfuerzo no. 13, Colonia Centro, Banderilla, Veracruz, C.P. 91300</li>
-                                <li><i class="fa fa-phone"></i><strong>Teléfonos</strong>(228) 8110503, (228) 1922343</li>
-                                <li><i class="fa fa-fax"></i><strong>Correo</strong>ventasbanderilla@laposta.com.mx</li>
+                                <li><i class="fa fa-map-marker"></i><strong>Dirección</strong><?php echo $rowband['direccion_ubicacion']; ?></li>
+                                <li><i class="fa fa-phone"></i><strong>Teléfonos</strong><?php echo $rowband['telefono_ubicacion']; ?></li>
+                                <li><i class="fa fa-fax"></i><strong>Correo</strong><?php echo $rowband['correo_ubicacion']; ?></li>
                             </ul>
                         </div>
                     </div>
