@@ -303,7 +303,7 @@ $resblog = mysqli_query($con, $queryblog);
                                     <div class="dez-post-media"> <img src="blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php?id=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo $rowblog['titulo_nota'];?></a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo $rowblog['titulo_nota'];?></a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
