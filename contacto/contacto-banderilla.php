@@ -112,9 +112,9 @@ $resblog = mysqli_query($con, $queryblog);
                 <div class="row justify-content-between">
                     <div class="dez-topbar-left">
                         <ul class="social-line text-center pull-right">
-                            <li><a href="javascript:void(0);"><i class="fa fa-phone"></i> <span>(228) 8110503, (228) 1922343</span> </a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-clock-o"></i> <span>ventasbanderilla@laposta.com.mx</span></a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-envelope-o"></i> <span>Lun - Vie: 08.00 - 17.00, Sab: 08.00 - 17.00, Dom: Cerrado</span></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-phone"></i> <span><?php echo $rowband['telefono_ubicacion']; ?></span> </a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-clock-o"></i> <span><?php echo $rowband['correo_ubicacion']; ?></span></a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-envelope-o"></i> <span><?php echo $rowband['horario_1_ubicacion']; ?>&nbsp;<?php echo $rowband['horario_2_ubicacion']; ?>&nbsp;<?php echo $rowband['horario_3_ubicacion']; ?></span></a></li>
                         </ul>
                     </div>
                     <div class="dez-topbar-right">
@@ -210,7 +210,7 @@ $resblog = mysqli_query($con, $queryblog);
                     <br>
                 </div>
                 <div class="row">
-                <div class="col-lg-8">
+                    <div class="col-lg-8">
                         <div class="p-a30 bg-gray clearfix m-b30 ">
 							<h2>Envíanos un mensaje</h2>
 							<div class="dzFormMsg"></div>
