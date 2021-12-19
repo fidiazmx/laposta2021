@@ -1,32 +1,23 @@
 <?php
-/*
-Template Name: GardenZone - Agriculture, Gardening Servces Templates
-
-Variable
-	$recaptchaSecret : Recaptcha Secret Key
- 
-	$dzName : Contact Person Name
-	$dzEmail : Contact Person Email
-	$dzMessage : Contact Person Message
-	$dzRes : response holder
-	$dzOtherField : Form other additional fields
-	
-	
-	$dzMailSubject : Mail Subject.
-	$dzMailMessage : Mail Body
-	$dzMailHeader : Mail Header
-	$dzEmailReceiver : Contact receiver email address
-	$dzEmailFrom : Mail Form title
-	$dzEmailHeader : Mail headers
-*/
-/* require ReCaptcha class */
 require('recaptcha-master/src/autoload.php');
 
 /* ReCaptch Secret */
-$recaptchaSecret = '<!-- Put Your reCaptcha Secret Key -->';
+//$recaptchaSecret = '<!-- Put Your reCaptcha Secret Key -->';
+//LOCAL
+//$recaptchaSecret = '6LdMY7QdAAAAAPO5_eeI3Gp9r2Z_URSaLaOK-HtO';
+//clave sitio web - 6LdMY7QdAAAAAJZymZiZjADP0PA01Wp4w1dO4Ybe
+//clave secreta - 6LdMY7QdAAAAAPO5_eeI3Gp9r2Z_URSaLaOK-HtO
+//HEROKU
+$recaptchaSecret = '6LdUZ7QdAAAAAJ94hDQ7FAvZ9RCw4QdOYyl7JUL6';
+//clave sitio web - 6LdUZ7QdAAAAALxSRLxUnaYlJ-epveqQNyKdug1a
+//clave secreta - 6LdUZ7QdAAAAAJ94hDQ7FAvZ9RCw4QdOYyl7JUL6
 
-$dzEmailTo 		= "youremailaddress@domain.com";   /* Receiver Email Address */
-$dzEmailFrom    = "GardenZone Contact";
+//FOR TEST PURPOSE
+//Site key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
+//Secret key: 6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe
+
+$dzEmailTo 		= "fide94@gmail.com";   /* Receiver Email Address */
+$dzEmailFrom    = "La Posta";
 
 function pr($value)
 {
@@ -75,9 +66,9 @@ try {
 				$dzRes['status'] = 0;
 				$dzRes['msg'] = 'Wrong Email Format.';
 			}
-			$dzMailSubject = 'GardenZone|Contact Form: A Person want to contact';
+			$dzMailSubject = 'La Posta|Formulario de contacto: Alguien lo contacto desde la página web';
 			$dzMailMessage	= 	"
-								A person want to contact you: <br><br>
+								Una persona quiere contactarlo: <br><br>
 								Name: $dzName<br/>
 								Email: $dzEmail<br/>
 								Message: $dzMessage<br/>
@@ -104,12 +95,12 @@ try {
 			if(mail($dzEmailTo, $dzMailSubject, $dzMailMessage, $dzEmailHeader))
 			{
 				$dzRes['status'] = 1;
-				$dzRes['msg'] = 'We have received your message successfully. Thanks for Contact.';
+				$dzRes['msg'] = 'Hemos recibido su mensaje. Gracias por contactarnos.';
 			}
 			else
 			{
 				$dzRes['status'] = 0;
-				$dzRes['msg'] = 'Some problem in sending mail, please try again later.';
+				$dzRes['msg'] = 'Surgió un problema al enviar el mensaje, intente de nuevo.';
 			}
 			echo json_encode($dzRes);
 			exit;
@@ -131,8 +122,14 @@ try {
 				exit;
 			}
 			
-				
-			
+			$dzMailSubject = 'La Posta|Formulario de contacto: Alguien lo contacto desde la página web';
+			$dzMailMessage	= 	"
+								Una persona quiere contactarlo: <br><br>
+								Name: $dzName<br/>
+								Email: $dzEmail<br/>
+								Message: $dzMessage<br/>
+								";
+			/*			
 			$dzMailSubject = 'GardenZone|Appointment Form: A Person want to contact';
 			$dzMailMessage	= 	"
 								A person want to contact you: <br><br>
@@ -140,6 +137,7 @@ try {
 								Email: $dzEmail<br/>
 								Message: $dzMessage<br/>
 								";
+			*/
 			$dzOtherField = "";
 			if(!empty($_POST['dzOther']))
 			{
@@ -161,12 +159,15 @@ try {
 			if(mail($dzEmailTo, $dzMailSubject, $dzMailMessage, $dzEmailHeader))
 			{
 				$dzRes['status'] = 1;
-				$dzRes['msg'] = 'We have received your message successfully. Thanks for Contact.';
+				//$dzRes['msg'] = 'We have received your message successfully. Thanks for Contact.';
+				$dzRes['msg'] = 'Hemos recibido su mensaje. Gracias por contactarnos.';
+
 			}
 			else
 			{
 				$dzRes['status'] = 0;
-				$dzRes['msg'] = 'Some problem in sending mail, please try again later.';
+				//$dzRes['msg'] = 'Some problem in sending mail, please try again later.';
+				$dzRes['msg'] = 'Surgió un problema al enviar el mensaje, intente de nuevo.';
 			}
 			echo json_encode($dzRes);
 			exit;
@@ -176,7 +177,7 @@ try {
 	}
 } catch (\Exception $e) {
     $dzRes['status'] = 0;
-	$dzRes['msg'] = $e->getMessage().'Some problem in sending mail, please try again later.';
+	$dzRes['msg'] = $e->getMessage().'Surgió un problema al enviar su mensaje, intente más tarde.';
 	echo json_encode($dzRes);
 	exit;
 }
