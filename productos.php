@@ -112,7 +112,7 @@ $resblog = mysqli_query($con, $queryblog);
                 <div class="row justify-content-between">
                     <div class="dez-topbar-left">
                         <ul class="social-line text-center pull-right">
-                        <li><a href="javascript:void(0);"><i class="fa fa-phone"></i> <span><?php echo $rowband['telefono_ubicacion']; ?></span> </a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-phone"></i> <span><?php echo $rowband['telefono_ubicacion']; ?></span> </a></li>
                             <li><a href="javascript:void(0);"><i class="fa fa-clock-o"></i> <span><?php echo $rowband['correo_ubicacion']; ?></span></a></li>
                             <li><a href="javascript:void(0);"><i class="fa fa-envelope-o"></i> <span><?php echo $rowband['horario_1_ubicacion']; ?>&nbsp;<?php echo $rowband['horario_2_ubicacion']; ?>&nbsp;<?php echo $rowband['horario_3_ubicacion']; ?></span></a></li>
                         </ul>
@@ -216,7 +216,7 @@ $resblog = mysqli_query($con, $queryblog);
 								<div class="dez-media"> <a href="#"><img src="images/product/vaca.jpg" alt=""></a> </div>
 								<div class="dez-info p-a20 text-center bg-gray">
 									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="productos/vacas/vacas.php">Vacas</a></h4>
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/vacas/vacas.php?idcategoria=1">Vacas</a></h4>
 									</div>										
 								</div>
 							</div>
@@ -226,7 +226,7 @@ $resblog = mysqli_query($con, $queryblog);
 								<div class="dez-media"> <a href="#"><img src="images/product/cerdo.jpg" alt=""></a> </div>
 								<div class="dez-info p-a20 text-center bg-gray">
 									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="productos/cerdos/cerdos.php">Cerdos</a></h4>
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/cerdos/cerdos.php?idcategoria=2">Cerdos</a></h4>
 									</div>										
 								</div>
 							</div>
@@ -236,7 +236,7 @@ $resblog = mysqli_query($con, $queryblog);
 								<div class="dez-media"> <a href="#"><img src="images/product/caballo.jpg" alt=""></a> </div>
 								<div class="dez-info p-a20 text-center bg-gray">
 									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="productos/caballos/caballos.php">Caballos</a></h4>
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/caballos/caballos.php?idcategoria=3">Caballos</a></h4>
 									</div>										
 								</div>
 							</div>
@@ -246,7 +246,7 @@ $resblog = mysqli_query($con, $queryblog);
 								<div class="dez-media"> <a href="#"><img src="images/product/borrego.jpg" alt=""></a> </div>
 								<div class="dez-info p-a20 text-center bg-gray">
 									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="productos/borregos/borregos.php">Borregos</a></h4>
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/borregos/borregos.php?idcategoria=4">Borregos</a></h4>
 									</div>										
 								</div>
 							</div>
@@ -256,7 +256,7 @@ $resblog = mysqli_query($con, $queryblog);
 								<div class="dez-media"> <a href="#"><img src="images/product/ave.jpg" alt=""></a> </div>
 								<div class="dez-info p-a20 text-center bg-gray">
 									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="productos/aves/aves.php">Aves</a></h4>
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/aves/aves.phpidcategoria=5">Aves</a></h4>
 									</div>										
 								</div>
 							</div>
