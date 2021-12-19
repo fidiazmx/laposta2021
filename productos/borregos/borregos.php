@@ -1,3 +1,79 @@
+<?php
+
+require_once ('../../admin/_inc/dbconfig.php');
+
+$mysql_data = array();
+$con = mysqli_connect($db_server, $db_username, $db_password, $db_name);
+if (mysqli_connect_errno()){
+	$result  = 'error';
+	$message = 'Failed to connect to database: ' . mysqli_connect_error();
+	$job     = '';
+}
+
+//DATOS BANDERILLA
+$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'BANDERILLA'"; 
+$resBand = mysqli_query($con, $queryBand);        
+if (!$resBand){
+	$result  = 'error';
+	$message = 'query error';
+} else {
+	$result  = 'success';
+	$message = 'query success';   
+	$rowband = mysqli_fetch_array($resBand);                                                              
+	$mysql_data[] = array(                           
+		"ubicacion"           => $rowband['ubicacion'],
+		"telefono_ubicacion"  => $rowband['telefono_ubicacion'],
+		"correo_ubicacion"    => $rowband['correo_ubicacion'],
+		"horario_1_ubicacion" => $rowband['horario_1_ubicacion'],
+		"horario_2_ubicacion" => $rowband['horario_2_ubicacion'],
+		"horario_3_ubicacion" => $rowband['horario_3_ubicacion'],
+		"direccion_ubicacion" => $rowband['direccion_ubicacion']
+	);            
+}
+
+//DATOS HISTORIA
+$queryhist =  "SELECT * FROM empresa WHERE id_empresa = 1"; 
+$reshist = mysqli_query($con, $queryhist);        
+if (!$reshist){
+	$result  = 'error';
+	$message = 'query error';
+} else {
+	$result  = 'success';
+	$message = 'query success';   
+	$rowhist = mysqli_fetch_array($reshist);                                                              
+	$mysql_data[] = array(                           
+		"texto_principal_linea1"     => $rowhist['texto_principal_linea1'],
+		"texto_principal_linea2"     => $rowhist['texto_principal_linea2'],
+		"texto_principal_linea3"     => $rowhist['texto_principal_linea3'],
+		"url_video_principal"        => $rowhist['url_video_principal'],
+		"mensaje_principal_contacto" => $rowhist['mensaje_principal_contacto'],
+		"texto_historia"             => $rowhist['texto_historia']
+	);            
+}
+
+//ULTIMOS TRES POST
+$queryblog =  "SELECT * FROM blog b
+INNER JOIN users u ON b.fk_id_user = u.id
+ORDER BY b.id_nota_blog DESC LIMIT 3"; 
+$resblog = mysqli_query($con, $queryblog);     
+$resblog2 = mysqli_query($con, $queryblog);        
+// if (!$resblog){
+// 	$result  = 'error';
+// 	$message = 'query error';
+// } else {
+// 	$result  = 'success';
+// 	$message = 'query success';       
+// }
+
+//TOTAL PRODUCTOS
+$querytotprod =  "SELECT COUNT(*) tot_prod, c.descripcion_categoria
+FROM productos p 
+INNER JOIN categorias c ON p.fk_id_categoria = c.id_categoria
+WHERE p.activo = 'A'
+GROUP BY c.id_categoria"; 
+$restotprod = mysqli_query($con, $querytotprod);    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +93,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title> La Posta - Productos Borregos</title>
+	<title> La Posta - Borregos</title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,9 +120,9 @@
                 <div class="row justify-content-between">
                     <div class="dez-topbar-left">
                         <ul class="social-line text-center pull-right">
-                            <li><a href="javascript:void(0);"><i class="fa fa-phone"></i> <span>(228) 8110503, (228) 1922343</span> </a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-clock-o"></i> <span>ventasbanderilla@laposta.com.mx</span></a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-envelope-o"></i> <span>Lun - Vie: 08.00 - 17.00, Sab: 08.00 - 17.00, Dom: Cerrado</span></a></li>
+						<li><a href="javascript:void(0);"><i class="fa fa-phone"></i> <span><?php echo $rowband['telefono_ubicacion']; ?></span> </a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-clock-o"></i> <span><?php echo $rowband['correo_ubicacion']; ?></span></a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-envelope-o"></i> <span><?php echo $rowband['horario_1_ubicacion']; ?>&nbsp;<?php echo $rowband['horario_2_ubicacion']; ?>&nbsp;<?php echo $rowband['horario_3_ubicacion']; ?></span></a></li>
                         </ul>
                     </div>
                     <div class="dez-topbar-right">
@@ -89,11 +165,11 @@
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li class="active"> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
                             </li>
                             <li class=""> <a href="../../nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
                             </li>
-                            <li class=""> <a href="../../productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
+                            <li class="active"> <a href="../../productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
                             </li>
                             <li class=""> <a href="../../blog.php">Blog<i class="fa fa-chevron-down"></i></a>									
                             </li>
@@ -181,8 +257,8 @@
 							</div>
 						</div>
 					</div>
-				</div>				
-                <div class="row">					
+				</div>
+                <div class="row">
 					<div class="col-lg-3 col-md-4 col-sm-6">
 						<aside class="side-bar">
                             <!--<div class="widget">
@@ -201,6 +277,26 @@
                             <div class="widget recent-posts-entry">
                                 <h4 class="widget-title">Últimas noticias</h4>
                                 <div class="widget-post-bx">
+									<?php
+                                	while ($rowblog = mysqli_fetch_array($resblog)) {                                                                 
+                                	?>
+									<div class="widget-post clearfix">
+                                        <div class="dez-post-media"> <img src="../../blog/<?php echo $rowblog['imagen_nota'];?>" width="200" height="143" alt=""> </div>
+                                        <div class="dez-post-info">
+                                            <div class="dez-post-header">
+                                                <h6 class="post-title"><a href="../../blog-single.php?id=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo $rowblog['titulo_nota'];?></a></h6>
+                                            </div>
+                                            <div class="dez-post-meta">
+                                                <ul>
+                                                    <li class="post-date"><?php echo $rowblog["fecha_alta"]; ?></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+									<?php
+									}
+									?>
+									<!--
                                     <div class="widget-post clearfix">
                                         <div class="dez-post-media"> <img src="../../images/banner/bnr1.jpg" width="200" height="143" alt=""> </div>
                                         <div class="dez-post-info">
@@ -240,6 +336,7 @@
                                             </div>
                                         </div>
                                     </div>
+									-->	
                                 </div>
                             </div>
 							<div class="widget">
@@ -248,11 +345,20 @@
                             <div class="widget widget_categories">
                                 <h4 class="widget-title">Categorías</h4>
                                 <ul>
+									<?php
+                                	while ($rowtotp = mysqli_fetch_array($restotprod)) {                                                                 
+                                	?>
+									<li><a href="#"><?php echo $rowtotp["descripcion_categoria"]; ?> </a> <?php echo $rowtotp["tot_prod"]; ?></li>
+									<!--
                                     <li><a href="../vacas/vacas.php">Vacas </a> (10)</li>
                                     <li><a href="../cerdos/cerdos.php">Cerdos </a> (05) </li>
                                     <li><a href="../caballos/caballos.php">Caballos </a> (08) </li>
                                     <li><a href="../borregos/borregos.php">Borregos</a> (06) </li>
                                     <li><a href="../aves/aves.php">Aves </a> (11) </li>                                    
+									-->
+									<?php
+									}
+									?>
                                 </ul>
                             </div>
                             <!--<div class="widget widget_gallery">
@@ -298,15 +404,37 @@
 							<div class="dez-separator-outer "><div class="dez-separator bg-primary style-skew"></div> </div>
 						</div>
 						<div class="row" id="masonry">
+							<?php
+								$querydetprod =  "SELECT id_producto, descripcion_producto, imagen_catalogo FROM productos WHERE activo = 'A' and fk_id_categoria = 4"; 
+								$resqrydetprod = mysqli_query($con, $querydetprod);
+							?>
+							<?php
+                                while ($rowbdetprod = mysqli_fetch_array($resqrydetprod)) {                                                                 
+                            ?>
+								<div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
+									<div class="dez-box">
+										<div class="dez-thum-bx dez-img-effect">
+											<img src="../../productos/borregos/<?php echo $rowbdetprod['imagen_catalogo']; ?>" alt="">										
+										</div>
+										<div class="dez-info p-a20 text-center">
+											<div class="m-t15">
+												<a href="../detalle-producto.php?idproducto=<?php echo $rowbdetprod['id_producto']; ?>&categoria=borregos&producto=<?php echo $rowbdetprod['descripcion_producto']; ?>" class="site-button">Ver detalle	</a>
+											</div>
+										</div>									
+									</div>
+								</div>
+							<?php
+								}
+							?>
+							<!--
 							<div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/borregos/borrega_reproductora.png" alt="">										
+										<img src="../../productos/vacas/lechera_azul.png" alt="">										
 									</div>
 									<div class="dez-info p-a20 text-center">
-										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
 										<div class="m-t15">
-											<a href="borrego-reproductora.php" class="site-button">Ver detalle	</a>
+											<a href="lechera-azul-15.php" class="site-button">Ver detalle	</a>
 										</div>
 									</div>									
 								</div>
@@ -314,16 +442,101 @@
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/borregos/engorda_borrego.png" alt="">										
+										<img src="../../productos/vacas/lechera_naranja.png" alt="">										
 									</div>
 									<div class="dez-info p-a20 text-center">
-										<!-- <h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#">Lechera azul</a></h4> -->
 										<div class="m-t15">
-											<a href="engorda-borrego.php" class="site-button">Ver detalle	</a>
+											<a href="lechera-naranja-16.php" class="site-button">Ver detalle	</a>
 										</div>
 									</div>									
 								</div>
-                            </div>                    
+                            </div>
+                            <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
+								<div class="dez-box">
+									<div class="dez-thum-bx dez-img-effect">
+										<img src="../../productos/vacas/lechera18.png" alt="">										
+									</div>
+									<div class="dez-info p-a20 text-center">
+										<div class="m-t15">
+											<a href="lechera-dorada-18.php" class="site-button">Ver detalle	</a>
+										</div>
+									</div>									
+								</div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
+								<div class="dez-box">
+									<div class="dez-thum-bx dez-img-effect">
+										<img src="../../productos/vacas/lechera20.png" alt="">										
+									</div>
+									<div class="dez-info p-a20 text-center">
+										<div class="m-t15">
+											<a href="lechera-20.php" class="site-button">Ver detalle	</a>
+										</div>
+									</div>									
+								</div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
+								<div class="dez-box">
+									<div class="dez-thum-bx dez-img-effect">
+										<img src="../../productos/vacas/lechera22.png" alt="">										
+									</div>
+									<div class="dez-info p-a20 text-center">
+										<div class="m-t15">
+											<a href="lechera-22.php" class="site-button">Ver detalle	</a>
+										</div>
+									</div>									
+								</div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
+								<div class="dez-box">
+									<div class="dez-thum-bx dez-img-effect">
+										<img src="../../productos/vacas/preiniciador_becerras.png" alt="">										
+									</div>
+									<div class="dez-info p-a20 text-center">
+										<h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#"></a></h4>
+										<div class="m-t15">
+											<a href="preiniciador-becerras.php" class="site-button">Ver detalle	</a>
+										</div>
+									</div>									
+								</div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
+								<div class="dez-box">
+									<div class="dez-thum-bx dez-img-effect">
+										<img src="../../productos/vacas/becerra.png" alt="">										
+									</div>
+									<div class="dez-info p-a20 text-center">
+										<div class="m-t15">
+											<a href="becerra.php" class="site-button">Ver detalle	</a>
+										</div>
+									</div>									
+								</div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
+								<div class="dez-box">
+									<div class="dez-thum-bx dez-img-effect">
+										<img src="../../productos/vacas/recria_becerras.png" alt="">										
+									</div>
+									<div class="dez-info p-a20 text-center">
+										<div class="m-t15">
+											<a href="becerras-recria.php" class="site-button">Ver detalle	</a>
+										</div>
+									</div>									
+								</div>
+                            </div>      
+                            <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
+								<div class="dez-box">
+									<div class="dez-thum-bx dez-img-effect">
+										<img src="../../productos/vacas/engorda_ganado.png" alt="">										
+									</div>
+									<div class="dez-info p-a20 text-center">
+										<div class="m-t15">
+											<a href="engorda-ganado.php" class="site-button">Ver detalle	</a>
+										</div>
+									</div>									
+								</div>
+                            </div>     
+							-->
 						</div>
 						<!--<div class="row">
 							<div class="text-center m-b50 m-t30 col-lg-12">
@@ -425,7 +638,7 @@
 						<div class="add-plat text-white shop-add" style="background-image:url(images/banner/bnr4.jpg); background-size:100%;
 						background-position:center;">
 							<h2 class="m-b0">Si tiene alguna duda de clic aquí</h2>
-							<a href="contacto.php" class="site-button outline yellow">Solicitar cotización</a>
+							<a href="../../contacto/contacto-banderilla.php" class="site-button outline yellow">Solicitar cotización</a>
 						</div>
 					</div>
 				</div>
@@ -442,10 +655,8 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
-                            <div class="logo-footer"><img src="images/logo.png" alt=""></div>
-                            <p class="m-tb20"><strong>La Posta</strong>  La Posta se creó en 1987, con la intención de ofrecer al ganadero una opción para la alimentación de su ganado diferente y más rentable. Se inició vendiendo materias primas y medicina veterinaria.
-
-                                A través de los años se añadió una gama de diferentes alimentos balanceados, que en un principio se elaboraban de manera artesanal y al paso de los años el proceso se ha tecnificado...</p>
+                            <div class="logo-footer"><img src="../../images/logo.png" alt=""></div>
+                            <p class="m-tb20"><?php echo $rowhist['texto_historia']; ?></p>
                             <ul class="dez-social-icon dez-social-icon-lg">
                                 <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
                                 <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
@@ -459,8 +670,34 @@
                             <h4 class="m-b15 text-uppercase">Últimas publicaciones</h4>
                             <div class="dez-separator bg-primary"></div>
                             <div class="widget-post-bx">
+                                <!--
+                                $mysql_data[] = array(                           
+                                        "texto_principal_linea1"     => $rowblog['texto_principal_linea1'],
+                                        "texto_principal_linea2"     => $rowblog['texto_principal_linea2']		
+                                );  
+                                -->          
+                                <?php
+                                while ($rowblog2 = mysqli_fetch_array($resblog2)) {                                                                 
+                                ?>
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="../../images/banner/bnr1.jpg" alt="" width="200" height="143"> </div>
+                                    <div class="dez-post-media"> <img src="../../blog/<?php echo $rowblog2['imagen_nota'];?>" alt="" width="200" height="143"> </div>
+                                    <div class="dez-post-info">
+                                        <div class="dez-post-header">
+                                            <h6 class="post-title"><a href="blog-single.php?id=<?php echo $rowblog2['id_nota_blog']; ?>"><?php echo $rowblog2['titulo_nota'];?></a></h6>
+                                        </div>
+                                        <div class="dez-post-meta">
+                                            <ul>
+                                                <li class="post-author">Por <a href="#"><?php echo $rowblog2['name'];?></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <?php
+                                }
+                                ?>
+                                <!--
+                                <div class="widget-post clearfix">
+                                    <div class="dez-post-media"> <img src="images/banner/bnr1.jpg" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
                                             <h6 class="post-title"><a href="blog-single.php">¿Qué come el ganado?</a></h6>
@@ -474,7 +711,7 @@
                                     </div>
                                 </div>
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="../../images/banner/bnr2.jpg" alt="" width="200" height="160"> </div>
+                                    <div class="dez-post-media"> <img src="images/banner/bnr2.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
                                             <h6 class="post-title"><a href="blog-single-2.php">México ya es 5° productor mundial de alimentos balanceados</a></h6>
@@ -488,7 +725,7 @@
                                     </div>
                                 </div>
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="../../images/banner/bnr3.jpg" alt="" width="200" height="160"> </div>
+                                    <div class="dez-post-media"> <img src="images/banner/bnr3.jpg" alt="" width="200" height="160"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
                                             <h6 class="post-title"><a href="blog-single-3.php">México, cuarto productor de alimentos balanceados en el mundo</a></h6>
@@ -501,6 +738,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                -->
                             </div>
                         </div>
                     </div>
@@ -522,9 +760,9 @@
                             <h4 class="m-b15 text-uppercase">Contacto</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><i class="fa fa-map-marker"></i><strong>Dirección</strong> Esfuerzo no. 13, Colonia Centro, Banderilla, Veracruz, C.P. 91300</li>
-                                <li><i class="fa fa-phone"></i><strong>Teléfonos</strong>(228) 8110503, (228) 1922343</li>
-                                <li><i class="fa fa-fax"></i><strong>Correo</strong>ventasbanderilla@laposta.com.mx</li>
+                                <li><i class="fa fa-map-marker"></i><strong>Dirección</strong><?php echo $rowband['direccion_ubicacion']; ?></li>
+                                <li><i class="fa fa-phone"></i><strong>Teléfonos</strong><?php echo $rowband['telefono_ubicacion']; ?></li>
+                                <li><i class="fa fa-fax"></i><strong>Correo</strong><?php echo $rowband['correo_ubicacion']; ?></li>
                             </ul>
                         </div>
                     </div>
