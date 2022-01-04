@@ -174,7 +174,7 @@
                         <div class="col s12 m6 l6 right-align-md">
                             <ol class="breadcrumbs mb-0">
                                 <li class="breadcrumb-item"><a href="main.php">Home</a>
-                                </li>                               
+                                </li>
                                 <li class="breadcrumb-item active">Editar inicio
                                 </li>
                             </ol>
@@ -184,7 +184,7 @@
             </div>
             <div class="col s12">
                 <div class="container">
-                    <div class="section">                
+                    <div class="section">
                         <!--INICIO PRIMER BLOQUE-->
                         <div class="row">
                             <div class="col s12">
@@ -205,30 +205,30 @@
                                                     <div class="input-field col s12">
                                                         <label for="txtLinea1">Texto línea 1</label>
                                                         <input class="validate" required id="txtLinea1" name="txtLinea1" type="text" placeholder="">
-                                                    </div> 
+                                                    </div>
                                                     <div class="input-field col s12">
                                                         <label for="txtLinea2">Texto línea 2</label>
                                                         <input class="validate" required id="txtLinea2" name="txtLinea2" type="text" placeholder="">
-                                                    </div> 
+                                                    </div>
                                                     <div class="input-field col s12">
                                                         <label for="txtLinea3">Texto línea 3</label>
                                                         <input class="validate" required id="txtLinea3" name="txtLinea3" type="text" placeholder="">
-                                                    </div>  
+                                                    </div>
                                                     <div class="input-field col s12">
                                                         <label for="txtLineaVideoYoutube">Url Video Youtube</label>
                                                         <input class="validate" required id="txtLineaVideoYoutube" name="txtLineaVideoYoutube" type="text" placeholder="">
-                                                    </div>      
+                                                    </div>
                                                     <!-- full Editor start -->
                                                     <section class="full-editor">
                                                         <div class="row">
                                                             <div class="col s12">
                                                                 <div class="card">
                                                                     <div class="card-content">
-                                                                        <h4 class="card-title">Texto contacto</h4>                                                                        
+                                                                        <h4 class="card-title">Texto contacto</h4>
                                                                         <div class="row">
-                                                                            <div class="col s12">                                                                                
+                                                                            <div class="col s12">
                                                                                 <input id="contenido-editor" name="contenido-editor" type="hidden" name="content">
-                                                                                <trix-editor id="trix-contenido" input="contenido-editor"></trix-editor>    
+                                                                                <trix-editor id="trix-contenido" input="contenido-editor"></trix-editor>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -236,18 +236,18 @@
                                                             </div>
                                                         </div>
                                                     </section>
-                                                    <!-- full Editor end -->   
+                                                    <!-- full Editor end -->
                                                     <!-- full Editor start 2 -->
                                                     <section class="full-editor">
                                                         <div class="row">
                                                             <div class="col s12">
                                                                 <div class="card">
                                                                     <div class="card-content">
-                                                                        <h4 class="card-title">Texto Historia</h4>                                                                        
+                                                                        <h4 class="card-title">Texto Historia</h4>
                                                                         <div class="row">
-                                                                            <div class="col s12">                                                                                
+                                                                            <div class="col s12">
                                                                                 <input id="contenido-editor-historia" name="contenido-editor-historia" type="hidden" name="content">
-                                                                                <trix-editor id="trix-contenido-historia" input="contenido-editor-historia"></trix-editor>                                                                                    
+                                                                                <trix-editor id="trix-contenido-historia" input="contenido-editor-historia"></trix-editor>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -255,7 +255,36 @@
                                                             </div>
                                                         </div>
                                                     </section>
-                                                    <!-- full Editor end 2 -->                                                                                              
+                                                    <!-- full Editor end 2 -->
+                                                    <!-- full Editor start 3 -->
+                                                    <section class="full-editor">
+                                                        <div class="row">
+                                                            <div class="col s12">
+                                                                <div class="card">
+                                                                    <div class="card-content">
+                                                                        <div class="row">
+                                                                            <div class="col s12">
+                                                                                <h4 class="card-title">Una muestra de nosotros</h4>
+                                                                                <div class="input-field col s12">
+                                                                                    <label for="txtCliAten">Clientes atendidos</label>
+                                                                                    <input class="validate" required id="txtCliAten" name="txtCliAten" type="text" placeholder="">
+                                                                                </div>
+                                                                                <div class="input-field col s12">
+                                                                                    <label for="txtFormOrig">Fórmulas originales</label>
+                                                                                    <input class="validate" required id="txtFormOrig" name="txtFormOrig" type="text" placeholder="">
+                                                                                </div>
+                                                                                <div class="input-field col s12">
+                                                                                    <label for="txtKgAlimento">Kg de Alimento</label>
+                                                                                    <input class="validate" required id="txtKgAlimento" name="txtKgAlimento" type="text" placeholder="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <!-- full Editor end 3 -->
                                                     <div class="input-field col s12">
                                                         <button id="btnGuardaPrimerBloque" name="btnGuardaPrimerBloque" type="button" class="btn waves-effect waves-light right">Actualizar
                                                             <i class="material-icons right">send</i>
@@ -268,10 +297,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!--FIN PRIMER BLOQUE-->                                                            
+                        <!--FIN PRIMER BLOQUE-->
                     </div>
                 </div>
-                                
+
                 <div class="content-overlay"></div>
             </div>
         </div>

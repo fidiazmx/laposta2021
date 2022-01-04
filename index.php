@@ -10,36 +10,39 @@ if (mysqli_connect_errno()){
 	$job     = '';
 }
 
-$query =  "SELECT * FROM empresa WHERE id_empresa = 1"; 
-$resultado = mysqli_query($con, $query);        
+$query =  "SELECT * FROM empresa WHERE id_empresa = 1";
+$resultado = mysqli_query($con, $query);
 if (!$resultado){
 	$result  = 'error';
 	$message = 'query error';
 } else {
 	$result  = 'success';
-	$message = 'query success';   
-	$row = mysqli_fetch_array($resultado);                                                              
-	$mysql_data[] = array(                           
+	$message = 'query success';
+	$row = mysqli_fetch_array($resultado);
+	$mysql_data[] = array(
 		"texto_principal_linea1"     => $row['texto_principal_linea1'],
 		"texto_principal_linea2"     => $row['texto_principal_linea2'],
 		"texto_principal_linea3"     => $row['texto_principal_linea3'],
 		"url_video_principal"        => $row['url_video_principal'],
 		"mensaje_principal_contacto" => $row['mensaje_principal_contacto'],
-		"texto_historia"             => $row['texto_historia']
-	);            
+		"texto_historia"             => $row['texto_historia'],
+		"clientes_atendidos"         => $row['clientes_atendidos'],
+		"formulas_originales"        => $row['formulas_originales'],
+		"kg_alimento"             	 => $row['kg_alimento'],
+	);
 }
 
 //DATOS BANDERILLA
-$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'BANDERILLA'"; 
-$resBand = mysqli_query($con, $queryBand);        
+$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'BANDERILLA'";
+$resBand = mysqli_query($con, $queryBand);
 if (!$resBand){
 	$result  = 'error';
 	$message = 'query error';
 } else {
 	$result  = 'success';
-	$message = 'query success';   
-	$rowband = mysqli_fetch_array($resBand);                                                              
-	$mysql_data[] = array(                           
+	$message = 'query success';
+	$rowband = mysqli_fetch_array($resBand);
+	$mysql_data[] = array(
 		"ubicacion"           => $rowband['ubicacion'],
 		"telefono_ubicacion"  => $rowband['telefono_ubicacion'],
 		"correo_ubicacion"    => $rowband['correo_ubicacion'],
@@ -47,7 +50,24 @@ if (!$resBand){
 		"horario_2_ubicacion" => $rowband['horario_2_ubicacion'],
 		"horario_3_ubicacion" => $rowband['horario_3_ubicacion'],
 		"direccion_ubicacion" => $rowband['direccion_ubicacion']
-	);            
+	);
+}
+
+//Calcular año
+function obtener_edad_segun_fecha($fecha_nacimiento)
+{
+    $nacimiento = new DateTime($fecha_nacimiento);
+    $ahora = new DateTime(date("Y-m-d"));
+    $diferencia = $ahora->diff($nacimiento);
+    return $diferencia->format("%y");
+}
+
+// Probar
+$fechas = ['1987-01-01'];
+$anioservicio = 0;
+foreach($fechas as $fecha){
+	printf("Edad para %s: %d\n", $fecha, obtener_edad_segun_fecha($fecha));
+	$anioservicio = obtener_edad_segun_fecha($fecha);
 }
 
 ?>
@@ -64,22 +84,22 @@ if (!$resBand){
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
-	
+
 	<!-- FAVICONS ICON -->
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-	
+
 	<!-- PAGE TITLE HERE -->
 	<title> La Posta - Forrajería y Veterinaria</title>
-	
+
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	
+
 	<!-- STYLESHEETS -->
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
@@ -108,12 +128,12 @@ if (!$resBand){
 							<li>
 								<i class="fa fa-envelope-o"></i>
 								<h4 class="m-a0"> Oficinas</h4>
-								<span><?php echo $rowband['direccion_ubicacion'] ?></span> 
+								<span><?php echo $rowband['direccion_ubicacion'] ?></span>
 							</li>
 							<li>
 								<i class="fa fa-phone"></i>
 								<h4 class="m-a0"> Teléfonos</h4>
-								<span style="font-size:13px !important;"><?php echo $rowband['telefono_ubicacion'] ?></span>                                 
+								<span style="font-size:13px !important;"><?php echo $rowband['telefono_ubicacion'] ?></span>
 							</li>
 						</ul>
 					</div>
@@ -156,17 +176,17 @@ if (!$resBand){
                         <!-- main nav -->
                         <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                             <ul class="nav navbar-nav">
-								<li class="active"> <a href="index.php">Inicio</a>									
+								<li class="active"> <a href="index.php">Inicio</a>
 								</li>
-                                <li class=""> <a href="nosotros.php">Nosotros</a>									
+                                <li class=""> <a href="nosotros.php">Nosotros</a>
 								</li>
-								<li class=""> <a href="productos.php">Productos</a>									
+								<li class=""> <a href="productos.php">Productos</a>
 								</li>
-								<li class=""> <a href="blog.php">Blog</a>									
+								<li class=""> <a href="blog.php">Blog</a>
 								</li>
-								<li class=""> <a href="galeria.php">Galería</a>									
-								</li>								
-								<!--<li class=""> <a href="contacto.php">Contacto</a>									
+								<li class=""> <a href="galeria.php">Galería</a>
+								</li>
+								<!--<li class=""> <a href="contacto.php">Contacto</a>
 								</li>-->
 								<li> <a href="javascript:;">Contacto<i class="fa fa-chevron-down"></i></a>
 									<ul class="sub-menu">
@@ -200,17 +220,17 @@ if (!$resBand){
 									<!-- LAYERS -->
 
 									<!-- LAYER NR. 1 -->
-									<div class="tp-caption tp-shape tp-shapewrapper  " 
-										id="slide-1699-layer-1" 
-										data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-										data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+									<div class="tp-caption tp-shape tp-shapewrapper  "
+										id="slide-1699-layer-1"
+										data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+										data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
 										data-width="full"
 										data-height="full"
 										data-whitespace="nowrap"
-							 
-										data-type="shape" 
-										data-basealign="slide" 
-										data-responsive_offset="on" 
+
+										data-type="shape"
+										data-basealign="slide"
+										data-responsive_offset="on"
 										data-responsive="off"
 										data-frames='[{"from":"opacity:0;","speed":1500,"to":"o:1;","delay":750,"ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"ease":"nothing"}]'
 										data-textAlign="['left','left','left','left']"
@@ -221,18 +241,18 @@ if (!$resBand){
 
 										style="z-index: 5;background-color:rgba(0, 0, 0, 0.0);border-color:rgba(0, 0, 0, 0.0);border-width:0px;"> </div>
 
-									<div class="tp-caption NotGeneric-Title tp-resizeme" 
-										id="slide-1699-layer-2" 
-										data-x="['left','left','left','left']" data-hoffset="['50','50','50','50']" 
-										data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-75','-70']" 
+									<div class="tp-caption NotGeneric-Title tp-resizeme"
+										id="slide-1699-layer-2"
+										data-x="['left','left','left','left']" data-hoffset="['50','50','50','50']"
+										data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-75','-70']"
 										data-fontsize="['20','20','18','16']"
 										data-lineheight="['20','20','18','16']"
 										data-width="none"
 										data-height="none"
 										data-whitespace="wrap"
-							 
-										data-type="text" 
-										data-responsive_offset="on" 
+
+										data-type="text"
+										data-responsive_offset="on"
 
 										data-frames='[{"from":"z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
 										data-textAlign="['left','left','left','center']"
@@ -242,20 +262,20 @@ if (!$resBand){
 										data-paddingleft="[25,25,20,25]"
 
 										style="z-index: 7; background:linear-gradient(90deg, rgba(250,180,0,1) 0%, rgba(229,245,3,1) 100%); font-family:Roboto; white-space: wrap; font-weight: 500; border-radius: 10px;"><?php echo $row['texto_principal_linea1']; ?> </div>
-										
+
 									<!-- LAYER NR. 3 -->
-									<div class="tp-caption NotGeneric-Title   tp-resizeme" 
-										id="slide-1699-layer-3" 
-										data-x="['left','left','left','left']" data-hoffset="['0','0','30','30']" 
-										data-y="['middle','middle','middle','middle']" data-voffset="['0','0','-20','-15']" 
+									<div class="tp-caption NotGeneric-Title   tp-resizeme"
+										id="slide-1699-layer-3"
+										data-x="['left','left','left','left']" data-hoffset="['0','0','30','30']"
+										data-y="['middle','middle','middle','middle']" data-voffset="['0','0','-20','-15']"
 										data-fontsize="['56','56','36','36']"
 										data-lineheight="['56','56','36','36']"
 										data-width="none"
 										data-height="none"
 										data-whitespace="wrap"
-							 
-										data-type="text" 
-										data-responsive_offset="on" 
+
+										data-type="text"
+										data-responsive_offset="on"
 
 										data-frames='[{"from":"z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
 										data-textAlign="['left','left','left','center']"
@@ -265,21 +285,21 @@ if (!$resBand){
 										data-paddingleft="[50,50,40,40]"
 
 										style="z-index: 7; background-color: #fff; font-family:Roboto; color: rgb(250, 180, 0); white-space: wrap; border-radius: 10px;"><?php echo $row['texto_principal_linea2']; ?> </div>
-										
-									
+
+
 									<!-- LAYER NR. 3 -->
-									<div class="tp-caption NotGeneric-Title   tp-resizeme" 
-										id="slide-1699-layer-4" 
+									<div class="tp-caption NotGeneric-Title   tp-resizeme"
+										id="slide-1699-layer-4"
 										data-x="['left','left','left','left']" data-hoffset="['200','200','200','120']"
-										data-y="['middle','middle','middle','middle']" data-voffset="['80','80','40','50']" 
+										data-y="['middle','middle','middle','middle']" data-voffset="['80','80','40','50']"
 										data-fontsize="['30','30','24','24']"
 										data-lineheight="['30','30','24','24']"
 										data-width="none"
 										data-height="none"
 										data-whitespace="wrap"
-							 
-										data-type="text" 
-										data-responsive_offset="on" 
+
+										data-type="text"
+										data-responsive_offset="on"
 
 										data-frames='[{"from":"z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
 										data-textAlign="['left','left','left','center']"
@@ -292,10 +312,10 @@ if (!$resBand){
 								</li>
 							</ul>
 						<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
-					</div><!-- END REVOLUTION SLIDER -->    
-				</div>        
-			</div>        
-		</div>        
+					</div><!-- END REVOLUTION SLIDER -->
+				</div>
+			</div>
+		</div>
 		<!-- Slider END -->
 
 		<!--VIDEO-->
@@ -322,10 +342,10 @@ if (!$resBand){
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="icon-bx-wraper service-style1 m-b30 center">
-							<div class="icon-bx-xl"> 
+							<div class="icon-bx-xl">
 								<a href="#" class="icon-cell">
 									<img src="images/icon/icon_vacas.png" alt="">
-								</a> 
+								</a>
 							</div>
 							<div class="icon-content">
 								<h2 class="dez-tilte text-primary">Vacas</h2>
@@ -336,10 +356,10 @@ if (!$resBand){
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-4 wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="icon-bx-wraper service-style1 m-b30 center">
-							<div class="icon-bx-xl"> 
+							<div class="icon-bx-xl">
 								<a href="productos/cerdos/vacas.php" class="icon-cell">
 									<img src="images/icon/icon_cerdos.png" alt="">
-								</a> 
+								</a>
 							</div>
 							<div class="icon-content">
 								<h2 class="dez-tilte text-primary">Cerdos</h2>
@@ -350,10 +370,10 @@ if (!$resBand){
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-4 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="icon-bx-wraper service-style1 center">
-							<div class="icon-bx-xl"> 
+							<div class="icon-bx-xl">
 								<a href="productos/cerdos/cerdos.php" class="icon-cell">
 									<img src="images/icon/icon_caballos.png" alt="">
-								</a> 
+								</a>
 							</div>
 							<div class="icon-content">
 								<h2 class="dez-tilte text-primary">Caballos</h2>
@@ -361,13 +381,13 @@ if (!$resBand){
 								<a href="productos/caballos/caballos.php" class="site-button italic light-gray">Ver más..</a>
 							</div>
 						</div>
-					</div>					
+					</div>
 					<div class="col-xl-3 col-lg-4 col-md-4 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="icon-bx-wraper service-style1 center">
-							<div class="icon-bx-xl"> 
+							<div class="icon-bx-xl">
 								<a href="#" class="icon-cell">
 									<img src="images/icon/icon_borregos.png" alt="">
-								</a> 
+								</a>
 							</div>
 							<div class="icon-content">
 								<h2 class="dez-tilte text-primary">Borregos</h2>
@@ -378,10 +398,10 @@ if (!$resBand){
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-4 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="icon-bx-wraper service-style1 center">
-							<div class="icon-bx-xl"> 
+							<div class="icon-bx-xl">
 								<a href="#" class="icon-cell">
 									<img src="images/icon/icon_aves.png" alt="">
-								</a> 
+								</a>
 							</div>
 							<div class="icon-content">
 								<h2 class="dez-tilte text-primary">Aves</h2>
@@ -400,7 +420,7 @@ if (!$resBand){
                 <div class="row">
 					<div class="col-lg-6 offset-lg-6 col-md-9 offset-md-3 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="dez-support style1 bg-white">
-							<?php 
+							<?php
 								echo $row['mensaje_principal_contacto'];
 							?>
 							<!--
@@ -425,7 +445,7 @@ if (!$resBand){
             <div class="container">
 				<div id="contenido-historia" class="row">
 					<div class="col-lg-6">
-						<?php echo $row['texto_historia'];?>					
+						<?php echo $row['texto_historia'];?>
 					</div>
 					<div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
 						<img class="img-cover" src="images/about/home-about.png" alt="">
@@ -434,7 +454,7 @@ if (!$resBand){
             </div>
         </div>
         <!-- About info END -->
-		<!-- Our Projects  
+		<!-- Our Projects
         <div class="section-full content-inner shap-top shap-bottom gallery-projects" style="background-image:url(images/background/bg12.jpg); background-size:cover; background-position:center;">
 			<div class="container">
 				<div class="section-head style1 text-white text-center">
@@ -446,27 +466,27 @@ if (!$resBand){
 					<ul class="filters" data-toggle="buttons">
 						<li data-filter="" class="btn active">
 							<input type="radio">
-							<a href="#" class="site-button"><span>Todos</span></a> 
+							<a href="#" class="site-button"><span>Todos</span></a>
 						</li>
 						<li data-filter="home" class="btn">
 							<input type="radio" >
-							<a href="#" class="site-button"><span>Vacas </span></a> 
+							<a href="#" class="site-button"><span>Vacas </span></a>
 						</li>
 						<li data-filter="office" class="btn">
 							<input type="radio">
-							<a href="#" class="site-button"><span>Cerdos</span></a> 
+							<a href="#" class="site-button"><span>Cerdos</span></a>
 						</li>
 						<li data-filter="commercial" class="btn">
 							<input type="radio">
-							<a href="#" class="site-button"><span>Caballos</span></a> 
+							<a href="#" class="site-button"><span>Caballos</span></a>
 						</li>
 						<li data-filter="window" class="btn">
 							<input type="radio">
-							<a href="#" class="site-button"><span>Borregos</span></a> 
+							<a href="#" class="site-button"><span>Borregos</span></a>
 						</li>
 						<li data-filter="window" class="btn">
 								<input type="radio">
-								<a href="#" class="site-button"><span>Aves</span></a> 
+								<a href="#" class="site-button"><span>Aves</span></a>
 						</li>
 					</ul>
 				</div>
@@ -474,7 +494,7 @@ if (!$resBand){
 					<ul id="masonry" class="dez-gallery-listing gallery-grid-4 m-b0">
 						<li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 home wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="2s">
 							<div class="dez-box project-box">
-								<div class="dez-media"> 
+								<div class="dez-media">
 									<img src="images/gallery/pic1.jpg" alt="">
 									<div class="overlay-box">
 										<div class="project-info">
@@ -487,7 +507,7 @@ if (!$resBand){
 						</li>
 						<li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 office wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="2s">
 							<div class="dez-box project-box">
-								<div class="dez-media"> 
+								<div class="dez-media">
 									<img src="images/gallery/pic2.jpg" alt="">
 									<div class="overlay-box">
 										<div class="project-info">
@@ -498,9 +518,9 @@ if (!$resBand){
 								</div>
 							</div>
 						</li>
-						<li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 children-aid wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s"> 
+						<li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 children-aid wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">
 							<div class="dez-box project-box">
-								<div class="dez-media"> 
+								<div class="dez-media">
 									<img src="images/gallery/pic3.jpg" alt="">
 									<div class="overlay-box">
 										<div class="project-info">
@@ -513,7 +533,7 @@ if (!$resBand){
 						</li>
 						<li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 commercial wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="2s">
 							<div class="dez-box project-box">
-								<div class="dez-media"> 
+								<div class="dez-media">
 									<img src="images/gallery/pic4.jpg" alt="">
 									<div class="overlay-box">
 										<div class="project-info">
@@ -526,7 +546,7 @@ if (!$resBand){
 						</li>
 						<li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 window wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="2s">
 							<div class="dez-box project-box">
-								<div class="dez-media"> 
+								<div class="dez-media">
 									<img src="images/gallery/pic5.jpg" alt="">
 									<div class="overlay-box">
 										<div class="project-info">
@@ -539,7 +559,7 @@ if (!$resBand){
 						</li>
 						<li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 apartment wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="2s">
 							<div class="dez-box project-box">
-								<div class="dez-media"> 
+								<div class="dez-media">
 									<img src="images/gallery/pic6.jpg" alt="">
 									<div class="overlay-box">
 										<div class="project-info">
@@ -552,7 +572,7 @@ if (!$resBand){
 						</li>
 						<li class="card-container col-lg-3 col-md-6 col-sm-6 m-b30 window wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="2s">
 							<div class="dez-box project-box">
-								<div class="dez-media"> 
+								<div class="dez-media">
 									<img src="images/gallery/pic7.jpg" alt="">
 									<div class="overlay-box">
 										<div class="project-info">
@@ -565,7 +585,7 @@ if (!$resBand){
 						</li>
 						<li class="card-container col-lg-3 col-md-6 col-sm-6 apartment wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="2s">
 							<div class="dez-box project-box">
-								<div class="dez-media"> 
+								<div class="dez-media">
 									<img src="images/gallery/pic8.jpg" alt="">
 									<div class="overlay-box">
 										<div class="project-info">
@@ -588,7 +608,7 @@ if (!$resBand){
                     <div class="row">
                         <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="2s">
 							<div class="experience-box">
-								<h2 class="exp-year">34</h2>
+								<h2 class="exp-year"><?php echo $anioservicio; ?></h2>
 								<h3>AÑOS DE</h3>
 								<h4>EXPERIENCIA</h4>
 							</div>
@@ -604,19 +624,19 @@ if (!$resBand){
 								<div class="row">
 									<div class="col-lg-4 col-md-4 col-sm-4 col-6 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="2s">
 										<div class="counter-style-2 m-b30">
-											<span class="counter">7652</span>
+											<span class="counter"><?php echo $row['clientes_atendidos'];?></span>
 											<span class="counter-text text-primary">Clientes atendidos</span>
 										</div>
 									</div>
 									<div class="col-lg-4 col-md-4 col-sm-4 col-6 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="2s">
 										<div class="counter-style-2 m-b30">
-											<span class="counter">25</span>
+											<span class="counter"><?php echo $row['formulas_originales'];?></span>
 											<span class="counter-text text-primary">Fórmulas originales</span>
 										</div>
 									</div>
 									<div class="col-lg-4 col-md-4 col-sm-4 col-12 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="2s">
 										<div class="counter-style-2">
-											<span class="counter">3569</span>
+											<span class="counter"><?php echo $row['kg_alimento'];?></span>
 											<span class="counter-text text-primary">Kg Alimento</span>
 										</div>
 									</div>
@@ -628,7 +648,7 @@ if (!$resBand){
             </div>
         </div>
         <!-- About Us END -->
-		<!-- Pricing Table 
+		<!-- Pricing Table
 		<div class="section-full bg-gray-dark shap-top shap-bottom content-inner">
 			<div class="container">
 				<div class="section-head style1 text-center">
@@ -645,8 +665,8 @@ if (!$resBand){
 										<div class="pricingtable-title">
 											<h2>SMALL</h2>
 										</div>
-										<div class="pricingtable-price"> 
-											<span class="pricingtable-bx">$10</span> 
+										<div class="pricingtable-price">
+											<span class="pricingtable-bx">$10</span>
 											<span class="pricingtable-type">Mo</span>
 										</div>
 										<ul class="pricingtable-features">
@@ -666,8 +686,8 @@ if (!$resBand){
 										<div class="pricingtable-title">
 											<h2>STANDARD</h2>
 										</div>
-										<div class="pricingtable-price"> 
-											<span class="pricingtable-bx">$12</span> 
+										<div class="pricingtable-price">
+											<span class="pricingtable-bx">$12</span>
 											<span class="pricingtable-type">Mo</span>
 										</div>
 										<ul class="pricingtable-features">
@@ -687,8 +707,8 @@ if (!$resBand){
 										<div class="pricingtable-title">
 											<h2>BUSINESS</h2>
 										</div>
-										<div class="pricingtable-price"> 
-											<span class="pricingtable-bx">$18</span> 
+										<div class="pricingtable-price">
+											<span class="pricingtable-bx">$18</span>
 											<span class="pricingtable-type">Mo</span>
 										</div>
 										<ul class="pricingtable-features">
@@ -708,8 +728,8 @@ if (!$resBand){
 										<div class="pricingtable-title">
 											<h2>ULTIMATE</h2>
 										</div>
-										<div class="pricingtable-price"> 
-											<span class="pricingtable-bx">$23</span> 
+										<div class="pricingtable-price">
+											<span class="pricingtable-bx">$23</span>
 											<span class="pricingtable-type">Mo</span>
 										</div>
 										<ul class="pricingtable-features">
@@ -744,7 +764,7 @@ if (!$resBand){
 									<div class="testimonial-detail clearfix info">
 										<div class="testimonial-pic"><img src="images/testimonials/pic1.jpg" alt="" width="100" height="100"></div>
 										<p class="testimonial-position">
-											<strong>Guillermo Gómez</strong> 
+											<strong>Guillermo Gómez</strong>
 											<span>Productor</span>
 										</p>
 									</div>
@@ -752,13 +772,13 @@ if (!$resBand){
 										<p>“La calidad de la maquinaria es incomparable”</p>
 									</div>
 								</div>
-							</div>	
+							</div>
 							<div class="item">
 								<div class="testimonial-8">
 									<div class="testimonial-detail clearfix info">
 										<div class="testimonial-pic"><img src="images/testimonials/pic1.jpg" alt="" width="100" height="100"></div>
 										<p class="testimonial-position">
-											<strong>David López</strong> 
+											<strong>David López</strong>
 											<span>Revendedor</span>
 										</p>
 									</div>
@@ -766,7 +786,7 @@ if (!$resBand){
 										<p>“Los productos de la posta son los mejores calificados</p>
 									</div>
 								</div>
-							</div>	
+							</div>
                         </div>
 					</div>
 					<div class="col-lg-6">
@@ -850,8 +870,8 @@ if (!$resBand){
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12"> 
-						<span>© 2021 Develop by Iwebyou</span> 
+                    <div class="col-md-12">
+						<span>© 2021 Develop by Iwebyou</span>
 					</div>
                 </div>
             </div>

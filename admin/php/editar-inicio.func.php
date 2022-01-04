@@ -35,45 +35,48 @@ if ($job != '') {
     mysqli_set_charset($con,"utf8");
 
     if ($job == 'get_data_inicio') {
-        $query =  "SELECT * FROM empresa WHERE id_empresa = 1"; 
-        $resultado = mysqli_query($con, $query);        
+        $query =  "SELECT * FROM empresa WHERE id_empresa = 1";
+        $resultado = mysqli_query($con, $query);
         if (!$resultado){
             $result  = 'error';
             $message = 'query error';
         } else {
             $result  = 'success';
-            $message = 'query success';   
-            $row = mysqli_fetch_array($resultado);                                                              
-            $mysql_data[] = array(                           
+            $message = 'query success';
+            $row = mysqli_fetch_array($resultado);
+            $mysql_data[] = array(
                 "texto_principal_linea1"     => $row['texto_principal_linea1'],
                 "texto_principal_linea2"     => $row['texto_principal_linea2'],
                 "texto_principal_linea3"     => $row['texto_principal_linea3'],
                 "url_video_principal"        => $row['url_video_principal'],
                 "mensaje_principal_contacto" => $row['mensaje_principal_contacto'],
-                "texto_historia"             => $row['texto_historia']
-            );            
+                "texto_historia"             => $row['texto_historia'],
+                "clientes_atendidos"         => $row['clientes_atendidos'],
+                "formulas_originales"        => $row['formulas_originales'],
+                "kg_alimento"                => $row['kg_alimento']
+            );
         }
     } else if ($job == 'update_inicio') {
-        $transaction_flag = false;    
+        $transaction_flag = false;
 
-        $queryInicio = "UPDATE Empresa 
+        $queryInicio = "UPDATE Empresa
         SET texto_principal_linea1 = '".$_POST['txtLinea1']."', texto_principal_linea2 = '".$_POST['txtLinea2']."', texto_principal_linea3 = '".$_POST['txtLinea3']."',
-        url_video_principal = '".$_POST['txtLineaVideoYoutube']."', mensaje_principal_contacto = '".$_POST['textoContacto']."', texto_historia = '".$_POST['textoHistoria']."'
-        WHERE id_empresa = 1";
+        url_video_principal = '".$_POST['txtLineaVideoYoutube']."', mensaje_principal_contacto = '".$_POST['textoContacto']."', texto_historia = '".$_POST['textoHistoria']."',
+        clientes_atendidos = '".$_POST['txtCliAten']."', formulas_originales = '".$_POST['txtFormOrig']."', kg_alimento = '".$_POST['txtKgAlimento']."' WHERE id_empresa = 1";
         $resInicio = mysqli_query($con, $queryInicio);
 
         if (!$resInicio){
             $result  = 'error';
-            $message = 'query error U';  
-            mysqli_rollback($con);                       
-        } else {            
+            $message = 'query error U';
+            mysqli_rollback($con);
+        } else {
             $transaction_flag = true;
             if ($transaction_flag) {
                 mysqli_commit($con);
             }
 
             $result  = 'success';
-            $message = 'query success';               
+            $message = 'query success';
         }
     }
 }
@@ -84,7 +87,7 @@ $data = array(
     "message" => $message,
     "data"    => $mysql_data
 );
-  
+
 // Convert PHP array to JSON array
 $json_data = json_encode($data);
 print $json_data;

@@ -11,16 +11,16 @@ if (mysqli_connect_errno()){
 }
 
 //DATOS BANDERILLA
-$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'BANDERILLA'"; 
-$resBand = mysqli_query($con, $queryBand);        
+$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'BANDERILLA'";
+$resBand = mysqli_query($con, $queryBand);
 if (!$resBand){
 	$result  = 'error';
 	$message = 'query error';
 } else {
 	$result  = 'success';
-	$message = 'query success';   
-	$rowband = mysqli_fetch_array($resBand);                                                              
-	$mysql_data[] = array(                           
+	$message = 'query success';
+	$rowband = mysqli_fetch_array($resBand);
+	$mysql_data[] = array(
 		"ubicacion"           => $rowband['ubicacion'],
 		"telefono_ubicacion"  => $rowband['telefono_ubicacion'],
 		"correo_ubicacion"    => $rowband['correo_ubicacion'],
@@ -28,40 +28,40 @@ if (!$resBand){
 		"horario_2_ubicacion" => $rowband['horario_2_ubicacion'],
 		"horario_3_ubicacion" => $rowband['horario_3_ubicacion'],
 		"direccion_ubicacion" => $rowband['direccion_ubicacion']
-	);            
+	);
 }
 
 //DATOS HISTORIA
-$queryhist =  "SELECT * FROM empresa WHERE id_empresa = 1"; 
-$reshist = mysqli_query($con, $queryhist);        
+$queryhist =  "SELECT * FROM empresa WHERE id_empresa = 1";
+$reshist = mysqli_query($con, $queryhist);
 if (!$reshist){
 	$result  = 'error';
 	$message = 'query error';
 } else {
 	$result  = 'success';
-	$message = 'query success';   
-	$rowhist = mysqli_fetch_array($reshist);                                                              
-	$mysql_data[] = array(                           
+	$message = 'query success';
+	$rowhist = mysqli_fetch_array($reshist);
+	$mysql_data[] = array(
 		"texto_principal_linea1"     => $rowhist['texto_principal_linea1'],
 		"texto_principal_linea2"     => $rowhist['texto_principal_linea2'],
 		"texto_principal_linea3"     => $rowhist['texto_principal_linea3'],
 		"url_video_principal"        => $rowhist['url_video_principal'],
 		"mensaje_principal_contacto" => $rowhist['mensaje_principal_contacto'],
 		"texto_historia"             => $rowhist['texto_historia']
-	);            
+	);
 }
 
 //ULTIMOS TRES POST
 $queryblog =  "SELECT * FROM blog b
 INNER JOIN users u ON b.fk_id_user = u.id
-ORDER BY b.id_nota_blog DESC LIMIT 3"; 
-$resblog = mysqli_query($con, $queryblog);        
+ORDER BY b.id_nota_blog DESC LIMIT 3";
+$resblog = mysqli_query($con, $queryblog);
 // if (!$resblog){
 // 	$result  = 'error';
 // 	$message = 'query error';
 // } else {
 // 	$result  = 'success';
-// 	$message = 'query success';       
+// 	$message = 'query success';
 // }
 
 ?>
@@ -78,22 +78,22 @@ $resblog = mysqli_query($con, $queryblog);
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
-	
+
 	<!-- FAVICONS ICON -->
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-	
+
 	<!-- PAGE TITLE HERE -->
 	<title> La Posta - Galería</title>
-	
+
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	
+
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
@@ -156,16 +156,16 @@ $resblog = mysqli_query($con, $queryblog);
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li class=""> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="productos.php">Productos<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="blog.php">Blog<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="blog.php">Blog<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class="active"> <a href="galeria.php">Galería<i class="fa fa-chevron-down"></i></a>									
-                            </li>								
+                            <li class="active"> <a href="galeria.php">Galería<i class="fa fa-chevron-down"></i></a>
+                            </li>
                             <li> <a href="javascript:;">Contacto<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
                                     <li><a href="contacto/contacto-banderilla.php">Banderilla</a></li>
@@ -219,17 +219,28 @@ $resblog = mysqli_query($con, $queryblog);
                             <a href="#" class="site-button-secondry"><span>BANDERILLA</span></a> </li>
                         <li data-filter="mataoscura" class="btn">
                             <input type="radio">
-                            <a href="#" class="site-button-secondry "><span>MATA OSCURA</span></a> </li>                        
+                            <a href="#" class="site-button-secondry "><span>MATA OSCURA</span></a> </li>
                     </ul>
                 </div>
                 <div class="clearfix">
                     <ul id="masonry" class="row dez-gallery-listing gallery-grid-4 mfp-gallery m-b0">
+                        <!--VIDEO YOUTUBE
+                        <li data-filter="" class="home acajete card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="https://i.ytimg.com/vi/LETEqk5W3pA/hqdefault.jpg"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"><a target="_blank" href="https://www.youtube.com/watch?v=LETEqk5W3pA"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="https://i.ytimg.com/vi/LETEqk5W3pA/hqdefault.jpg" class="mfp-link"  title="Image title come here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        -->
                         <?php
-                            $querygale =  "SELECT * FROM empresa_galeria_imagenes WHERE activo = 'A'"; 
-                            $resgale = mysqli_query($con, $querygale);  
+                            $querygale =  "SELECT * FROM empresa_galeria_imagenes WHERE activo = 'A'";
+                            $resgale = mysqli_query($con, $querygale);
                         ?>
                         <?php
-                        while ($rowgale = mysqli_fetch_array($resgale)) {                                                                 
+                        while ($rowgale = mysqli_fetch_array($resgale)) {
                         ?>
                         <li data-filter="" class="home <?php echo $rowgale['ubicacion']; ?> card-container col-lg-4 col-md-6 col-6">
                             <div class="dez-box dez-gallery-box">
@@ -530,13 +541,13 @@ $resblog = mysqli_query($con, $queryblog);
                             <div class="dez-separator bg-primary"></div>
                             <div class="widget-post-bx">
                                 <!--
-                                $mysql_data[] = array(                           
+                                $mysql_data[] = array(
                                         "texto_principal_linea1"     => $rowblog['texto_principal_linea1'],
-                                        "texto_principal_linea2"     => $rowblog['texto_principal_linea2']		
-                                );  
-                                -->          
+                                        "texto_principal_linea2"     => $rowblog['texto_principal_linea2']
+                                );
+                                -->
                                 <?php
-                                while ($rowblog = mysqli_fetch_array($resblog)) {                                                                 
+                                while ($rowblog = mysqli_fetch_array($resblog)) {
                                 ?>
                                 <div class="widget-post clearfix">
                                     <div class="dez-post-media"> <img src="blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
