@@ -66,7 +66,7 @@ function obtener_edad_segun_fecha($fecha_nacimiento)
 $fechas = ['1987-01-01'];
 $anioservicio = 0;
 foreach($fechas as $fecha){
-	printf("Edad para %s: %d\n", $fecha, obtener_edad_segun_fecha($fecha));
+	//printf("Edad para %s: %d\n", $fecha, obtener_edad_segun_fecha($fecha));
 	$anioservicio = obtener_edad_segun_fecha($fecha);
 }
 
