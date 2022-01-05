@@ -178,15 +178,15 @@
                         <div class="col s12 m6 l6 right-align-md">
                             <ol class="breadcrumbs mb-0">
                                 <li class="breadcrumb-item"><a href="main.php">Home</a>
-                                </li>                               
+                                </li>
                                 <li class="breadcrumb-item active">Editar Galería
                                 </li>
                             </ol>
                         </div>
                     </div>
                     <div class="col s12 m12 l12 ">
-                        <a id="add_descimagen" href="#modalDescImagen" class="waves-effect waves-light breadcrumbs-btn right btn modal-trigger" style="display:block;">AGREGAR</a>                            
-                        <ul class="dropdown-content" id="dropdown1" tabindex="0">                            
+                        <a id="add_descimagen" href="#modalDescImagen" class="waves-effect waves-light breadcrumbs-btn right btn modal-trigger" style="display:block;">AGREGAR</a>
+                        <ul class="dropdown-content" id="dropdown1" tabindex="0">
                         </ul>
                     </div>
                 </div>
@@ -205,15 +205,16 @@
                                             <th>Id</th>
                                             <th>Imagen</th>
                                             <th>Desc.</th>
-                                            <th>Ubicacion</th>                                            
+                                            <th>Ubicacion</th>
+                                            <th>Es video</th>
                                             <th>Estatus</th>
                                             <th>Acciones</th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                                                                           
+
                                         </tbody>
-                                </table>                                
+                                </table>
                                 <!-- datatable ends -->
                             </div>
                         </div>
@@ -229,7 +230,7 @@
                     </div>
                 </div>
                 <div class="content-overlay"></div>
-            </div>          
+            </div>
         </div>
     </div>
     <!-- END: Page Main-->
@@ -241,28 +242,38 @@
                 <div class="row">
                     <div class="input-field col s6 txtDescripcion">
                         <input id="txtDescImagen" name="txtDescImagen" type="text" placeholder="">
-                        <label for="txtDescImagen">Descripción imagen</label>                            
-                    </div>    
+                        <label for="txtDescImagen">Descripción imagen</label>
+                    </div>
                     <div class="input-field col s4">
                         <select id="slUbicacion" name="slUbicacion">
                             <option value="" disabled selected>Seleccione</option>
                             <option value="ACAJETE">ACAJETE</option>
                             <option value="BANDERILLA">BANDERILLA</option>
-                            <option value="MATAOSCURA">MATAOSCURA</option>                            
+                            <option value="MATAOSCURA">MATAOSCURA</option>
                         </select>
                         <label>UBICACIÓN</label>
-                    </div>                    
-                    <div class="col s2 bloqueo">                            
+                    </div>
+                    <div class="col s2 bloqueo">
+                        <div class="switch">ES VIDEO :
+                            <label>Off<input type="checkbox" value="I" id="swEsVideo" name="swEsVideo"><span class="lever"></span> On</label>
+                        </div>
+                        <br>
                         <div class="switch">Activa :
                             <label>Off<input type="checkbox" value="A" id="swActivo" name="swActivo"><span class="lever"></span> On</label>
                         </div>
-                    </div>                                           
-                </div>      
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 txtUrlvideoYoutube">
+                        <input id="txtUrlvideoYoutube" name="txtUrlvideoYoutube" type="text" placeholder="">
+                        <label for="txtUrlvideoYoutube">URL Video Youtube</label>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col s12">
                         <img id="imggaleriaSel" width="50%" height="50%" class="responsive-img" src="" alt="">
                     </div>
-                </div>            
+                </div>
             </form>
         </div>
         <div class="modal-footer">
@@ -279,25 +290,25 @@
                     <form id="submitForm">
                         <input type="hidden" id="hdidgaleria" name="hdidgaleria">
                         <input type="hidden" id="hdurlact" name="hdurlact">
-                        <input type="hidden" id="hdimgact" name="hdimgact">                        
+                        <input type="hidden" id="hdimgact" name="hdimgact">
                         <div class="form-group">
                         <label for="file">Select File</label>
                         <input type="file" class="form-control" name="file" id="image" required="">
                         </div>
                         <div class="form-group">
                         <button type="submit" class="btn btn-success btn btn-block">Upload</button>
-                        </div>  
+                        </div>
                     </form>
-                </div>                    
-            </div>     
+                </div>
+            </div>
             <div class="row">
-                <div class="col-md-4"></div>  
+                <div class="col-md-4"></div>
                 <div class="card col-md-4" id="preview" style="display: none;">
                     <div class="card-body" id="imageView">
-                            
+
                     </div>
-                </div>    
-            </div>           
+                </div>
+            </div>
         </div>
 
     <!-- BEGIN: Footer-->

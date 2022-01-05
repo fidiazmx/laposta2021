@@ -241,6 +241,8 @@ $resblog = mysqli_query($con, $queryblog);
                         ?>
                         <?php
                         while ($rowgale = mysqli_fetch_array($resgale)) {
+                            if ($rowgale['es_video'] != 'A') {
+
                         ?>
                         <li data-filter="" class="home <?php echo $rowgale['ubicacion']; ?> card-container col-lg-4 col-md-6 col-6">
                             <div class="dez-box dez-gallery-box">
@@ -252,6 +254,19 @@ $resblog = mysqli_query($con, $queryblog);
                             </div>
                         </li>
                         <?php
+                            } else if ($rowgale['es_video'] == 'A') {
+                        ?>
+                        <li data-filter="" class="home <?php echo $rowgale['ubicacion']; ?> card-container col-lg-4 col-md-6 col-6">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect zoom-slow"> <a href="javascript:void(0);"> <img src="https://i.ytimg.com/vi/<?php echo substr($rowgale['url_video_galeria'],32,11); ?>/hqdefault.jpg"  alt=""> </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"><a target="_blank" href="<?php echo $rowgale['url_video_galeria'];?>"> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="https://i.ytimg.com/vi/<?php echo substr($rowgale['url_video_galeria'],32,11); ?>/hqdefault.jpg" class="mfp-link"  title="<?php echo $rowgale['desc_imagen']; ?>"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <?php
+                            }
                         }
                         ?>
                         <!--

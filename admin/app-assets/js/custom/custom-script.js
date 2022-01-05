@@ -17,9 +17,9 @@ $( document ).ready(function() {
 		$("#spanUsuario").text(sessionStorage.getItem("usuario") + " ["+ sessionStorage.getItem("descrol") + "]");
 	}
 
-	$(".switch").find("input[type=checkbox]").on("change",function() {        
+	$(".switch").find("input[type=checkbox]").on("change",function() {
 		var id = this.id;
-		if (id == "swActivo") {
+		if (id == "swActivo" || id == "swEsVideo") {
 			if($("#"+id).is(":checked")) {
 				$("#"+id).val('A');
 			} else {
@@ -29,8 +29,8 @@ $( document ).ready(function() {
 	});
 
 	$( "#btnCerrarSesion" ).click(function(e) {
-		e.preventDefault();   
+		e.preventDefault();
 		sessionStorage.clear();
 		window.location.href = "index.php";
-	});	
+	});
 });
