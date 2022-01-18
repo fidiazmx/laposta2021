@@ -11,16 +11,16 @@ if (mysqli_connect_errno()){
 }
 
 //DATOS BANDERILLA
-$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'ACAJETE'"; 
-$resBand = mysqli_query($con, $queryBand);        
+$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'ACAJETE'";
+$resBand = mysqli_query($con, $queryBand);
 if (!$resBand){
 	$result  = 'error';
 	$message = 'query error';
 } else {
 	$result  = 'success';
-	$message = 'query success';   
-	$rowband = mysqli_fetch_array($resBand);                                                              
-	$mysql_data[] = array(                           
+	$message = 'query success';
+	$rowband = mysqli_fetch_array($resBand);
+	$mysql_data[] = array(
 		"ubicacion"           => $rowband['ubicacion'],
 		"telefono_ubicacion"  => $rowband['telefono_ubicacion'],
 		"correo_ubicacion"    => $rowband['correo_ubicacion'],
@@ -28,40 +28,40 @@ if (!$resBand){
 		"horario_2_ubicacion" => $rowband['horario_2_ubicacion'],
 		"horario_3_ubicacion" => $rowband['horario_3_ubicacion'],
 		"direccion_ubicacion" => $rowband['direccion_ubicacion']
-	);            
+	);
 }
 
 //DATOS HISTORIA
-$queryhist =  "SELECT * FROM empresa WHERE id_empresa = 1"; 
-$reshist = mysqli_query($con, $queryhist);        
+$queryhist =  "SELECT * FROM empresa WHERE id_empresa = 1";
+$reshist = mysqli_query($con, $queryhist);
 if (!$reshist){
 	$result  = 'error';
 	$message = 'query error';
 } else {
 	$result  = 'success';
-	$message = 'query success';   
-	$rowhist = mysqli_fetch_array($reshist);                                                              
-	$mysql_data[] = array(                           
+	$message = 'query success';
+	$rowhist = mysqli_fetch_array($reshist);
+	$mysql_data[] = array(
 		"texto_principal_linea1"     => $rowhist['texto_principal_linea1'],
 		"texto_principal_linea2"     => $rowhist['texto_principal_linea2'],
 		"texto_principal_linea3"     => $rowhist['texto_principal_linea3'],
 		"url_video_principal"        => $rowhist['url_video_principal'],
 		"mensaje_principal_contacto" => $rowhist['mensaje_principal_contacto'],
 		"texto_historia"             => $rowhist['texto_historia']
-	);            
+	);
 }
 
 //ULTIMOS TRES POST
 $queryblog =  "SELECT * FROM blog b
 INNER JOIN users u ON b.fk_id_user = u.id
-ORDER BY b.id_nota_blog DESC LIMIT 3"; 
-$resblog = mysqli_query($con, $queryblog);        
+ORDER BY b.id_nota_blog DESC LIMIT 3";
+$resblog = mysqli_query($con, $queryblog);
 // if (!$resblog){
 // 	$result  = 'error';
 // 	$message = 'query error';
 // } else {
 // 	$result  = 'success';
-// 	$message = 'query success';       
+// 	$message = 'query success';
 // }
 
 
@@ -79,22 +79,22 @@ $resblog = mysqli_query($con, $queryblog);
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
-	
+
 	<!-- FAVICONS ICON -->
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-	
+
 	<!-- PAGE TITLE HERE -->
 	<title> La Posta - Contacto</title>
-	
+
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	
+
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="../css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.min.css">
@@ -157,16 +157,16 @@ $resblog = mysqli_query($con, $queryblog);
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li class=""> <a href="../index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../index.php">Inicio<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="../nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="../productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../productos.php">Productos<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="../blog.php">Blog<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../blog.php">Blog<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="../galeria.php">Galería<i class="fa fa-chevron-down"></i></a>									
-                            </li>								
+                            <li class=""> <a href="../galeria.php">Galería<i class="fa fa-chevron-down"></i></a>
+                            </li>
                             <li> <a href="javascript:;">Contacto<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
                                     <li><a href="contacto-banderilla.php">Banderilla</a></li>
@@ -205,7 +205,7 @@ $resblog = mysqli_query($con, $queryblog);
         <!-- Breadcrumb row END -->
         <!-- contact area -->
         <div class="section-full content-inner bg-white contact-style-1">
-			<div class="container">                
+			<div class="container">
                 <div class="row">
                     <br>
                 </div>
@@ -226,7 +226,7 @@ $resblog = mysqli_query($con, $queryblog);
                                     </div>
                                     <div class="col-lg-6 col-sm-6">
                                         <div class="form-group">
-                                            <div class="input-group"> 
+                                            <div class="input-group">
 											    <input name="dzEmail" type="email" class="form-control" required  placeholder="Email..." >
                                             </div>
                                         </div>
@@ -284,7 +284,7 @@ $resblog = mysqli_query($con, $queryblog);
                                         </div>
                                         <div class="col-lg-6 col-sm-6">
                                             <div class="form-group">
-                                                <div class="input-group"> 
+                                                <div class="input-group">
                                                     <input name="dzEmail" type="email" class="form-control" required  placeholder="Email" >
                                                 </div>
                                             </div>
@@ -396,13 +396,13 @@ $resblog = mysqli_query($con, $queryblog);
                             <div class="dez-separator bg-primary"></div>
                             <div class="widget-post-bx">
                                 <!--
-                                $mysql_data[] = array(                           
+                                $mysql_data[] = array(
                                         "texto_principal_linea1"     => $rowblog['texto_principal_linea1'],
-                                        "texto_principal_linea2"     => $rowblog['texto_principal_linea2']		
-                                );  
-                                -->          
+                                        "texto_principal_linea2"     => $rowblog['texto_principal_linea2']
+                                );
+                                -->
                                 <?php
-                                while ($rowblog = mysqli_fetch_array($resblog)) {                                                                 
+                                while ($rowblog = mysqli_fetch_array($resblog)) {
                                 ?>
                                 <div class="widget-post clearfix">
                                     <div class="dez-post-media"> <img src="../blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
@@ -472,7 +472,7 @@ $resblog = mysqli_query($con, $queryblog);
                             <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="productos/vacas/vacas.php">Alimento Vacas</a></li>
+                                <li><a href="productos/vacas/vacas.php">Alimento Bovinos</a></li>
                                 <li><a href="productos/cerdos/cerdos.php">Alimento Cerdos</a></li>
                                 <li><a href="productos/caballos/caballos.php">Alimento Caballos</a></li>
                                 <li><a href="productos/borregos/borregos.php">Alimento Borregos</a></li>

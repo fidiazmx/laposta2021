@@ -632,7 +632,7 @@ $resblog = mysqli_query($con, $queryblog);
                             <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="productos/vacas/vacas.php">Alimento Vacas</a></li>
+                                <li><a href="productos/vacas/vacas.php">Alimento Bovinos</a></li>
                                 <li><a href="productos/cerdos/cerdos.php">Alimento Cerdos</a></li>
                                 <li><a href="productos/caballos/caballos.php">Alimento Caballos</a></li>
                                 <li><a href="productos/borregos/borregos.php">Alimento Borregos</a></li>

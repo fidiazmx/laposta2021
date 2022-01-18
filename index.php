@@ -348,7 +348,7 @@ foreach($fechas as $fecha){
 								</a>
 							</div>
 							<div class="icon-content">
-								<h2 class="dez-tilte text-primary">Vacas</h2>
+								<h2 class="dez-tilte text-primary">Bovinos</h2>
 								<!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>-->
 								<a href="productos/vacas/vacas.php" class="site-button italic light-gray">Ver más..</a>
 							</div>
@@ -637,7 +637,7 @@ foreach($fechas as $fecha){
 									<div class="col-lg-4 col-md-4 col-sm-4 col-12 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="2s">
 										<div class="counter-style-2">
 											<span class="counter"><?php echo $row['kg_alimento'];?></span>
-											<span class="counter-text text-primary">Kg Alimento</span>
+											<span class="counter-text text-primary">Toneladas de Alimento</span>
 										</div>
 									</div>
 								</div>

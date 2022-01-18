@@ -11,16 +11,16 @@ if (mysqli_connect_errno()){
 }
 
 //DATOS BANDERILLA
-$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'BANDERILLA'"; 
-$resBand = mysqli_query($con, $queryBand);        
+$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'BANDERILLA'";
+$resBand = mysqli_query($con, $queryBand);
 if (!$resBand){
 	$result  = 'error';
 	$message = 'query error';
 } else {
 	$result  = 'success';
-	$message = 'query success';   
-	$rowband = mysqli_fetch_array($resBand);                                                              
-	$mysql_data[] = array(                           
+	$message = 'query success';
+	$rowband = mysqli_fetch_array($resBand);
+	$mysql_data[] = array(
 		"ubicacion"           => $rowband['ubicacion'],
 		"telefono_ubicacion"  => $rowband['telefono_ubicacion'],
 		"correo_ubicacion"    => $rowband['correo_ubicacion'],
@@ -28,40 +28,40 @@ if (!$resBand){
 		"horario_2_ubicacion" => $rowband['horario_2_ubicacion'],
 		"horario_3_ubicacion" => $rowband['horario_3_ubicacion'],
 		"direccion_ubicacion" => $rowband['direccion_ubicacion']
-	);            
+	);
 }
 
 //DATOS HISTORIA
-$queryhist =  "SELECT * FROM empresa WHERE id_empresa = 1"; 
-$reshist = mysqli_query($con, $queryhist);        
+$queryhist =  "SELECT * FROM empresa WHERE id_empresa = 1";
+$reshist = mysqli_query($con, $queryhist);
 if (!$reshist){
 	$result  = 'error';
 	$message = 'query error';
 } else {
 	$result  = 'success';
-	$message = 'query success';   
-	$rowhist = mysqli_fetch_array($reshist);                                                              
-	$mysql_data[] = array(                           
+	$message = 'query success';
+	$rowhist = mysqli_fetch_array($reshist);
+	$mysql_data[] = array(
 		"texto_principal_linea1"     => $rowhist['texto_principal_linea1'],
 		"texto_principal_linea2"     => $rowhist['texto_principal_linea2'],
 		"texto_principal_linea3"     => $rowhist['texto_principal_linea3'],
 		"url_video_principal"        => $rowhist['url_video_principal'],
 		"mensaje_principal_contacto" => $rowhist['mensaje_principal_contacto'],
 		"texto_historia"             => $rowhist['texto_historia']
-	);            
+	);
 }
 
 //ULTIMOS TRES POST
 $queryblog =  "SELECT * FROM blog b
 INNER JOIN users u ON b.fk_id_user = u.id
-ORDER BY b.id_nota_blog DESC LIMIT 3"; 
-$resblog = mysqli_query($con, $queryblog);        
+ORDER BY b.id_nota_blog DESC LIMIT 3";
+$resblog = mysqli_query($con, $queryblog);
 // if (!$resblog){
 // 	$result  = 'error';
 // 	$message = 'query error';
 // } else {
 // 	$result  = 'success';
-// 	$message = 'query success';       
+// 	$message = 'query success';
 // }
 
 ?>
@@ -78,22 +78,22 @@ $resblog = mysqli_query($con, $queryblog);
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
-	
+
 	<!-- FAVICONS ICON -->
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-	
+
 	<!-- PAGE TITLE HERE -->
 	<title> La Posta - Blog</title>
-	
+
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	
+
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
@@ -156,16 +156,16 @@ $resblog = mysqli_query($con, $queryblog);
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li class=""> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="productos.php">Productos<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class="active"> <a href="blog.php">Blog<i class="fa fa-chevron-down"></i></a>									
+                            <li class="active"> <a href="blog.php">Blog<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="galeria.php">Galería<i class="fa fa-chevron-down"></i></a>									
-                            </li>								
+                            <li class=""> <a href="galeria.php">Galería<i class="fa fa-chevron-down"></i></a>
+                            </li>
                             <li> <a href="javascript:;">Contacto<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
                                     <li><a href="contacto/contacto-banderilla.php">Banderilla</a></li>
@@ -206,14 +206,14 @@ $resblog = mysqli_query($con, $queryblog);
             <div class="container">
                 <!-- Blog half image -->
                 <?php
-                    $queryblogdet =  "select * 
+                    $queryblogdet =  "select *
                     from blog b
                     INNER JOIN users u ON b.fk_id_user = u.id
-                    WHERE activo = 'A'"; 
-                    $resblogdet = mysqli_query($con, $queryblogdet);    
+                    WHERE activo = 'A'";
+                    $resblogdet = mysqli_query($con, $queryblogdet);
                 ?>
                 <?php
-                while ($rowblogdet = mysqli_fetch_array($resblogdet)) {                                                                 
+                while ($rowblogdet = mysqli_fetch_array($resblogdet)) {
                 ?>
                 <div class="blog-post blog-md clearfix">
                     <div class="dez-post-media dez-img-effect zoom-slow"> <a href="#"><img src="images/banner/bnr1.jpg" alt=""></a> </div>
@@ -232,10 +232,10 @@ $resblog = mysqli_query($con, $queryblog);
 						<div class="dez-post-text">
 							<p><?php echo substr($rowblogdet['texto_nota'], 0, 100); ?></p>
 						</div>
-						<div class="dez-post-readmore"> 
-							<a href="blog-single.php?idblog=<?php echo $rowblogdet['id_nota_blog']; ?>" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a> 
+						<div class="dez-post-readmore">
+							<a href="blog-single.php?idblog=<?php echo $rowblogdet['id_nota_blog']; ?>" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a>
 						</div>
-						
+
 					</div>
                 </div>
                 <?php
@@ -260,10 +260,10 @@ $resblog = mysqli_query($con, $queryblog);
                             El subsector agrícola mexicano proporciona la mayoría de los insumos para alimentar al ganado mexicano, lo que da como resultado colocar a México en el 7mo lugar a nivel mundial en la producción de proteína animal
 							</p>
 						</div>
-						<div class="dez-post-readmore"> 
-							<a href="blog-single.php" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a> 
+						<div class="dez-post-readmore">
+							<a href="blog-single.php" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a>
 						</div>
-						
+
 					</div>
                 </div>
                 <div class="blog-post blog-md clearfix">
@@ -284,10 +284,10 @@ $resblog = mysqli_query($con, $queryblog);
                             La producción anual de alimentos balanceados para animales ha mantenido un crecimiento promedio de 4% durante los últimos cuatro años, lo cual ha generado beneficios directos, principalmente al sector pecuario, al cubrir la demanda de esta materia prima que requieren para garantizar una proteína animal de calidad para los mexicanos.
 							</p>
 						</div>
-						<div class="dez-post-readmore"> 
-							<a href="blog-single-2.php" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a> 
+						<div class="dez-post-readmore">
+							<a href="blog-single-2.php" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a>
 						</div>
-						
+
 					</div>
                 </div>
 				<div class="blog-post blog-md clearfix">
@@ -308,9 +308,9 @@ $resblog = mysqli_query($con, $queryblog);
                             Nuestro país tiene una privilegiada posición internacional con una producción anual de alrededor de 38 millones de toneladas anuales.
 							</p>
 						</div>
-						<div class="dez-post-readmore"> 
-							<a href="blog-single-3.php" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a> 
-						</div>						
+						<div class="dez-post-readmore">
+							<a href="blog-single-3.php" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a>
+						</div>
 					</div>
                 </div>
                 -->
@@ -353,13 +353,13 @@ $resblog = mysqli_query($con, $queryblog);
                             <div class="dez-separator bg-primary"></div>
                             <div class="widget-post-bx">
                                 <!--
-                                $mysql_data[] = array(                           
+                                $mysql_data[] = array(
                                         "texto_principal_linea1"     => $rowblog['texto_principal_linea1'],
-                                        "texto_principal_linea2"     => $rowblog['texto_principal_linea2']		
-                                );  
-                                -->          
+                                        "texto_principal_linea2"     => $rowblog['texto_principal_linea2']
+                                );
+                                -->
                                 <?php
-                                while ($rowblog = mysqli_fetch_array($resblog)) {                                                                 
+                                while ($rowblog = mysqli_fetch_array($resblog)) {
                                 ?>
                                 <div class="widget-post clearfix">
                                     <div class="dez-post-media"> <img src="blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
@@ -429,7 +429,7 @@ $resblog = mysqli_query($con, $queryblog);
                             <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="productos/vacas/vacas.php">Alimento Vacas</a></li>
+                                <li><a href="productos/vacas/vacas.php">Alimento Bovinos</a></li>
                                 <li><a href="productos/cerdos/cerdos.php">Alimento Cerdos</a></li>
                                 <li><a href="productos/caballos/caballos.php">Alimento Caballos</a></li>
                                 <li><a href="productos/borregos/borregos.php">Alimento Borregos</a></li>

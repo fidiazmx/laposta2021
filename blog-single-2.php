@@ -11,22 +11,22 @@
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
-	
+
 	<!-- FAVICONS ICON -->
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-	
+
 	<!-- PAGE TITLE HERE -->
 	<title> La posta - México ya es 5° productor mundial de alimentos balanceados para animales</title>
-	
+
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	
+
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
@@ -89,17 +89,17 @@
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li class=""> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li> <a href="nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
+                            <li> <a href="nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="productos.php">Productos<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="blog.php">Blog<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="blog.php">Blog<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="galeria.php">Galería<i class="fa fa-chevron-down"></i></a>									
-                            </li>								
-                            <li class=""> <a href="contacto.php">Contacto<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="galeria.php">Galería<i class="fa fa-chevron-down"></i></a>
+                            </li>
+                            <li class=""> <a href="contacto.php">Contacto<i class="fa fa-chevron-down"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -168,10 +168,10 @@
                         En la Encuesta Alltech encontramos, específicamente en el sector pecuario, que México, Chile, Argentina y Colombia registraron un aumento en la producción de alimento balanceado para porcinos, por la demanda de este tipo de proteína durante la contingencia sanitaria por Covid-19. Lo anterior se debe a lo accesible que es este tipo de carne por sus precios moderados.
                         </p>
                         <p>
-                        Para CONAFAB la seguridad alimentaria no solo tiene que ver con la cantidad de alimento, también involucra calidad, inocuidad y trazabilidad del producto en todas las fases de la producción de proteína animal así como en la alimentación de pequeñas especies.    
-                        </p>                        
+                        Para CONAFAB la seguridad alimentaria no solo tiene que ver con la cantidad de alimento, también involucra calidad, inocuidad y trazabilidad del producto en todas las fases de la producción de proteína animal así como en la alimentación de pequeñas especies.
+                        </p>
                         <p>Fuente: https://bmeditores.mx/ganaderia/articulos-ganaderia/mexico-ya-es-5-productor-mundial-de-alimentos-balanceados-para-animales/</p>
-                    </div>                    
+                    </div>
                 </div>
                 <!-- blog END -->
             </div>
@@ -252,7 +252,7 @@
                             <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="productos/vacas/vacas.php">Alimento Vacas</a></li>
+                                <li><a href="productos/vacas/vacas.php">Alimento Bovinos</a></li>
                                 <li><a href="productos/cerdos/cerdos.php">Alimento Cerdos</a></li>
                                 <li><a href="productos/caballos/caballos.php">Alimento Caballos</a></li>
                                 <li><a href="productos/borregos/borregos.php">Alimento Borregos</a></li>
