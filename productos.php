@@ -64,6 +64,9 @@ $resblog = mysqli_query($con, $queryblog);
 // 	$message = 'query success';
 // }
 
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -211,6 +214,42 @@ $resblog = mysqli_query($con, $queryblog);
                 </div>
                 <div class="section-content">
                     <div class="row">
+                        <?php
+                        $querycat =  "SELECT * FROM categorias;";
+                        $rescat = mysqli_query($con, $querycat);
+                        ?>
+                        <?php
+                        $urlcat = "";
+                        while ($rowcat = mysqli_fetch_array($rescat)) {
+
+                            if ($rowcat['id_categoria'] == 1) {
+                                $urlcat = "bovinos/bovinos.php";
+                            } else if ($rowcat['id_categoria'] == 2) {
+                                $urlcat = "cerdos/cerdos.php";
+                            } else if ($rowcat['id_categoria'] == 3) {
+                                $urlcat = "caballos/caballos.php";
+                            } else if ($rowcat['id_categoria'] == 4) {
+                                $urlcat = "borregos/borregos.php";
+                            } else if ($rowcat['id_categoria'] == 5) {
+                                $urlcat = "aves/aves.php";
+                            }
+
+                        ?>
+                        <div class="col-lg-4 col-sm-6 m-b30">
+							<div class="dez-box">
+								<div class="dez-media"> <a href="#"><img src="images/product/<?php echo $rowcat['imagen_categoria']; ?>" alt=""></a> </div>
+								<div class="dez-info p-a20 text-center bg-gray">
+									<div class="p-lr20">
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/<?php echo $urlcat;?>?idcategoria=<?php echo $rowcat['id_categoria']; ?>"><?php echo $rowcat['descripcion_categoria']; ?></a></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+                        <?php
+                        }
+                        ?>
+
+                        <!--
                         <div class="col-lg-4 col-sm-6 m-b30">
 							<div class="dez-box">
 								<div class="dez-media"> <a href="#"><img src="images/product/vaca.jpg" alt=""></a> </div>
@@ -261,6 +300,7 @@ $resblog = mysqli_query($con, $queryblog);
 								</div>
 							</div>
 						</div>
+                        -->
                     </div>
                 </div>
             </div>

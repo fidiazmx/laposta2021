@@ -31,6 +31,10 @@
         </li>
         <li class="bold"><a class="waves-effect waves-cyan " href="editar-nosotros.php">
             <i class="material-icons">people</i><span class="menu-title" data-i18n="Calendar">Nosotros</span></a>
+        </li>
+        <li class="bold"><a class="waves-effect waves-cyan " href="editar-categorias.php">
+            <i class="material-icons">donut_small</i><span class="menu-title" data-i18n="Calendar">Categorías</span></a>
+        </li>
         <li class="bold"><a class="waves-effect waves-cyan " href="editar-productos.php">
             <i class="material-icons">format_list_numbered</i><span class="menu-title" data-i18n="Calendar">Productos</span></a>
         </li>
