@@ -216,7 +216,7 @@ $resblog = mysqli_query($con, $queryblog);
 								<div class="dez-media"> <a href="#"><img src="images/product/vaca.jpg" alt=""></a> </div>
 								<div class="dez-info p-a20 text-center bg-gray">
 									<div class="p-lr20">
-										<h4 class="m-a0 bg-primary service-head"><a href="productos/vacas/vacas.php?idcategoria=1">Bovinos</a></h4>
+										<h4 class="m-a0 bg-primary service-head"><a href="productos/bovinos/bovinos.php?idcategoria=1">Bovinos</a></h4>
 									</div>
 								</div>
 							</div>
