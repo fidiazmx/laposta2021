@@ -11,16 +11,16 @@ if (mysqli_connect_errno()){
 }
 
 //DATOS BANDERILLA
-$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'BANDERILLA'"; 
-$resBand = mysqli_query($con, $queryBand);        
+$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'BANDERILLA'";
+$resBand = mysqli_query($con, $queryBand);
 if (!$resBand){
 	$result  = 'error';
 	$message = 'query error';
 } else {
 	$result  = 'success';
-	$message = 'query success';   
-	$rowband = mysqli_fetch_array($resBand);                                                              
-	$mysql_data[] = array(                           
+	$message = 'query success';
+	$rowband = mysqli_fetch_array($resBand);
+	$mysql_data[] = array(
 		"ubicacion"           => $rowband['ubicacion'],
 		"telefono_ubicacion"  => $rowband['telefono_ubicacion'],
 		"correo_ubicacion"    => $rowband['correo_ubicacion'],
@@ -28,38 +28,38 @@ if (!$resBand){
 		"horario_2_ubicacion" => $rowband['horario_2_ubicacion'],
 		"horario_3_ubicacion" => $rowband['horario_3_ubicacion'],
 		"direccion_ubicacion" => $rowband['direccion_ubicacion']
-	);            
+	);
 }
 
 //detalle producto
-$querydetProd =  "SELECT * FROM productos WHERE id_producto = ".$_GET['idproducto']." "; 
-$resProd = mysqli_query($con, $querydetProd);    
-$rowProd = mysqli_fetch_array($resProd);                                                              
+$querydetProd =  "SELECT * FROM productos WHERE id_producto = ".$_GET['idproducto']." ";
+$resProd = mysqli_query($con, $querydetProd);
+$rowProd = mysqli_fetch_array($resProd);
 
 //ULTIMOS TRES POST
 $queryblog =  "SELECT * FROM blog b
 INNER JOIN users u ON b.fk_id_user = u.id
-ORDER BY b.id_nota_blog DESC LIMIT 3"; 
-$resblog = mysqli_query($con, $queryblog);     
+ORDER BY b.id_nota_blog DESC LIMIT 3";
+$resblog = mysqli_query($con, $queryblog);
 
 //DATOS HISTORIA
-$queryhist =  "SELECT * FROM empresa WHERE id_empresa = 1"; 
-$reshist = mysqli_query($con, $queryhist);        
+$queryhist =  "SELECT * FROM empresa WHERE id_empresa = 1";
+$reshist = mysqli_query($con, $queryhist);
 if (!$reshist){
 	$result  = 'error';
 	$message = 'query error';
 } else {
 	$result  = 'success';
-	$message = 'query success';   
-	$rowhist = mysqli_fetch_array($reshist);                                                              
-	$mysql_data[] = array(                           
+	$message = 'query success';
+	$rowhist = mysqli_fetch_array($reshist);
+	$mysql_data[] = array(
 		"texto_principal_linea1"     => $rowhist['texto_principal_linea1'],
 		"texto_principal_linea2"     => $rowhist['texto_principal_linea2'],
 		"texto_principal_linea3"     => $rowhist['texto_principal_linea3'],
 		"url_video_principal"        => $rowhist['url_video_principal'],
 		"mensaje_principal_contacto" => $rowhist['mensaje_principal_contacto'],
 		"texto_historia"             => $rowhist['texto_historia']
-	);            
+	);
 }
 
 ?>
@@ -76,22 +76,22 @@ if (!$reshist){
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
-	
+
 	<!-- FAVICONS ICON -->
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-	
+
 	<!-- PAGE TITLE HERE -->
 	<title> La Posta - <?php echo $rowProd["descripcion_producto"]; ?></title>
-	
+
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	
+
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="../../css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
@@ -154,16 +154,16 @@ if (!$reshist){
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
+                            <li> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="../../nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../../nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="../../productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../../productos.php">Productos<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="../../blog.php">Blog<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../../blog.php">Blog<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="../../galeria.php">Galería<i class="fa fa-chevron-down"></i></a>									
-                            </li>								
+                            <li class=""> <a href="../../galeria.php">Galería<i class="fa fa-chevron-down"></i></a>
+                            </li>
                             <li> <a href="javascript:;">Contacto<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
                                     <li><a href="contacto/contacto-banderilla.php">Banderilla</a></li>
@@ -180,7 +180,7 @@ if (!$reshist){
     </header>
     <!-- header END -->
     <!-- Content -->
-    <div class="page-content">    
+    <div class="page-content">
         <!-- inner page banner -->
         <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(images/banner/breadcrubs-productos.png);">
             <div class="container">
@@ -189,7 +189,7 @@ if (!$reshist){
                 </div>
             </div>
         </div>
-        <!-- inner page banner END -->    
+        <!-- inner page banner END -->
         <!-- Breadcrumb row -->
         <div class="breadcrumb-row">
             <div class="container">
@@ -253,7 +253,7 @@ if (!$reshist){
                             </ul>
                             <div class="tab-content">
                                 <div id="ingredientes" class="tab-pane active">
-                                    <p><?php echo $rowProd["ingredientes"]; ?></p>        
+                                    <p><?php echo $rowProd["ingredientes"]; ?></p>
                                 </div>
                                 <div id="indicaciones" class="tab-pane">
                                     <p><?php echo $rowProd["indicaciones"]; ?></p>
@@ -314,7 +314,7 @@ if (!$reshist){
                                                     <div class="comment-form-email">
                                                         <label>Email <span class="required">*</span></label>
                                                         <input type="text" aria-required="true" size="30" value="" name="email" id="email">
-                                                    </div>                                                    
+                                                    </div>
                                                     <div class="comment-form-comment">
                                                         <label>Comentario</label>
                                                         <textarea aria-required="true" rows="8" cols="45" name="comment" id="comment"></textarea>
@@ -360,13 +360,13 @@ if (!$reshist){
                             <div class="dez-separator bg-primary"></div>
                             <div class="widget-post-bx">
                                 <!--
-                                $mysql_data[] = array(                           
+                                $mysql_data[] = array(
                                         "texto_principal_linea1"     => $rowblog['texto_principal_linea1'],
-                                        "texto_principal_linea2"     => $rowblog['texto_principal_linea2']		
-                                );  
-                                -->          
+                                        "texto_principal_linea2"     => $rowblog['texto_principal_linea2']
+                                );
+                                -->
                                 <?php
-                                while ($rowblog = mysqli_fetch_array($resblog)) {                                                                 
+                                while ($rowblog = mysqli_fetch_array($resblog)) {
                                 ?>
                                 <div class="widget-post clearfix">
                                     <div class="dez-post-media"> <img src="../blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
@@ -436,10 +436,10 @@ if (!$reshist){
                             <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="productos/vacas/vacas.php">Alimento Vacas</a></li>
-                                <li><a href="productos/cerdos/cerdos.php">Alimento Cerdos</a></li>
-                                <li><a href="productos/caballos/caballos.php">Alimento Caballos</a></li>
-                                <li><a href="productos/borregos/borregos.php">Alimento Borregos</a></li>
+                                <li><a href="productos/vacas/vacas.php">Alimento Bovinos</a></li>
+                                <li><a href="productos/cerdos/cerdos.php">Alimento Porcinos</a></li>
+                                <li><a href="productos/caballos/caballos.php">Alimento Equinos</a></li>
+                                <li><a href="productos/borregos/borregos.php">Alimento Ovinos</a></li>
                                 <li><a href="productos/aves/aves.php">Alimento Aves</a></li>
                             </ul>
                         </div>

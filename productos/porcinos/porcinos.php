@@ -191,7 +191,7 @@ $restotprod = mysqli_query($con, $querytotprod);
         <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(../../images/banner/breadcumbs-cerdos.png);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
-                    <h1 class="text-white">Cerdos</h1>
+                    <h1 class="text-white">Porcinos</h1>
                 </div>
             </div>
         </div>
@@ -202,7 +202,7 @@ $restotprod = mysqli_query($con, $querytotprod);
                 <ul class="list-inline">
                     <li><a href="#">Inicio</a></li>
                     <li>Productos</li>
-                    <li>Vacas</li>
+                    <li>Porcinos</li>
                 </ul>
             </div>
         </div>
