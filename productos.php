@@ -408,9 +408,9 @@ $resblog = mysqli_query($con, $queryblog);
                             <div class="dez-separator bg-primary"></div>
                             <ul>
                                 <li><a href="productos/vacas/vacas.php">Alimento Bovinos</a></li>
-                                <li><a href="productos/cerdos/cerdos.php">Alimento Cerdos</a></li>
-                                <li><a href="productos/caballos/caballos.php">Alimento Caballos</a></li>
-                                <li><a href="productos/borregos/borregos.php">Alimento Borregos</a></li>
+                                <li><a href="productos/cerdos/cerdos.php">Alimento Porcinos</a></li>
+                                <li><a href="productos/caballos/caballos.php">Alimento Equinoss</a></li>
+                                <li><a href="productos/borregos/borregos.php">Alimento Ovinos</a></li>
                                 <li><a href="productos/aves/aves.php">Alimento Aves</a></li>
                             </ul>
                         </div>
