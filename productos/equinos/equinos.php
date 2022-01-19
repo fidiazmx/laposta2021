@@ -11,16 +11,16 @@ if (mysqli_connect_errno()){
 }
 
 //DATOS BANDERILLA
-$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'BANDERILLA'"; 
-$resBand = mysqli_query($con, $queryBand);        
+$queryBand =  "SELECT * FROM empresa_contacto WHERE ubicacion = 'BANDERILLA'";
+$resBand = mysqli_query($con, $queryBand);
 if (!$resBand){
 	$result  = 'error';
 	$message = 'query error';
 } else {
 	$result  = 'success';
-	$message = 'query success';   
-	$rowband = mysqli_fetch_array($resBand);                                                              
-	$mysql_data[] = array(                           
+	$message = 'query success';
+	$rowband = mysqli_fetch_array($resBand);
+	$mysql_data[] = array(
 		"ubicacion"           => $rowband['ubicacion'],
 		"telefono_ubicacion"  => $rowband['telefono_ubicacion'],
 		"correo_ubicacion"    => $rowband['correo_ubicacion'],
@@ -28,50 +28,50 @@ if (!$resBand){
 		"horario_2_ubicacion" => $rowband['horario_2_ubicacion'],
 		"horario_3_ubicacion" => $rowband['horario_3_ubicacion'],
 		"direccion_ubicacion" => $rowband['direccion_ubicacion']
-	);            
+	);
 }
 
 //DATOS HISTORIA
-$queryhist =  "SELECT * FROM empresa WHERE id_empresa = 1"; 
-$reshist = mysqli_query($con, $queryhist);        
+$queryhist =  "SELECT * FROM empresa WHERE id_empresa = 1";
+$reshist = mysqli_query($con, $queryhist);
 if (!$reshist){
 	$result  = 'error';
 	$message = 'query error';
 } else {
 	$result  = 'success';
-	$message = 'query success';   
-	$rowhist = mysqli_fetch_array($reshist);                                                              
-	$mysql_data[] = array(                           
+	$message = 'query success';
+	$rowhist = mysqli_fetch_array($reshist);
+	$mysql_data[] = array(
 		"texto_principal_linea1"     => $rowhist['texto_principal_linea1'],
 		"texto_principal_linea2"     => $rowhist['texto_principal_linea2'],
 		"texto_principal_linea3"     => $rowhist['texto_principal_linea3'],
 		"url_video_principal"        => $rowhist['url_video_principal'],
 		"mensaje_principal_contacto" => $rowhist['mensaje_principal_contacto'],
 		"texto_historia"             => $rowhist['texto_historia']
-	);            
+	);
 }
 
 //ULTIMOS TRES POST
 $queryblog =  "SELECT * FROM blog b
 INNER JOIN users u ON b.fk_id_user = u.id
-ORDER BY b.id_nota_blog DESC LIMIT 3"; 
-$resblog = mysqli_query($con, $queryblog);     
-$resblog2 = mysqli_query($con, $queryblog);        
+ORDER BY b.id_nota_blog DESC LIMIT 3";
+$resblog = mysqli_query($con, $queryblog);
+$resblog2 = mysqli_query($con, $queryblog);
 // if (!$resblog){
 // 	$result  = 'error';
 // 	$message = 'query error';
 // } else {
 // 	$result  = 'success';
-// 	$message = 'query success';       
+// 	$message = 'query success';
 // }
 
 //TOTAL PRODUCTOS
 $querytotprod =  "SELECT COUNT(*) tot_prod, c.descripcion_categoria
-FROM productos p 
+FROM productos p
 INNER JOIN categorias c ON p.fk_id_categoria = c.id_categoria
 WHERE p.activo = 'A'
-GROUP BY c.id_categoria"; 
-$restotprod = mysqli_query($con, $querytotprod);    
+GROUP BY c.id_categoria";
+$restotprod = mysqli_query($con, $querytotprod);
 ?>
 
 <!DOCTYPE html>
@@ -87,22 +87,22 @@ $restotprod = mysqli_query($con, $querytotprod);
 	<meta property="og:description" content="" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
-	
+
 	<!-- FAVICONS ICON -->
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-	
+
 	<!-- PAGE TITLE HERE -->
 	<title> La Posta - Productos Caballos</title>
-	
+
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.min.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-	
+
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="../../css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style.min.css">
@@ -165,17 +165,17 @@ $restotprod = mysqli_query($con, $querytotprod);
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li class=""> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="../../nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../../nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class="active"> <a href="../../productos.php">Productos<i class="fa fa-chevron-down"></i></a>									
+                            <li class="active"> <a href="../../productos.php">Productos<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="../../blog.php">Blog<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../../blog.php">Blog<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li class=""> <a href="../../galeria.php">Galería<i class="fa fa-chevron-down"></i></a>									
-                            </li>								
-                            <li class=""> <a href="../../contacto.php">Contacto<i class="fa fa-chevron-down"></i></a>									
+                            <li class=""> <a href="../../galeria.php">Galería<i class="fa fa-chevron-down"></i></a>
+                            </li>
+                            <li class=""> <a href="../../contacto.php">Contacto<i class="fa fa-chevron-down"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -186,7 +186,7 @@ $restotprod = mysqli_query($con, $querytotprod);
     </header>
     <!-- header END -->
     <!-- Content -->
-    <div class="page-content">    
+    <div class="page-content">
         <!-- inner page banner -->
         <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(../../images/banner/breadcumbs-caballos.png);">
             <div class="container">
@@ -195,7 +195,7 @@ $restotprod = mysqli_query($con, $querytotprod);
                 </div>
             </div>
         </div>
-        <!-- inner page banner END -->    
+        <!-- inner page banner END -->
         <!-- Breadcrumb row -->
         <div class="breadcrumb-row">
             <div class="container">
@@ -218,7 +218,7 @@ $restotprod = mysqli_query($con, $querytotprod);
 								<div class="dez-info-has p-a20 bg-black no-hover">
 									<div class="clearfix">
 										<h3 class="m-t0 m-b5">We Have The Expertise</h3>
-										<h2>150$<del class="m-lr15">180$</del></h2> 
+										<h2>150$<del class="m-lr15">180$</del></h2>
 									</div>
 									<div class="clearfix">
 										<a href="#" class="site-button">Add To Cart</a>
@@ -233,7 +233,7 @@ $restotprod = mysqli_query($con, $querytotprod);
 								<div class="dez-info-has p-a20 bg-black no-hover">
 									<div class="clearfix">
 										<h3 class="m-t0 m-b5">We Have The Expertise</h3>
-										<h2>910$<del class="m-lr15">2900$</del></h2> 
+										<h2>910$<del class="m-lr15">2900$</del></h2>
 									</div>
 									<div class="clearfix">
 										<a href="#" class="site-button">Add To Cart</a>
@@ -248,7 +248,7 @@ $restotprod = mysqli_query($con, $querytotprod);
 								<div class="dez-info-has p-a20 bg-black no-hover">
 									<div class="clearfix">
 										<h3 class="m-t0 m-b5">We Have The Expertise</h3>
-										<h2>210$<del class="m-lr15">220$</del></h2> 
+										<h2>210$<del class="m-lr15">220$</del></h2>
 									</div>
 									<div class="clearfix">
 										<a href="#" class="site-button">Add To Cart</a>
@@ -269,7 +269,7 @@ $restotprod = mysqli_query($con, $querytotprod);
                                             <input name="text" type="text" class="form-control" placeholder="Write your text">
                                             <span class="input-group-btn">
 												<button type="submit" class="site-button"><i class="fa fa-search"></i></button>
-                                            </span> 
+                                            </span>
 										</div>
                                     </form>
                                 </div>
@@ -278,7 +278,7 @@ $restotprod = mysqli_query($con, $querytotprod);
                                 <h4 class="widget-title">Últimas noticias</h4>
                                 <div class="widget-post-bx">
 									<?php
-                                	while ($rowblog = mysqli_fetch_array($resblog)) {                                                                 
+                                	while ($rowblog = mysqli_fetch_array($resblog)) {
                                 	?>
 									<div class="widget-post clearfix">
                                         <div class="dez-post-media"> <img src="../../blog/<?php echo $rowblog['imagen_nota'];?>" width="200" height="143" alt=""> </div>
@@ -336,7 +336,7 @@ $restotprod = mysqli_query($con, $querytotprod);
                                             </div>
                                         </div>
                                     </div>
-									-->	
+									-->
                                 </div>
                             </div>
 							<div class="widget">
@@ -346,7 +346,7 @@ $restotprod = mysqli_query($con, $querytotprod);
                                 <h4 class="widget-title">Categorías</h4>
                                 <ul>
 									<?php
-                                	while ($rowtotp = mysqli_fetch_array($restotprod)) {                                                                 
+                                	while ($rowtotp = mysqli_fetch_array($restotprod)) {
                                 	?>
 									<li><a href="#"><?php echo $rowtotp["descripcion_categoria"]; ?> </a> <?php echo $rowtotp["tot_prod"]; ?></li>
 									<!--
@@ -354,7 +354,7 @@ $restotprod = mysqli_query($con, $querytotprod);
                                     <li><a href="../cerdos/cerdos.php">Cerdos </a> (05) </li>
                                     <li><a href="../caballos/caballos.php">Caballos </a> (08) </li>
                                     <li><a href="../borregos/borregos.php">Borregos</a> (06) </li>
-                                    <li><a href="../aves/aves.php">Aves </a> (11) </li>                                    
+                                    <li><a href="../aves/aves.php">Aves </a> (11) </li>
 									-->
 									<?php
 									}
@@ -380,7 +380,7 @@ $restotprod = mysqli_query($con, $querytotprod);
                             </div>
                             <div class="widget widget_tag_cloud">
 								<h4 class="widget-title">Tags</h4>
-                                <div class="tagcloud"> 
+                                <div class="tagcloud">
 									<a href="#">Design</a>
 									<a href="#">User interface</a>
 									<a href="#">SEO</a>
@@ -405,22 +405,22 @@ $restotprod = mysqli_query($con, $querytotprod);
 						</div>
 						<div class="row" id="masonry">
 							<?php
-								$querydetprod =  "SELECT id_producto, descripcion_producto, imagen_catalogo FROM productos WHERE activo = 'A' and fk_id_categoria = 3"; 
+								$querydetprod =  "SELECT id_producto, descripcion_producto, imagen_catalogo FROM productos WHERE activo = 'A' and fk_id_categoria = 3";
 								$resqrydetprod = mysqli_query($con, $querydetprod);
 							?>
 							<?php
-                                while ($rowbdetprod = mysqli_fetch_array($resqrydetprod)) {                                                                 
+                                while ($rowbdetprod = mysqli_fetch_array($resqrydetprod)) {
                             ?>
 								<div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 									<div class="dez-box">
 										<div class="dez-thum-bx dez-img-effect">
-											<img src="../../productos/caballos/<?php echo $rowbdetprod['imagen_catalogo']; ?>" alt="">										
+											<img src="../../productos/caballos/<?php echo $rowbdetprod['imagen_catalogo']; ?>" alt="">
 										</div>
 										<div class="dez-info p-a20 text-center">
 											<div class="m-t15">
-												<a href="../detalle-producto.php?idproducto=<?php echo $rowbdetprod['id_producto']; ?>&categoria=caballos&producto=<?php echo $rowbdetprod['descripcion_producto']; ?>" class="site-button">Ver detalle	</a>
+												<a href="../detalle-producto.php?idproducto=<?php echo $rowbdetprod['id_producto']; ?>&categoria=equinos&producto=<?php echo $rowbdetprod['descripcion_producto']; ?>" class="site-button">Ver detalle	</a>
 											</div>
-										</div>									
+										</div>
 									</div>
 								</div>
 							<?php
@@ -430,112 +430,112 @@ $restotprod = mysqli_query($con, $querytotprod);
 							<div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/lechera_azul.png" alt="">										
+										<img src="../../productos/vacas/lechera_azul.png" alt="">
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<div class="m-t15">
 											<a href="lechera-azul-15.php" class="site-button">Ver detalle	</a>
 										</div>
-									</div>									
+									</div>
 								</div>
                             </div>
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/lechera_naranja.png" alt="">										
+										<img src="../../productos/vacas/lechera_naranja.png" alt="">
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<div class="m-t15">
 											<a href="lechera-naranja-16.php" class="site-button">Ver detalle	</a>
 										</div>
-									</div>									
+									</div>
 								</div>
                             </div>
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/lechera18.png" alt="">										
+										<img src="../../productos/vacas/lechera18.png" alt="">
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<div class="m-t15">
 											<a href="lechera-dorada-18.php" class="site-button">Ver detalle	</a>
 										</div>
-									</div>									
+									</div>
 								</div>
                             </div>
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/lechera20.png" alt="">										
+										<img src="../../productos/vacas/lechera20.png" alt="">
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<div class="m-t15">
 											<a href="lechera-20.php" class="site-button">Ver detalle	</a>
 										</div>
-									</div>									
+									</div>
 								</div>
                             </div>
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/lechera22.png" alt="">										
+										<img src="../../productos/vacas/lechera22.png" alt="">
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<div class="m-t15">
 											<a href="lechera-22.php" class="site-button">Ver detalle	</a>
 										</div>
-									</div>									
+									</div>
 								</div>
                             </div>
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/preiniciador_becerras.png" alt="">										
+										<img src="../../productos/vacas/preiniciador_becerras.png" alt="">
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<h4 class="dez-title m-t0 m-b5 text-uppercase"><a href="#"></a></h4>
 										<div class="m-t15">
 											<a href="preiniciador-becerras.php" class="site-button">Ver detalle	</a>
 										</div>
-									</div>									
+									</div>
 								</div>
                             </div>
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/becerra.png" alt="">										
+										<img src="../../productos/vacas/becerra.png" alt="">
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<div class="m-t15">
 											<a href="becerra.php" class="site-button">Ver detalle	</a>
 										</div>
-									</div>									
+									</div>
 								</div>
                             </div>
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/recria_becerras.png" alt="">										
+										<img src="../../productos/vacas/recria_becerras.png" alt="">
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<div class="m-t15">
 											<a href="becerras-recria.php" class="site-button">Ver detalle	</a>
 										</div>
-									</div>									
+									</div>
 								</div>
-                            </div>      
+                            </div>
                             <div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 								<div class="dez-box">
 									<div class="dez-thum-bx dez-img-effect">
-										<img src="../../productos/vacas/engorda_ganado.png" alt="">										
+										<img src="../../productos/vacas/engorda_ganado.png" alt="">
 									</div>
 									<div class="dez-info p-a20 text-center">
 										<div class="m-t15">
 											<a href="engorda-ganado.php" class="site-button">Ver detalle	</a>
 										</div>
-									</div>									
+									</div>
 								</div>
-                            </div>     
+                            </div>
 							-->
 						</div>
 						<!--<div class="row">
@@ -612,8 +612,8 @@ $restotprod = mysqli_query($con, $querytotprod);
 					</div>
 					<div class="col-lg-4 col-md-6 m-b30">
 						<div class="icon-bx-wraper bx-style-1 p-a20 left bg-primary clearfix text-white">
-							<div class="icon-bx-md bg-white text-primary"> 
-								<a href="#" class="icon-cell "><i class="fa fa-briefcase"></i></a> 
+							<div class="icon-bx-md bg-white text-primary">
+								<a href="#" class="icon-cell "><i class="fa fa-briefcase"></i></a>
 							</div>
 							<div class="icon-content">
 								<h3 class="dez-tilte text-uppercase m-b5">Warehouse</h3>
@@ -623,7 +623,7 @@ $restotprod = mysqli_query($con, $querytotprod);
 					</div>
 					<div class="col-lg-4 col-md-6 m-b30">
 						<div class="icon-bx-wraper bx-style-1 p-a20 left bg-primary clearfix text-white">
-							<div class="icon-bx-md bg-white text-primary"> 
+							<div class="icon-bx-md bg-white text-primary">
 								<a href="#" class="icon-cell"><i class="fa fa-cogs"></i></a>
 							</div>
 							<div class="icon-content">
@@ -671,13 +671,13 @@ $restotprod = mysqli_query($con, $querytotprod);
                             <div class="dez-separator bg-primary"></div>
                             <div class="widget-post-bx">
                                 <!--
-                                $mysql_data[] = array(                           
+                                $mysql_data[] = array(
                                         "texto_principal_linea1"     => $rowblog['texto_principal_linea1'],
-                                        "texto_principal_linea2"     => $rowblog['texto_principal_linea2']		
-                                );  
-                                -->          
+                                        "texto_principal_linea2"     => $rowblog['texto_principal_linea2']
+                                );
+                                -->
                                 <?php
-                                while ($rowblog2 = mysqli_fetch_array($resblog2)) {                                                                 
+                                while ($rowblog2 = mysqli_fetch_array($resblog2)) {
                                 ?>
                                 <div class="widget-post clearfix">
                                     <div class="dez-post-media"> <img src="../../blog/<?php echo $rowblog2['imagen_nota'];?>" alt="" width="200" height="143"> </div>

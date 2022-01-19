@@ -225,11 +225,11 @@ $resblog = mysqli_query($con, $queryblog);
                             if ($rowcat['id_categoria'] == 1) {
                                 $urlcat = "bovinos/bovinos.php";
                             } else if ($rowcat['id_categoria'] == 2) {
-                                $urlcat = "cerdos/cerdos.php";
+                                $urlcat = "porcinos/porcinos.php";
                             } else if ($rowcat['id_categoria'] == 3) {
-                                $urlcat = "caballos/caballos.php";
+                                $urlcat = "equinos/equinos.php";
                             } else if ($rowcat['id_categoria'] == 4) {
-                                $urlcat = "borregos/borregos.php";
+                                $urlcat = "ovinos/ovinos.php";
                             } else if ($rowcat['id_categoria'] == 5) {
                                 $urlcat = "aves/aves.php";
                             }

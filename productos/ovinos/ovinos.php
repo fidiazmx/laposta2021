@@ -418,7 +418,7 @@ $restotprod = mysqli_query($con, $querytotprod);
 										</div>
 										<div class="dez-info p-a20 text-center">
 											<div class="m-t15">
-												<a href="../detalle-producto.php?idproducto=<?php echo $rowbdetprod['id_producto']; ?>&categoria=borregos&producto=<?php echo $rowbdetprod['descripcion_producto']; ?>" class="site-button">Ver detalle	</a>
+												<a href="../detalle-producto.php?idproducto=<?php echo $rowbdetprod['id_producto']; ?>&categoria=ovinos&producto=<?php echo $rowbdetprod['descripcion_producto']; ?>" class="site-button">Ver detalle	</a>
 											</div>
 										</div>
 									</div>
