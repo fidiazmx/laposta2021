@@ -284,7 +284,7 @@ foreach($fechas as $fecha){
 										data-paddingbottom="[25,25,20,20]"
 										data-paddingleft="[50,50,40,40]"
 
-										style="z-index: 7; background-color: #fff; font-family:Roboto; color: rgb(250, 180, 0); white-space: wrap; border-radius: 10px;"><?php echo $row['texto_principal_linea2']; ?> </div>
+										style="z-index: 7; background-color: #fff; font-family:Roboto; color: rgb(250, 180, 0); white-space: wrap; border-radius: 10px;"><img src="images/la_posta_principal.png" alt=""></div>
 
 
 									<!-- LAYER NR. 3 -->
