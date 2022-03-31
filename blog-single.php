@@ -85,7 +85,7 @@ $resblog = mysqli_query($con, $queryblog);
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
 	<!-- PAGE TITLE HERE -->
-	<title> La posta - <?php echo $rowNota['titulo_nota']; ?></title>
+	<title> La posta - <?php echo utf8_encode($rowNota['titulo_nota']); ?></title>
 
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -183,7 +183,7 @@ $resblog = mysqli_query($con, $queryblog);
         <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(images/banner/bnr1.jpg);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
-                    <h1 class="text-white"><?php echo $rowNota['titulo_nota']; ?></h1>
+                    <h1 class="text-white"><?php echo utf8_encode($rowNota['titulo_nota']); ?></h1>
                 </div>
             </div>
         </div>
@@ -193,7 +193,7 @@ $resblog = mysqli_query($con, $queryblog);
             <div class="container">
                 <ul class="list-inline">
                     <li><a href="#">Home</a></li>
-                    <li><?php echo $rowNota['titulo_nota']; ?></li>
+                    <li><?php echo utf8_encode($rowNota['titulo_nota']); ?></li>
                 </ul>
             </div>
         </div>
@@ -203,18 +203,18 @@ $resblog = mysqli_query($con, $queryblog);
                 <!-- blog start -->
                 <div class="blog-post blog-single">
                     <div class="dez-post-title ">
-                        <h3 class="post-title"><a href="#"><?php echo $rowNota['titulo_nota']; ?></a></h3>
+                        <h3 class="post-title"><a href="#"><?php echo utf8_encode($rowNota['titulo_nota']); ?></a></h3>
                     </div>
                     <div class="dez-post-meta m-b20">
                         <ul>
                             <li class="post-date"> <i class="fa fa-calendar"></i><?php echo $rowNota['fecha_alta']; ?></li>
-                            <li class="post-author"><i class="fa fa-user"></i>Por <a href="#"><?php echo $rowNota['name']; ?></a> </li>
+                            <li class="post-author"><i class="fa fa-user"></i>Por <a href="#"><?php echo utf8_encode($rowNota['name']); ?></a> </li>
                             <!--<li class="post-comment"><i class="fa fa-comments"></i> <a href="#">0 Comentarios</a> </li>-->
                         </ul>
                     </div>
                     <div class="dez-post-media dez-img-effect zoom-slow"> <a href="#"><img src="blog/<?php echo $rowNota['imagen_nota']; ?>" alt=""></a> </div>
                     <div class="dez-post-text">
-                        <?php echo $rowNota['texto_nota']; ?>
+                        <?php echo utf8_encode($rowNota['texto_nota']); ?>
                         <!--
                         <p>El subsector agrícola mexicano proporciona la mayoría de los insumos para alimentar al ganado mexicano, lo que da como resultado colocar a México en el 7mo lugar a nivel mundial en la producción de proteína animal</p>
                         <p>La buena nutrición del sector pecuario es clave para garantizar la seguridad alimentaria y el abasto de proteína animal principalmente para consumo interno y para que los ganaderos accedan a más mercados internacionales,
@@ -249,7 +249,7 @@ $resblog = mysqli_query($con, $queryblog);
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <div class="logo-footer"><img src="images/logo.png" alt=""></div>
-                            <p class="m-tb20"><?php echo $rowhist['texto_historia']; ?></p>
+                            <p class="m-tb20"><?php echo utf8_encode($rowhist['texto_historia']); ?></p>
                             <ul class="dez-social-icon dez-social-icon-lg">
                                 <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
                                 <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
@@ -276,11 +276,11 @@ $resblog = mysqli_query($con, $queryblog);
                                     <div class="dez-post-media"> <img src="blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo $rowblog['titulo_nota'];?></a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo utf8_encode($rowblog['titulo_nota']);?></a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
-                                                <li class="post-author">Por <a href="#"><?php echo $rowblog['name'];?></a></li>
+                                                <li class="post-author">Por <a href="#"><?php echo utf8_encode($rowblog['name']);?></a></li>
                                             </ul>
                                         </div>
                                     </div>

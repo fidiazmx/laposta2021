@@ -289,7 +289,7 @@ $restotprod = mysqli_query($con, $querytotprod);
                                         <div class="dez-post-media"> <img src="../../blog/<?php echo $rowblog['imagen_nota'];?>" width="200" height="143" alt=""> </div>
                                         <div class="dez-post-info">
                                             <div class="dez-post-header">
-                                                <h6 class="post-title"><a href="../../blog-single.php?id=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo $rowblog['titulo_nota'];?></a></h6>
+                                                <h6 class="post-title"><a href="../../blog-single.php?id=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo utf8_encode($rowblog['titulo_nota']);?></a></h6>
                                             </div>
                                             <div class="dez-post-meta">
                                                 <ul>
@@ -419,7 +419,7 @@ $restotprod = mysqli_query($con, $querytotprod);
 								<div class="col-lg-4 col-sm-12 m-b30 product-item card-container">
 									<div class="dez-box">
 										<div class="dez-thum-bx dez-img-effect">
-											<img src="../../productos/cerdos/<?php echo $rowbdetprod['imagen_catalogo']; ?>" alt="">
+											<img src="../../productos/porcinos/<?php echo $rowbdetprod['imagen_catalogo']; ?>" alt="">
 										</div>
 										<div class="dez-info p-a20 text-center">
 											<div class="m-t15">
@@ -661,7 +661,7 @@ $restotprod = mysqli_query($con, $querytotprod);
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <div class="logo-footer"><img src="../../images/logo.png" alt=""></div>
-                            <p class="m-tb20"><?php echo $rowhist['texto_historia']; ?></p>
+                            <p class="m-tb20"><?php echo utf8_encode($rowhist['texto_historia']); ?></p>
                             <ul class="dez-social-icon dez-social-icon-lg">
                                 <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
                                 <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
@@ -688,7 +688,7 @@ $restotprod = mysqli_query($con, $querytotprod);
                                     <div class="dez-post-media"> <img src="../../blog/<?php echo $rowblog2['imagen_nota'];?>" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php?id=<?php echo $rowblog2['id_nota_blog']; ?>"><?php echo $rowblog2['titulo_nota'];?></a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php?id=<?php echo $rowblog2['id_nota_blog']; ?>"><?php echo utf8_encode($rowblog2['titulo_nota']);?></a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>

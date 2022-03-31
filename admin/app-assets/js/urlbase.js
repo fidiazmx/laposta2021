@@ -1,4 +1,4 @@
-const urlbaseprod     = "laposta2021.herokuapp.com";
+const urlbaseprod     = "laposta.local";
 const urlbaseproddev  = "develop.zzz.com";
 const urlbasedev      = "laposta.local";
 const urlbasedevlocal = "laposta.local";
@@ -11,13 +11,13 @@ var usourl;
 switch (window.location.hostname) {
     case urlbaseprod:
         usourl = document.location.protocol + '//' + urlbaseprod + '/admin';
-    break;    
+    break;
     case urlbaseproddev:
         usourl = document.location.protocol + '//' + urlbaseproddev + '/admin';
-    break;    
+    break;
     case urlbasedev:
         usourl = document.location.protocol + '//' + urlbasedev + '/admin'; ;
-    break;    
+    break;
     default:
         usourl = document.location.protocol + '//' + urlbasedevlocal + '/admin';;
         break;

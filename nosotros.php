@@ -233,7 +233,7 @@ $resblog = mysqli_query($con, $queryblog);
 						<div class="col-lg-6 col-md-12 m-b30 align-self-center">
 							<h2 class="h2 mt-0 p-b20">¿Por qué elegirnos?</h2>
 							<!--<div class="p-b20 font-18"><i>Garden Lorem ipsum dolor sit amet, cons ectetur elit. ..</i></div>-->
-                            <?php echo $row['texto_por_que']; ?>
+                            <?php echo utf8_encode($row['texto_por_que']); ?>
 							<!--p>Ofrecemos al ganadero una opción para la alimentación de su ganado diferente y más rentable, siempre con la mejor calidad.</p>-->
 							<!--<a href="#" class="site-button">Read More</a>-->
 						</div>
@@ -242,17 +242,17 @@ $resblog = mysqli_query($con, $queryblog);
 					<div class="row">
 						<div class="col-lg-6 col-md-12 m-b30 align-self-center">
 							<h2 class="h2 mt-0 p-b20">Misión</h2>
-                            <?php echo $row['texto_mision']; ?>
+                            <?php echo utf8_encode($row['texto_mision']); ?>
 							<!--<p>Producimos una amplia gama de soluciones nutrimentales de alta calidad para los mercados ganaderos.</p>-->
                         </div>
                         <div class="col-lg-6 col-md-12 m-b30 align-self-center">
 							<h2 class="h2 mt-0 p-b20">Visión</h2>
-                            <?php echo $row['texto_vision']; ?>
+                            <?php echo utf8_encode($row['texto_vision']); ?>
 							<!--<p>Ser reconocidos como la mejor opción de nutrición animal balanceada y saludable para el mejoramiento del hato ganadero.</p>-->
 						</div>
 						<div class="col-lg-6 col-md-12 m-b30 align-self-center">
 							<h2 class="h2 mt-0 p-b20">Valores</h2>
-                            <?php echo $row['texto_valores']; ?>
+                            <?php echo utf8_encode($row['texto_valores']); ?>
                             <!--
                             <ul class="list-angle-right">
                                 <li><strong>Higiene</strong> En cada una de las etapas del proceso de producción.</li>
@@ -278,7 +278,7 @@ $resblog = mysqli_query($con, $queryblog);
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <div class="logo-footer"><img src="images/logo.png" alt=""></div>
-                            <p class="m-tb20"><?php echo $rowhist['texto_historia']; ?></p>
+                            <p class="m-tb20"><?php echo utf8_encode($rowhist['texto_historia']); ?></p>
                             <ul class="dez-social-icon dez-social-icon-lg">
                                 <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
                                 <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
@@ -305,11 +305,11 @@ $resblog = mysqli_query($con, $queryblog);
                                     <div class="dez-post-media"> <img src="blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo $rowblog['titulo_nota'];?></a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo utf8_encode($rowblog['titulo_nota']);?></a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
-                                                <li class="post-author">Por <a href="#"><?php echo $rowblog['name'];?></a></li>
+                                                <li class="post-author">Por <a href="#"><?php echo utf8_encode($rowblog['name']);?></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -395,7 +395,7 @@ $resblog = mysqli_query($con, $queryblog);
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 text-left"> <span>© 2021 La Posta</span> </div>
+                    <div class="col-lg-4 text-left"> <span>© 2022 La Posta</span> </div>
                     <div class="col-lg-4 text-center"> <span> Develop by <i class="fa fa-heart text-primary heart"></i> By Iwebyou</span> </div>
                     <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a></div>
                 </div>

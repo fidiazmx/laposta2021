@@ -1,4 +1,8 @@
 <?php
+/*ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);*/
+//echo $_SERVER['HTTP_HOST'];
 
 require_once ('admin/_inc/dbconfig.php');
 
@@ -343,63 +347,63 @@ foreach($fechas as $fecha){
 					<div class="col-xl-3 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="icon-bx-wraper service-style1 m-b30 center">
 							<div class="icon-bx-xl">
-								<a href="#" class="icon-cell">
+								<a href="productos/bovinos/bovinos.php" class="icon-cell">
 									<img src="images/icon/icon_vacas.png" alt="">
 								</a>
 							</div>
 							<div class="icon-content">
 								<h2 class="dez-tilte text-primary">Bovinos</h2>
 								<!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>-->
-								<a href="productos/vacas/vacas.php" class="site-button italic light-gray">Ver más..</a>
+								<a href="productos/bovinos/bovinos.php" class="site-button italic light-gray">Ver más..</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-4 wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="icon-bx-wraper service-style1 m-b30 center">
 							<div class="icon-bx-xl">
-								<a href="productos/cerdos/vacas.php" class="icon-cell">
+								<a href="productos/porcinos/porcinos.php" class="icon-cell">
 									<img src="images/icon/icon_cerdos.png" alt="">
 								</a>
 							</div>
 							<div class="icon-content">
-								<h2 class="dez-tilte text-primary">Cerdos</h2>
+								<h2 class="dez-tilte text-primary">Porcinos</h2>
 								<!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>-->
-								<a href="productos/cerdos/cerdos.php" class="site-button italic light-gray">Ver más..</a>
+								<a href="productos/porcinos/porcinos.php" class="site-button italic light-gray">Ver más..</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-4 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="icon-bx-wraper service-style1 center">
 							<div class="icon-bx-xl">
-								<a href="productos/cerdos/cerdos.php" class="icon-cell">
+								<a href="productos/equinos/equinos.php" class="icon-cell">
 									<img src="images/icon/icon_caballos.png" alt="">
 								</a>
 							</div>
 							<div class="icon-content">
-								<h2 class="dez-tilte text-primary">Caballos</h2>
+								<h2 class="dez-tilte text-primary">Equinos</h2>
 								<!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>-->
-								<a href="productos/caballos/caballos.php" class="site-button italic light-gray">Ver más..</a>
+								<a href="productos/equinos/equinos.php" class="site-button italic light-gray">Ver más..</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-4 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="icon-bx-wraper service-style1 center">
 							<div class="icon-bx-xl">
-								<a href="#" class="icon-cell">
+								<a href="productos/ovinos/ovinos.php" class="icon-cell">
 									<img src="images/icon/icon_borregos.png" alt="">
 								</a>
 							</div>
 							<div class="icon-content">
-								<h2 class="dez-tilte text-primary">Borregos</h2>
+								<h2 class="dez-tilte text-primary">Ovinos</h2>
 								<!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>-->
-								<a href="productos/borregos/borregos.php" class="site-button italic light-gray">Ver más..</a>
+								<a href="productos/ovinos/ovinos.php" class="site-button italic light-gray">Ver más..</a>
 							</div>
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-4 col-md-4 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
 						<div class="icon-bx-wraper service-style1 center">
 							<div class="icon-bx-xl">
-								<a href="#" class="icon-cell">
+								<a href="productos/aves/aves.php" class="icon-cell">
 									<img src="images/icon/icon_aves.png" alt="">
 								</a>
 							</div>
@@ -444,8 +448,8 @@ foreach($fechas as $fecha){
         <div class="section-full content-inner about-info-area bg-white">
             <div class="container">
 				<div id="contenido-historia" class="row">
-					<div class="col-lg-6">
-						<?php echo $row['texto_historia'];?>
+					<div class="col-lg-6 text-justify">
+						<?php echo utf8_encode($row['texto_historia']);?>
 					</div>
 					<div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
 						<img class="img-cover" src="images/about/home-about.png" alt="">
@@ -474,8 +478,8 @@ foreach($fechas as $fecha){
 								<div class="row">
 									<div class="col-lg-4 col-md-4 col-sm-4 col-6 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="2s">
 										<div class="counter-style-2 m-b30">
-											<span class="counter-text text-primary">Más de</span>
-											<span class="counter"><?php echo $row['clientes_atendidos'];?></span>
+											<!--<span class="counter-text text-primary">Más de</span>-->
+											<span class="counter"><?php echo "+".$row['clientes_atendidos'];?></span>
 											<span class="counter-text text-primary">Clientes atendidos</span>
 										</div>
 									</div>
@@ -520,7 +524,7 @@ foreach($fechas as $fecha){
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-						<span>© 2021 Develop by Iwebyou</span>
+						<span>© 2022 Develop by <a style="color:white;" target="_blank" href="http://www.iwebyou.com.mx/">Iwebyou</a></span>
 					</div>
                 </div>
             </div>

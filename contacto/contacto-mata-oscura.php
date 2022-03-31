@@ -167,7 +167,7 @@ $resblog = mysqli_query($con, $queryblog);
                             </li>
                             <li class=""> <a href="../galeria.php">Galería<i class="fa fa-chevron-down"></i></a>
                             </li>
-                            <li> <a href="javascript:;">Contacto<i class="fa fa-chevron-down"></i></a>
+                            <li class="active"> <a href="javascript:;">Contacto<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
                                     <li><a href="contacto-banderilla.php">Banderilla</a></li>
                                     <li><a href="contacto-acajete.php">Acajete</a></li>
@@ -255,7 +255,7 @@ $resblog = mysqli_query($con, $queryblog);
 									<div class="col-lg-12">
 										<div class="form-group">
 											<div class="input-group">
-												<div class="g-recaptcha" data-sitekey="<!-- Put reCaptcha Site Key -->" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+												<div class="g-recaptcha" data-sitekey="6LdvtB0fAAAAAO3EMHgIpJtIzlEVWR4-d2w7VO3t" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
 												<input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha">
 											</div>
 										</div>
@@ -381,7 +381,7 @@ $resblog = mysqli_query($con, $queryblog);
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <div class="logo-footer"><img src="../images/logo.png" alt=""></div>
-                            <p class="m-tb20"><?php echo $rowhist['texto_historia']; ?></p>
+                            <p class="m-tb20"><?php echo utf8_encode($rowhist['texto_historia']); ?></p>
                             <ul class="dez-social-icon dez-social-icon-lg">
                                 <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
                                 <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
@@ -408,7 +408,7 @@ $resblog = mysqli_query($con, $queryblog);
                                     <div class="dez-post-media"> <img src="../blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo $rowblog['titulo_nota'];?></a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo utf8_encode($rowblog['titulo_nota']);?></a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>

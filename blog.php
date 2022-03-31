@@ -219,18 +219,18 @@ $resblog = mysqli_query($con, $queryblog);
                     <div class="dez-post-media dez-img-effect zoom-slow"> <a href="#"><img src="images/banner/bnr1.jpg" alt=""></a> </div>
                     <div class="dez-post-info">
 						<div class="dez-post-title ">
-							<h3 class="post-title"><a href="blog-single.php"><?php echo $rowblogdet['titulo_nota']; ?></a></h3>
+							<h3 class="post-title"><a href="blog-single.php?idblog=<?php echo $rowblogdet['id_nota_blog']; ?>"><?php echo utf8_encode($rowblogdet['titulo_nota']); ?></a></h3>
 						</div>
 						<div class="dez-post-meta ">
 							<ul>
 								<!--<li class="post-date"> <i class="fa fa-calendar"></i>03 de diciembre <span>2021</span> </li>-->
                                 <li class="post-date"> <i class="fa fa-calendar"></i><?php echo $rowblogdet['fecha_alta']; ?></li>
-								<li class="post-author"><i class="fa fa-user"></i>Por <a href="#"><?php echo $rowblogdet['name']; ?></a> </li>
+								<li class="post-author"><i class="fa fa-user"></i>Por <a href="#"><?php echo utf8_encode($rowblogdet['name']); ?></a> </li>
 								<!--<li class="post-comment"><i class="fa fa-Comentarios"></i> <a href="#">0 Comentarios</a> </li>-->
 							</ul>
 						</div>
 						<div class="dez-post-text">
-							<p><?php echo substr($rowblogdet['texto_nota'], 0, 100); ?></p>
+							<p><?php echo substr(utf8_encode($rowblogdet['texto_nota']), 0, 100); ?></p>
 						</div>
 						<div class="dez-post-readmore">
 							<a href="blog-single.php?idblog=<?php echo $rowblogdet['id_nota_blog']; ?>" title="READ MORE" rel="bookmark" class="site-button-link">Leer más....</a>
@@ -338,7 +338,7 @@ $resblog = mysqli_query($con, $queryblog);
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <div class="logo-footer"><img src="images/logo.png" alt=""></div>
-                            <p class="m-tb20"><?php echo $rowhist['texto_historia']; ?></p>
+                            <p class="m-tb20"><?php echo utf8_encode($rowhist['texto_historia']); ?></p>
                             <ul class="dez-social-icon dez-social-icon-lg">
                                 <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
                                 <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
@@ -365,7 +365,7 @@ $resblog = mysqli_query($con, $queryblog);
                                     <div class="dez-post-media"> <img src="blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo $rowblog['titulo_nota'];?></a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo utf8_encode($rowblog['titulo_nota']);?></a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>

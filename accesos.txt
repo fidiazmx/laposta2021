@@ -1,0 +1,31 @@
+ACCESOS
+
+murbe94@gmail.com
+Usuario   lapostaba
+
+Contra     +120810Ba21+
+
+
+
+Servidor.  laposta.com.mx
+ Usuario.  lapostaba
+ Password.  120810ba
+
+ https://misapps.telmex.com/portal/
+
+admon@laposta.com.mx
+Contraseña.  Banderilla2017
+
+
+Usuarios db
+
+db: Postadb2022_lapostacom104453
+usr: lapostacom104453
+
+pwd: 0PeEWpGTMDfRZFx
+
+bd iwebyou
+
+usr: iwebyou5_posta22
+pwd: L4P0st42022**_
+bd:  iwebyou5_laposta_2022

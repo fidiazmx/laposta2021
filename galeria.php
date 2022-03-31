@@ -141,11 +141,13 @@ $resblog = mysqli_query($con, $queryblog);
 						<span></span>
 					</button>
                     <!-- extra nav -->
+                    <!--
                     <div class="extra-nav">
                         <div class="extra-cell">
                             <button id="quik-search-btn" type="button" class="site-button-link"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
+                    -->
                     <!-- Quik search -->
                     <div class="dez-quik-search bg-primary">
                         <form action="#">
@@ -541,7 +543,7 @@ $resblog = mysqli_query($con, $queryblog);
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <div class="logo-footer"><img src="images/logo.png" alt=""></div>
-                            <p class="m-tb20"><?php echo $rowhist['texto_historia']; ?></p>
+                            <p class="m-tb20"><?php echo utf8_encode($rowhist['texto_historia']); ?></p>
                             <ul class="dez-social-icon dez-social-icon-lg">
                                 <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
                                 <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
@@ -568,7 +570,7 @@ $resblog = mysqli_query($con, $queryblog);
                                     <div class="dez-post-media"> <img src="blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo $rowblog['titulo_nota'];?></a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo utf8_encode($rowblog['titulo_nota']);?></a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>

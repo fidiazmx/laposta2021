@@ -211,13 +211,13 @@ if (!$reshist){
                         <div class="col-lg-4 col-md-4 m-b30"> <a href="#"><img src="<?php echo $_GET['categoria']; ?>/<?php echo $rowProd["imagen_detalle"]; ?>" alt=""></a> </div>
                         <div class="col-lg-8 col-md-8">
                             <div class="dez-post-title ">
-                                <h3 class="post-title m-b10"><a href="#"><?php echo $rowProd["descripcion_producto"]; ?></a></h3>
+                                <h3 class="post-title m-b10"><a href="#"><?php echo utf8_encode($rowProd["descripcion_producto"]); ?></a></h3>
                             </div>
-                            <h3><?php echo $rowProd["detalle_producto"]; ?></h3>
+                            <h3><?php echo utf8_encode($rowProd["detalle_producto"]); ?></h3>
                             <!--<h3>Peso neto al envasar 40 KG.</h3>-->
                             <!-- <h2 class="m-tb10">$ 10.00 </h2> -->
                             <div class="dez-post-text">
-                                <p class="m-b10"> <?php echo $rowProd["detalle2_producto"]; ?></p>
+                                <p class="m-b10"> <?php echo utf8_encode($rowProd["detalle2_producto"]); ?></p>
                             </div>
                             <table class="table table-bordered" >
                                 <tr>
@@ -256,7 +256,7 @@ if (!$reshist){
                                     <p><?php echo $rowProd["ingredientes"]; ?></p>
                                 </div>
                                 <div id="indicaciones" class="tab-pane">
-                                    <p><?php echo $rowProd["indicaciones"]; ?></p>
+                                    <p><?php echo utf8_encode($rowProd["indicaciones"]); ?></p>
                                 </div>
                                 <div id="comentarios" class="tab-pane">
                                     <div id="comments">
@@ -345,7 +345,7 @@ if (!$reshist){
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
                             <div class="logo-footer"><img src="../images/logo.png" alt=""></div>
-                            <p class="m-tb20"><?php echo $rowhist['texto_historia']; ?></p>
+                            <p class="m-tb20"><?php echo utf8_encode($rowhist['texto_historia']); ?></p>
                             <ul class="dez-social-icon dez-social-icon-lg">
                                 <li><a href="javascript:void(0);" class="fa fa-facebook fb-btn"></a></li>
                                 <!-- <li><a href="javascript:void(0);" class="fa fa-twitter tw-btn"></a></li>
@@ -372,7 +372,7 @@ if (!$reshist){
                                     <div class="dez-post-media"> <img src="../blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php?id=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo $rowblog['titulo_nota'];?></a></h6>
+                                            <h6 class="post-title"><a href="blog-single.php?id=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo utf8_encode($rowblog['titulo_nota']);?></a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
