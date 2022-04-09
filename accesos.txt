@@ -1,11 +1,11 @@
 ACCESOS
 
+https://cp.cloud.telmex.com/servlet/Turbine/frm/single/
+
 murbe94@gmail.com
 Usuario   lapostaba
 
 Contra     +120810Ba21+
-
-
 
 Servidor.  laposta.com.mx
  Usuario.  lapostaba
@@ -29,3 +29,30 @@ bd iwebyou
 usr: iwebyou5_posta22
 pwd: L4P0st42022**_
 bd:  iwebyou5_laposta_2022
+
+username=Chivas2010&userpass=Postadb2022**
+
+--prd--
+host: sql5c75f.carrierzone.com
+usr:  lapostacom674025 - Usrposta22
+pwd:  Posta2022db**
+bd:   posta22db_lapostacom674025
+
+Warning: mysqli_connect(): (HY000/1045): Access denied for user 'lapostac_usr22'@'web62c75.carrierzone.com' (using password: YES) in /services/webpages/l/a/laposta.com.mx/public/index.php on line 10
+
+
+mysql-laposta-iwebyou
+
+host: 189.203.85.167
+usr:  lapostac_usr22
+pwd:  Posta2022db**
+bd:   lapostac_22_db
+
+ftp
+usrdevlaposta2022.laposta.com.mx
+
+
+Your Control Panel:  https://cressida.websitewelcome.com:2087
+    Your Domain:         iwebyouhosting.com
+    Your Username:       anavelaz
+

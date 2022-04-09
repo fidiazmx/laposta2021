@@ -1,4 +1,4 @@
-const urlbaseprod     = "laposta.local";
+const urlbaseprod     = "laposta.com.mx";
 const urlbaseproddev  = "develop.zzz.com";
 const urlbasedev      = "laposta.local";
 const urlbasedevlocal = "laposta.local";
