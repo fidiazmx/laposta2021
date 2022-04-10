@@ -85,7 +85,7 @@ $resblog = mysqli_query($con, $queryblog);
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
 	<!-- PAGE TITLE HERE -->
-	<title> La Posta - Contacto</title>
+	<title> La Posta - Contacto Mata Oscura</title>
 
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -188,7 +188,7 @@ $resblog = mysqli_query($con, $queryblog);
         <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(../images/banner/bg-contacto-banderilla.png);">
             <div class="container">
                 <div class="dez-bnr-inr-entry">
-                    <h1 class="text-white">Contacto</h1>
+                    <h1 class="text-white">Contacto Mata Oscura</h1>
                 </div>
             </div>
         </div>
@@ -197,8 +197,8 @@ $resblog = mysqli_query($con, $queryblog);
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="#">Inicio</a></li>
-                    <li>Contacto</li>
+                    <li><a href="../index.php">Inicio</a></li>
+                    <li>Contacto Mata Oscura</li>
                 </ul>
             </div>
         </div>
@@ -375,7 +375,7 @@ $resblog = mysqli_query($con, $queryblog);
     <!-- Content END-->
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="footer-top" style="background-image:url(images/logo.png);">
+        <div class="footer-top" style="background-image:url(../images/logo.png);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
@@ -408,11 +408,11 @@ $resblog = mysqli_query($con, $queryblog);
                                     <div class="dez-post-media"> <img src="../blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo utf8_encode($rowblog['titulo_nota']);?></a></h6>
+                                            <h6 class="post-title"><a href="../blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo utf8_encode($rowblog['titulo_nota']);?></a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
-                                                <li class="post-author">Por <a href="#"><?php echo $rowblog['name'];?></a></li>
+                                                <li class="post-author">Por <a href="#"><?php echo utf8_encode($rowblog['name']);?></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -472,11 +472,11 @@ $resblog = mysqli_query($con, $queryblog);
                             <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="productos/vacas/vacas.php">Alimento Bovinos</a></li>
-                                <li><a href="productos/cerdos/cerdos.php">Alimento Porcinos</a></li>
-                                <li><a href="productos/caballos/caballos.php">Alimento Equinoss</a></li>
-                                <li><a href="productos/borregos/borregos.php">Alimento Ovinos</a></li>
-                                <li><a href="productos/aves/aves.php">Alimento Aves</a></li>
+                                <li><a href="../productos/bovinos/bovinos.php">Alimento Bovinos</a></li>
+                                <li><a href="../productos/porcinos/porcinos.php">Alimento Porcinos</a></li>
+                                <li><a href="../productos/equinos/equinos.php">Alimento Equinoss</a></li>
+                                <li><a href="../productos/ovinos/ovinos.php">Alimento Ovinos</a></li>
+                                <li><a href="../productos/aves/aves.php">Alimento Aves</a></li>
                             </ul>
                         </div>
                     </div>
@@ -498,9 +498,9 @@ $resblog = mysqli_query($con, $queryblog);
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 text-left"> <span>© 2021 La Posta</span> </div>
+                    <div class="col-lg-4 text-left"> <span>© 2022 La Posta</span> </div>
                     <div class="col-lg-4 text-center"> <span> Develop by <i class="fa fa-heart text-primary heart"></i> By Iwebyou</span> </div>
-                    <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a></div>
+                    <div class="col-lg-4 text-right "> <a href="../nosotros.php"> Nosotros</a></div>
                 </div>
             </div>
         </div>

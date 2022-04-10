@@ -198,7 +198,7 @@ $resblog = mysqli_query($con, $queryblog);
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.php">Inicio</a></li>
                     <li>Galería</li>
                 </ul>
             </div>
@@ -574,7 +574,7 @@ $resblog = mysqli_query($con, $queryblog);
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
-                                                <li class="post-author">Por <a href="#"><?php echo $rowblog['name'];?></a></li>
+                                                <li class="post-author">Por <a href="#"><?php echo utf8_encode($rowblog['name']);?></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -634,10 +634,10 @@ $resblog = mysqli_query($con, $queryblog);
                             <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="productos/vacas/vacas.php">Alimento Bovinos</a></li>
-                                <li><a href="productos/cerdos/cerdos.php">Alimento Porcinos</a></li>
-                                <li><a href="productos/caballos/caballos.php">Alimento Equinoss</a></li>
-                                <li><a href="productos/borregos/borregos.php">Alimento Ovinos</a></li>
+                                <li><a href="productos/bovinos/bovinos.php">Alimento Bovinos</a></li>
+                                <li><a href="productos/porcinos/porcinos.php">Alimento Porcinos</a></li>
+                                <li><a href="productos/equinos/equinos.php">Alimento Equinoss</a></li>
+                                <li><a href="productos/ovinos/ovinos.php">Alimento Ovinos</a></li>
                                 <li><a href="productos/aves/aves.php">Alimento Aves</a></li>
                             </ul>
                         </div>
@@ -660,7 +660,7 @@ $resblog = mysqli_query($con, $queryblog);
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 text-left"> <span>© 2021 La Posta</span> </div>
+                    <div class="col-lg-4 text-left"> <span>© 2022 La Posta</span> </div>
                     <div class="col-lg-4 text-center"> <span> Develop by <i class="fa fa-heart text-primary heart"></i> By Iwebyou</span> </div>
                     <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a></div>
                 </div>

@@ -131,7 +131,7 @@ if (!$reshist){
             <div class="main-bar clearfix ">
                 <div class="container clearfix">
                     <!-- website logo -->
-                    <div class="logo-header mostion"><a href="index.php"><img src="../../images/logo.png" width="193" height="89" alt=""></a></div>
+                    <div class="logo-header mostion"><a href="../../index.php"><img src="../../images/logo.png" width="193" height="89" alt=""></a></div>
                     <!-- nav toggle button -->
 					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 						<span></span>
@@ -154,7 +154,7 @@ if (!$reshist){
                     <!-- main nav -->
                     <div class="header-nav navbar-collapse collapse" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li> <a href="index.php">Inicio<i class="fa fa-chevron-down"></i></a>
+                            <li> <a href="../../index.php">Inicio<i class="fa fa-chevron-down"></i></a>
                             </li>
                             <li class=""> <a href="../../nosotros.php">Nosotros<i class="fa fa-chevron-down"></i></a>
                             </li>
@@ -166,9 +166,9 @@ if (!$reshist){
                             </li>
                             <li> <a href="javascript:;">Contacto<i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu">
-                                    <li><a href="contacto/contacto-banderilla.php">Banderilla</a></li>
-                                    <li><a href="contacto/contacto-acajete.php">Acajete</a></li>
-                                    <li><a href="contacto/contacto-mata-oscura.php">Mata oscura</a></li>
+                                    <li><a href="../contacto/contacto-banderilla.php">Banderilla</a></li>
+                                    <li><a href="../contacto/contacto-acajete.php">Acajete</a></li>
+                                    <li><a href="../contacto/contacto-mata-oscura.php">Mata oscura</a></li>
 								</ul>
 							</li>
                         </ul>
@@ -194,9 +194,9 @@ if (!$reshist){
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="#">Inicio</a></li>
-                    <li>Productos</li>
-					<li><?php echo $_GET['categoria']; ?></li>
+                    <li><a href="../../index.php">Inicio</a></li>
+                    <li><a href="../../productos.php">Productos</a></li>
+					<li><a href="../productos/<?php echo $_GET['categoria']; ?>/<?php echo $_GET['categoria']; ?>.php"><?php echo $_GET['categoria']; ?></a></li>
 					<li><?php echo $rowProd["descripcion_producto"]; ?></li>
                 </ul>
             </div>
@@ -369,10 +369,10 @@ if (!$reshist){
                                 while ($rowblog = mysqli_fetch_array($resblog)) {
                                 ?>
                                 <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="../blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
+                                    <div class="dez-post-media"> <img src="../../blog/<?php echo $rowblog['imagen_nota'];?>" alt="" width="200" height="143"> </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.php?id=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo utf8_encode($rowblog['titulo_nota']);?></a></h6>
+                                            <h6 class="post-title"><a href="../../blog-single.php?idblog=<?php echo $rowblog['id_nota_blog']; ?>"><?php echo utf8_encode($rowblog['titulo_nota']);?></a></h6>
                                         </div>
                                         <div class="dez-post-meta">
                                             <ul>
@@ -436,11 +436,11 @@ if (!$reshist){
                             <h4 class="m-b15 text-uppercase">Nuestros servicios</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="productos/vacas/vacas.php">Alimento Bovinos</a></li>
-                                <li><a href="productos/cerdos/cerdos.php">Alimento Porcinos</a></li>
-                                <li><a href="productos/caballos/caballos.php">Alimento Equinos</a></li>
-                                <li><a href="productos/borregos/borregos.php">Alimento Ovinos</a></li>
-                                <li><a href="productos/aves/aves.php">Alimento Aves</a></li>
+                                <li><a href="bovinos/bovinos.php">Alimento Bovinos</a></li>
+                                <li><a href="porcinos/porcinos.php">Alimento Porcinos</a></li>
+                                <li><a href="equinos/equinos.php">Alimento Equinos</a></li>
+                                <li><a href="ovinos/ovinos.php">Alimento Ovinos</a></li>
+                                <li><a href="aves/aves.php">Alimento Aves</a></li>
                             </ul>
                         </div>
                     </div>
@@ -464,7 +464,7 @@ if (!$reshist){
                 <div class="row">
                     <div class="col-lg-4 text-left"> <span>© 2021 La Posta</span> </div>
                     <div class="col-lg-4 text-center"> <span> Develop by <i class="fa fa-heart text-primary heart"></i> By Iwebyou</span> </div>
-                    <div class="col-lg-4 text-right "> <a href="nosotros.php"> Nosotros</a></div>
+                    <div class="col-lg-4 text-right "> <a href="../nosotros.php"> Nosotros</a></div>
                 </div>
             </div>
         </div>
