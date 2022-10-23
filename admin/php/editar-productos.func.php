@@ -68,6 +68,9 @@ if ($job != '') {
                     case '5':
                         $preurl = "/productos/aves/";
                         break;
+                    case '6':
+                        $preurl = "/productos/perros/";
+                        break;
                     default:
                         # code...
                         break;

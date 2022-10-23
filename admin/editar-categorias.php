@@ -184,7 +184,7 @@
                             </ol>
                         </div>
                         <div class="col s12 m12 l12 ">
-                            <a id="add_producto" href="#modalProducto" class="waves-effect waves-light breadcrumbs-btn right btn modal-trigger" style="display:block;">AGREGAR</a>
+                            <a id="add_categoria" href="#modalCategoria" class="waves-effect waves-light breadcrumbs-btn right btn modal-trigger" style="display:block;">AGREGAR</a>
                             <ul class="dropdown-content" id="dropdown1" tabindex="0">
                             </ul>
                         </div>
@@ -237,6 +237,24 @@
         </div>
     </div>
     <!-- END: Page Main-->
+
+    <div id="modalCategoria" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h6 class="card-title">Información</h4>
+            <form id="form-categorias">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="" id="txtDescripcion" name="txtDescripcion" type="text" maxlength="250">
+                        <label for="txtDescripcion" class="active">Descripción</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a id="btnGuardar" href="#" class="modal-action waves-effect waves-red btn-flat ">Guardar</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
+        </div>
+    </div>
 
     <div id="modalImagen" class="modal modal-fixed-footer">
         <div class="modal-content">

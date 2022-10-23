@@ -6,7 +6,7 @@ $job = '';
 $id  = '';
 if (isset($_GET['job'])) {
     $job = $_GET['job'];
-    if ($job == 'get_categorias') {
+    if ($job == 'get_categorias' || $job == 'add_categoria') {
         if (isset($_GET['id'])){
             $id = $_GET['id'];
             if (!is_numeric($id)){
@@ -53,6 +53,18 @@ if ($job != '') {
                     "imagen_categoria"      => "<img width='120px' height='80px' src='/images/product/".$row['imagen_categoria']."' /><div class='center-align'><a class='function_edit_img modal-trigger' data-idcategoria='".$row['id_categoria']."' data-imgactual='".$row['imagen_categoria']."' href='#modalImagen'>Modificar</a></div>"
                 );
             }
+        }
+    } else if ($job == 'add_categoria') {
+        $query = "INSERT INTO categorias (descripcion_categoria)
+        values
+        ('".$_POST['txtDescripcion']."')";
+        $resultado = mysqli_query($con, $query);
+        if (!$resultado){
+            $result  = 'error';
+            $message = 'query error';
+        } else {
+            $result  = 'success';
+            $message = 'query success';
         }
     }
 }

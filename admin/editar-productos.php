@@ -178,14 +178,14 @@
                         <div class="col s12 m6 l6 right-align-md">
                             <ol class="breadcrumbs mb-0">
                                 <li class="breadcrumb-item"><a href="main.php">Home</a>
-                                </li>                               
+                                </li>
                                 <li class="breadcrumb-item active">Editar Productos
                                 </li>
                             </ol>
                         </div>
                         <div class="col s12 m12 l12 ">
-                            <a id="add_producto" href="#modalProducto" class="waves-effect waves-light breadcrumbs-btn right btn modal-trigger" style="display:block;">AGREGAR</a>                            
-                            <ul class="dropdown-content" id="dropdown1" tabindex="0">                            
+                            <a id="add_producto" href="#modalProducto" class="waves-effect waves-light breadcrumbs-btn right btn modal-trigger" style="display:block;">AGREGAR</a>
+                            <ul class="dropdown-content" id="dropdown1" tabindex="0">
                             </ul>
                         </div>
                     </div>
@@ -251,7 +251,7 @@
                     </div>
                 </div>
                 <div class="content-overlay"></div>
-            </div>          
+            </div>
         </div>
     </div>
     <!-- END: Page Main-->
@@ -273,19 +273,20 @@
                             <option value="3">CABALLOS</option>
                             <option value="4">BORREGOS</option>
                             <option value="5">AVES</option>
+                            <option value="6">PERROS</option>
                         </select>
                         <label>Categoría</label>
                     </div>
                     <div class="input-field col s4">
                         <input placeholder="" id="txtIngred" name="txtIngred" type="text" maxlength="250">
-                        <label for="txtIngred" class="active">Ingredientes</label>                        
+                        <label for="txtIngred" class="active">Ingredientes</label>
                     </div>
-                </div>                
+                </div>
                 <div class="row">
                     <div class="input-field col s4">
                         <input placeholder="" id="txtDetProd" name="txtDetProd" type="text" maxlength="250">
                         <label for="txtDetProd" class="active">Detalle producto</label>
-                    </div>           
+                    </div>
                     <div class="input-field col s4">
                         <input placeholder="" id="txtDetEspec" name="txtDetEspec" type="text">
                         <label for="txtDetEspec" class="active">Detalle específico</label>
@@ -294,7 +295,7 @@
                         <input placeholder="" id="txtIndic" name="txtIndic" type="text" maxlength="250">
                         <label for="txtIndic" class="active">Indicaciones</label>
                     </div>
-                </div>  
+                </div>
                 <div class="row">
                     <div class="input-field col s4">
                         <input placeholder="" id="txtPrecio" name="txtPrecio" type="text" maxlenngth="14">
@@ -304,7 +305,7 @@
                     <select id="slDisponible" name="slDisponible">
                             <option value="" disabled selected>Seleccione</option>
                             <option value="DISPONIBLE">Disponible</option>
-                            <option value="NO DISPONIBLE">No Disponible</option>                            
+                            <option value="NO DISPONIBLE">No Disponible</option>
                         </select>
                         <label>Estatus</label>
                     </div>
@@ -318,15 +319,15 @@
                             </label>
                         </div>
                     </div>
-                </div>    
+                </div>
                 <div class="row">
                     <div class="input-field col s6">
                         <img id="imgdetalle" width="50%" height="50%" class="responsive-img" src="../productos/vacas/lechera_azul.png" alt="">
-                    </div>                               
+                    </div>
                     <div class="input-field col s6">
                         <img id="imgprod" width="50%" height="50%" class="responsive-img" src="../productos/vacas/etiqueta-lechera-azul15.png" alt="">
-                    </div>                               
-                </div>                                                         
+                    </div>
+                </div>
             </form>
         </div>
         <div class="modal-footer">
@@ -351,18 +352,18 @@
                         </div>
                         <div class="form-group">
                         <button type="submit" class="btn btn-success btn btn-block">Upload</button>
-                        </div>  
+                        </div>
                     </form>
-                </div>                    
-            </div>     
+                </div>
+            </div>
             <div class="row">
-                <div class="col-md-4"></div>  
+                <div class="col-md-4"></div>
                 <div class="card col-md-4" id="preview" style="display: none;">
                     <div class="card-body" id="imageView">
-                            
+
                     </div>
-                </div>    
-            </div>           
+                </div>
+            </div>
         </div>
         <!--<div class="modal-footer">
             <button type="button" id="btnGuardarImg" href="#" class="modal-action waves-effect waves-red btn-flat">Guardar</button>

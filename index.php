@@ -414,6 +414,20 @@ foreach($fechas as $fecha){
 							</div>
 						</div>
 					</div>
+					<div class="col-xl-3 col-lg-4 col-md-4 wow fadeInRight" data-wow-delay="0.2s" data-wow-duration="2s">
+						<div class="icon-bx-wraper service-style1 center">
+							<div class="icon-bx-xl">
+								<a href="productos/perros/perros.php" class="icon-cell">
+									<img width="100" height="100" src="images/icon/icon_perros.png" alt="">
+								</a>
+							</div>
+							<div class="icon-content">
+								<h2 class="dez-tilte text-primary">Perros</h2>
+								<!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>-->
+								<a href="productos/perros/perros.php" class="site-button italic light-gray">Ver más..</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

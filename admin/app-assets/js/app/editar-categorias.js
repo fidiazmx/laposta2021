@@ -33,6 +33,56 @@ $(document).ready(function(){
         $("#hdimgact").val($(this).data("imgactual"));
     });
 
+    $( "#btnGuardar" ).click(function() {
+        //if ($("#form-productos").valid()) {
+            swal({   title: "¿Está seguro que desea guardar?",
+            text: "",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#0053A0",
+            confirmButtonText: "SI",
+            cancelButtonText: "NO",
+            closeOnConfirm: false,
+            showLoaderOnConfirm: true,
+            closeOnCancel: false },
+            function(isConfirm){
+                if (isConfirm) {
+                    var accion_cat;
+                    if (sessionStorage.getItem("accion") == "nuevo") {
+                        accion_cat = "add_categoria";
+                    } else if (sessionStorage.getItem("accion") == "editar") {
+                        accion_cat = "update_categoria";
+                    }
+                    var form_data = $("#form-categorias").serialize();
+                    var request   = $.ajax({
+                      url:          usourl + '/php/editar-categorias.func.php?job='+accion_cat+'&id='+sessionStorage.getItem("idcategoria"),
+                      data:         form_data,
+                      type:         'POST'
+                      //cache:        false,
+                      //dataType:     'json',
+                      //contentType:  'application/json; charset=utf-8',
+                    });
+                    request.done(function(output){
+                      output = JSON.parse(output);
+                      if (output.result == 'success'){
+                          swal({
+                              title: "Los cambios fueron guardados correctamente",
+                              type: "success"
+                              },
+                              function(){
+                                  window.location = "editar-categorias.php";
+                          });
+                      } else {
+                          swal("Error", "No se pudo realizar la acción", "error");
+                      }
+                    });
+                } else {
+                    swal("Cancelado", "No se realizó ninguna acción", "error");
+                }
+            });
+        //}
+    });
+
     $("#submitForm").on("submit", function(e){
         e.preventDefault();
         //var formData = new FormData(this);
